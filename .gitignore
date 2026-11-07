@@ -1,0 +1,14 @@
+__pycache__/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+# Game files and extracted levels never belong here.
+*.gtp
+*.dat
+*.hini
+*.glb
+*.glb.part
+*.png
+.claude/
+*.jsonl
