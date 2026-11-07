@@ -154,3 +154,47 @@ def test_build_game_frame_and_bad_corners(tmp_path):
     g = doc["accessors"][doc["meshes"][0]["primitives"][0]["attributes"]["POSITION"]]
     assert g["min"][0] == pytest.approx(0.0) and g["max"][0] == pytest.approx(69 * 50)  # x north
     assert g["max"][2] == pytest.approx(89 * 50)  # z east
+
+
+def test_wtr_blocks_and_refine():
+    from heat3d_ext_il2.wtr import read_wtr, refine
+
+    blocks = np.zeros((4, 4), np.uint8)
+    blocks[0, 0], blocks[0, 1], blocks[1, 1] = 2, 1, 1
+    mask, info = read_wtr(synth.wtr(blocks), cell=50.0)
+    assert mask.shape == (32, 32) and info["samples_per_block"] == 8
+    assert (mask[:8, :8] == 2).all() and (mask[:8, 8:16] == 1).all() and (mask[16:, :] == 0).all()
+    h = np.full((32, 32), 1000, np.uint16)
+    h[:, 8:] = 1100  # above the lake in the full block, so the lake does not spill into its neighbour
+    w = np.zeros((32, 32), np.uint16)
+    w[:, 10:12] = 2000  # a river through the partial block, and through land where it must not count
+    wet = refine(mask, h, w)
+    assert wet[:8, :8].all()  # the full block
+    assert wet[:8, 10:12].all() and not wet[:8, 12:16].any()  # the river inside the partial block
+    assert not wet[24:, 10:12].any()  # the water map alone does not make land wet
+
+
+def test_town_mesh():
+    from heat3d_ext_il2.townmesh import read_town_mesh
+
+    data = synth.town_mesh([(30000.0, 40000.0, 500.0, "graphics/village_01.dds"),
+                            (60000.0, 10000.0, 300.0, "graphics/field_03.dds")])
+    v, f, info = read_town_mesh(data)
+    assert len(f) == 4 and list(info["face_category"]) == ["town", "town", "ground", "ground"]
+    tv, tf, _ = read_town_mesh(data, town_only=True)
+    assert len(tf) == 2 and np.allclose(tv.min(0), [30000, 0, 40000]) and np.allclose(tv.max(0), [30500, 0, 40500])
+
+
+def test_build_with_water_mask_and_towns(tmp_path):
+    src = _source(tmp_path)
+    blocks = np.zeros((10, 12), np.uint8)  # 70 x 90 samples -> blocks of 8 cover 80 x 96
+    blocks[:, :2] = 2  # the sea strip in the west is open water
+    extra = tmp_path / "Extra.gtp"
+    extra.write_bytes(synth.gtp({"/w.wtr": synth.wtr(blocks), "/towns.mesh": synth.town_mesh([(1500.0, 2000.0, 400.0, "village_01.dds")])}))
+    e = {x.name: x for x in read_table(extra)}
+    src.wtr, src.towns = e["/w.wtr"], [e["/towns.mesh"]]
+    rec = build(src, tmp_path / "out", max_grid=40, log=lambda s: None)
+    assert rec["parts"]["water"]["source"].startswith("water.wtr")
+    assert rec["parts"]["towns"]["triangles"] == 2
+    doc = _doc(tmp_path / "out" / "landscape_x.glb")
+    assert [n["name"] for n in doc["nodes"]] == ["ground:landscape_x", "water:landscape_x", "ground:landscape_x towns"]

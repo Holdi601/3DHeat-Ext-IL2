@@ -120,3 +120,47 @@ def hini(height: str, water: str | None, corners: dict[str, tuple[float, float]]
     lines += [f" {k}={a}, {b}" for k, (a, b) in corners.items()]
     lines += ["[Distortions]", ' bitmap="x.bmp"']
     return "\r\n".join(lines).encode("cp1251")
+
+
+def wtr(blocks: np.ndarray, tile_blocks: int = 2, block_m: float = 400.0) -> bytes:
+    """One-level water.wtr: `blocks` [rows, cols] of 0 land, 1 partial, 2 full, row 0 north."""
+    rows, cols = blocks.shape
+    tx, tz = rows // tile_blocks, cols // tile_blocks
+    g, n = tile_blocks, tile_blocks * tile_blocks
+    out = struct.pack("<HHHBB", tz, tx, int(block_m * g / 10), 0x29, 1)
+    for r in range(tx):
+        for c in range(tz):
+            b = blocks[r * g:(r + 1) * g, c * g:(c + 1) * g].ravel()
+            if not b.any():
+                out += b"\0"
+                continue
+            sizes = np.where(b == 1, 3, 0).astype(np.int64)
+            offs = np.r_[0, np.cumsum(sizes)[:-1]]
+            empty = (b == 0).astype(np.uint8)
+            out += b"\1" + offs.astype("<u4").tobytes() + sizes.astype("<u2").tobytes() + empty.tobytes()
+            out += b"\xad\x22\x00" * int((b == 1).sum())
+    return out
+
+
+def town_mesh(quads: list[tuple[float, float, float, str]], tile: float = 25600.0) -> bytes:
+    """A decal mesh: each quad (x north, z east, size, texture), one tile chunk per quad."""
+    textures = sorted({q[3] for q in quads})
+    body = bytearray()
+    index = []
+    for x, z, size, tex in quads:
+        tx, tz = int(x // tile + 0.5), int(z // tile + 0.5)
+        lx, lz = x - (tx - 0.5) * tile, z - (tz - 0.5) * tile
+        index.append((tx, tz, 17 + len(body)))
+        ids = [textures.index(tex)] + [0xFFFF] * 7
+        body += struct.pack("<HHB", tx, tz, 0x81) + struct.pack("<8HIII", *ids, 0, 0, 6)
+        body += struct.pack("<I", 4)
+        for dx, dz in ((0, 0), (size, 0), (size, size), (0, size)):
+            body += struct.pack("<3f4f2f4BI", lx + dx, 0.0, lz + dz, 0, 0, 0, 0, 1, 0, 128, 128, 128, 255, 0)
+        body += struct.pack("<I", 6) + struct.pack("<6H", 0, 1, 2, 0, 2, 3)
+    table_at = 17 + len(body)
+    trailer = struct.pack("<H", len(index)) + b"".join(struct.pack("<II", a * 13 + b, o) for a, b, o in index)
+    trailer += struct.pack("<H", len(textures))
+    for i, t in enumerate(textures):
+        name = t.encode() + b"\0"
+        trailer += struct.pack("<HB", i, len(name)) + name + b"\0\0\0\0"
+    return struct.pack("<BIfII", 1, table_at, tile, 13, 13) + bytes(body) + trailer

@@ -72,29 +72,14 @@ def mission_objects(root: Path) -> tuple[list[tuple[str, float, float]], list[fl
 
 def fit_affine(airfields: list[tuple[str, float, float]]) -> dict | None:
     """Game (x, z) to east/north metres about the landmarks' centre, or None with fewer than three matches."""
-    from .level import tangent
+    from .landmarks import fit
 
     matched = []
     for name, x, z in airfields:
         key = next((k for k in REAL_AIRFIELDS if k in name.lower()), None)
         if key:
             matched.append((name, x, z, *REAL_AIRFIELDS[key]))
-    if len(matched) < 3:
-        return None
-    lat0 = round(float(np.mean([m[3] for m in matched])), 4)
-    lon0 = round(float(np.mean([m[4] for m in matched])), 4)
-    a = np.array([[m[1], m[2], 1.0] for m in matched])
-    e, n = tangent(np.array([m[3] for m in matched]), np.array([m[4] for m in matched]), lat0, lon0)
-    b = np.stack([e, n], 1)
-    matrix, *_ = np.linalg.lstsq(a, b, rcond=None)
-    resid = np.hypot(*(a @ matrix - b).T)
-    return {
-        "origin": [lat0, lon0],
-        "matrix": matrix.tolist(),
-        "landmarks": [{"name": m[0], "lat": m[3], "lon": m[4], "residualMetres": round(float(r))}
-                      for m, r in zip(matched, resid)],
-        "rmsMetres": round(float(np.sqrt(np.mean(resid**2)))),
-    }
+    return fit(matched)
 
 
 def sea_settings(ship_y: list[float], water_mode_raw: int | None) -> dict | None:

@@ -48,6 +48,7 @@ def main(argv: list[str] | None = None) -> int:
     ex.add_argument("--origin", nargs=2, type=float, metavar=("LAT", "LON"),
                     help="origin of the enu frame (a recording's geo); default: the map's centre")
     ex.add_argument("--no-water", action="store_true", help="leave the water out")
+    ex.add_argument("--no-towns", action="store_true", help="leave the town footprints out")
     ex.add_argument("--skip-existing", action="store_true", help="leave maps whose .glb exists")
     args = ap.parse_args(argv)
 
@@ -61,7 +62,9 @@ def main(argv: list[str] | None = None) -> int:
             corners = m.hini.corners() if m.hini else None
             where = (f"{min(a for a, _ in corners.values()):.2f}..{max(a for a, _ in corners.values()):.2f} N, "
                      f"{min(b for _, b in corners.values()):.2f}..{max(b for _, b in corners.values()):.2f} E") if corners else (
-                f"placed by an airfield fit (rms {m.affine['rmsMetres']} m)" if m.affine else "not placed on the earth")
+                f"placed by a landmark fit (rms {m.affine['rmsMetres']} m)" if m.affine else "not placed on the earth")
+            if corners and m.affine:
+                where += f" per height.hini, which looks wrong: landmark fit (rms {m.affine['rmsMetres']} m) used instead"
             print(f"{m.name}\t{m.game}\theight {m.height.name or m.height.archive.name}\t{where}")
         print(f"{len(maps)} maps in {', '.join(str(r) for r in roots)}", file=sys.stderr)
         return 0
@@ -88,7 +91,7 @@ def main(argv: list[str] | None = None) -> int:
         try:
             frame = args.frame if (m.hini and m.hini.corners()) else "game"
             rec = build(m, dest, max_grid=args.max_grid, frame=frame,
-                        origin=tuple(args.origin) if args.origin else None, water=not args.no_water,
+                        origin=tuple(args.origin) if args.origin else None, water=not args.no_water, towns=not args.no_towns,
                         log=lambda s: print(s, flush=True))
             tris = sum(p.get("triangles", p.get("cells", 0) * 2) for p in rec["parts"].values())
             print(f"ok {dest / (m.name + '.glb')} {tris} triangles ({rec['frame']['name']} frame)", flush=True)

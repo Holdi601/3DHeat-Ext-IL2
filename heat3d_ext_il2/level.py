@@ -64,6 +64,8 @@ class MapSource:
     #: Height settings where there is no height.hini to give them: heightMul, SeaLevel.
     heights: dict | None = None
     notes: list[str] = field(default_factory=list)
+    wtr: Entry | None = None  # the exact water mask (water.wtr)
+    towns: list = field(default_factory=list)  # town ground-decal meshes (towns.mesh, cities.mesh, ...)
 
     def corners(self) -> dict[str, tuple[float, float]] | None:
         """The four corners' (lat, lon), if the map's height.hini gives them."""
@@ -154,8 +156,74 @@ def _water_cells(height: Entry, water: Entry, rows: np.ndarray, cols: np.ndarray
     return count, level
 
 
+def _water_cells_exact(src: MapSource, rows: np.ndarray, cols: np.ndarray, w: int, h: int, cell: float):
+    """As `_water_cells`, from the map's own water mask (water.wtr), narrowed inside its 400 m blocks by the water map."""
+    from .heightdat import read_height_dat
+    from .wtr import read_wtr, refine
+
+    hraw, _ = read_height_dat(src.height.read(), return_raw=True)
+    wraw, _ = read_height_dat(src.water.read(), return_raw=True)
+    mask, info = read_wtr(src.wtr.read(), cell=cell)
+    spb = int(info.get("samples_per_block", 8))
+    mr, mc = min(mask.shape[0], h), min(mask.shape[1], w)
+    wet = refine(mask[:mr, :mc], hraw[:mr, :mc], wraw[:mr, :mc], spb=spb).astype(bool)
+    nr, nc = len(rows) - 1, len(cols) - 1
+    col_cell = np.clip(np.searchsorted(cols, np.arange(mc), side="right") - 1, 0, nc - 1)
+    row_cell = np.clip(np.searchsorted(rows, np.arange(mr), side="right") - 1, 0, nr - 1)
+    rr, cc = np.nonzero(wet)
+    count = np.zeros((nr, nc), np.int64)
+    total = np.zeros((nr, nc), np.float64)
+    np.add.at(count, (row_cell[rr], col_cell[cc]), 1)
+    np.add.at(total, (row_cell[rr], col_cell[cc]), np.maximum(wraw[rr, cc], hraw[rr, cc]).astype(np.float64))
+    level = np.where(count > 0, total / np.maximum(count, 1), np.nan)
+    return count, level
+
+
+def _add_towns(src, positions, parts, record, notes, heights, rows, cols, h, cell, latlon, origin) -> None:
+    """The built-up footprints of towns and villages (the maps' town ground decals), draped 1.5 m over the ground."""
+    from .townmesh import read_town_mesh
+
+    vs, fs = [], []
+    for entry in src.towns:
+        try:
+            v, f, _info = read_town_mesh(entry.read(), town_only=True)
+        except Exception as e:  # one unreadable decal file costs its towns, not the level
+            notes.append(f"{entry.name}: not read ({type(e).__name__}: {e})")
+            continue
+        if len(f):
+            fs.append(np.asarray(f, np.int64) + sum(len(x) for x in vs))
+            vs.append(np.asarray(v, np.float64))
+    if not vs:
+        return
+    v = np.concatenate(vs)
+    f = np.concatenate(fs)
+    x, z = v[:, 0], v[:, 2]
+    # Fractional position on the output grid, then bilinear height from it.
+    fr = np.interp(((h - 1) * cell - x) / cell, rows, np.arange(len(rows)))
+    fc = np.interp(z / cell, cols, np.arange(len(cols)))
+    r0 = np.clip(np.floor(fr).astype(int), 0, len(rows) - 2)
+    c0 = np.clip(np.floor(fc).astype(int), 0, len(cols) - 2)
+    tr, tc = fr - r0, fc - c0
+    y = (heights[r0, c0] * (1 - tr) * (1 - tc) + heights[r0 + 1, c0] * tr * (1 - tc)
+         + heights[r0, c0 + 1] * (1 - tr) * tc + heights[r0 + 1, c0 + 1] * tr * tc) + 1.5
+    if origin is not None:
+        lat, lon = latlon(x, z)
+        east, north = tangent(lat, lon, *origin)
+        out = np.stack([east, y, -north], 1)
+    else:
+        out = np.stack([x, y, z], 1)
+    n = np.cross(out[f[:, 1]] - out[f[:, 0]], out[f[:, 2]] - out[f[:, 0]])
+    f = np.where((n[:, 1] < 0)[:, None], f[:, [0, 2, 1]], f)  # every footprint faces up
+    off = sum(len(p) for p in positions)
+    positions.append(out.astype(np.float32))
+    parts.append(Part(name=f"ground:{src.name} towns", faces=(f + off).astype(np.uint32), colour=(0.55, 0.36, 0.30)))
+    record["parts"]["towns"] = {"triangles": int(len(f)), "files": [e.name for e in src.towns],
+                                "what": "built-up footprints (the game's town and village ground decals), flat on the "
+                                        "ground; the buildings themselves are not in these files"}
+
+
 def build(src: MapSource, out_dir: Path, *, max_grid: int = DEFAULT_MAX_GRID, frame: str = "enu",
-          origin: tuple[float, float] | None = None, water: bool = True, log=print) -> dict:
+          origin: tuple[float, float] | None = None, water: bool = True, towns: bool = True, log=print) -> dict:
     t0 = time.time()
     out_dir.mkdir(parents=True, exist_ok=True)
     hini = src.hini
@@ -173,6 +241,8 @@ def build(src: MapSource, out_dir: Path, *, max_grid: int = DEFAULT_MAX_GRID, fr
         notes.append("height.hini's corner coordinates do not span this map's size (they look copied from "
                      "another map) and are not used")
         corners = None
+    if corners is not None:
+        notes = [n for n in notes if not n.startswith("a landmark fit")]  # the map's own corners win
     placed = corners is not None or src.affine is not None
     if frame == "enu" and not placed:
         notes.append("no way to place the map on the earth: written in the game's own metres instead")
@@ -206,8 +276,11 @@ def build(src: MapSource, out_dir: Path, *, max_grid: int = DEFAULT_MAX_GRID, fr
                       "settingsFrom": "height.hini" if hini else "estimated (see notes)",
                       "sectors": hd["sectors_x"] * hd["sectors_y"], "badSectors": decoded["bad_sectors"],
                       "suspiciousSectors": decoded["suspicious_sectors"]},
-        "notRead": ["buildings, towns and airfields (towns.mesh and the Locations archives are not read)",
-                    "forests (forest_map.wtr)", "the ground's textures"],
+        "notRead": ["buildings and airfields: the map files hold town footprints only (drawn), the buildings are "
+                    "placed by the game at run time; airfields are mission objects",
+                    "forests (forest_map.wtr: its blocks are read, the shapes inside them are not decoded)",
+                    "the exact shore inside water.wtr's 400 m blocks (narrowed with the water map instead)",
+                    "the ground's textures"],
     }
     if hini:
         lim = {k: hini.number(k) for k in ("limitMinX", "limitMinZ", "limitMaxX", "limitMaxZ")}
@@ -268,12 +341,21 @@ def build(src: MapSource, out_dir: Path, *, max_grid: int = DEFAULT_MAX_GRID, fr
     if water:
         nr, nc = len(rows) - 1, len(cols) - 1
         offset = sea * mul if frame == "enu" else 0.0
-        if src.water is not None:
+        exact = False
+        if src.water is not None and src.wtr is not None:
+            try:
+                count, level_raw = _water_cells_exact(src, rows, cols, w, h, cell)
+                exact = True
+            except Exception as e:  # an unreadable mask: fall back to the water map alone
+                notes.append(f"water.wtr not read ({type(e).__name__}: {e}); water from the water map alone")
+        if src.water is not None and not exact:
             count, level_raw = _water_cells(src.height, src.water, rows, cols, w, h)
+        if src.water is not None:
             # A cell is water where at least half its samples are: "any" floods every low field that
             # touches a stream once the grid is coarser than the water map.
+            # The exact mask has no marsh noise, so a third of a cell is enough there (rivers stay joined).
             cells = np.diff(rows)[:, None] * np.diff(cols)[None, :]
-            wet = count >= 0.5 * np.maximum(cells, 1)
+            wet = count >= (0.3 if exact else 0.5) * np.maximum(cells, 1)
             level = level_raw * mul / 256.0 - offset
         else:
             lowest = np.minimum(np.minimum(heights[:-1, :-1], heights[1:, :-1]),
@@ -296,7 +378,14 @@ def build(src: MapSource, out_dir: Path, *, max_grid: int = DEFAULT_MAX_GRID, fr
             positions.append(wv.astype(np.float32))
             parts.append(Part(name=f"water:{src.name}", faces=(wf + off).astype(np.uint32), colour=(0.16, 0.30, 0.42)))
             record["parts"]["water"] = {"cells": int(len(rr)), "of": int(nr * nc),
-                                        "source": "water map" if src.water is not None else "sea level"}
+                                        "source": ("water.wtr blocks, narrowed by the water map" if src.water is not None and exact
+                                                   else "water map" if src.water is not None else "sea level")}
+
+    if towns and src.towns:
+        _add_towns(src, positions, parts, record, notes, heights, rows, cols, h, cell, latlon,
+                   origin if frame == "enu" else None)
+        if notes:
+            record["notes"] = notes
 
     glb_path = out_dir / f"{src.name}.glb"
     tmp = glb_path.with_suffix(".glb.part")

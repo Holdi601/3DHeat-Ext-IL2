@@ -17,6 +17,7 @@ from pathlib import Path
 
 import numpy as np
 
+from . import landmarks
 from .gtp import Entry, read_table, scan_chain
 from .hini import parse_hini
 from .level import MapSource
@@ -67,6 +68,7 @@ def maps_great_battles(root: Path) -> list[MapSource]:
         for e in read_table(archive):
             files.setdefault(e.name, e)
     out: list[MapSource] = []
+    fits: dict[str, dict | None] = {}
     for name, e in sorted(files.items()):
         if not name.endswith("/height.hini"):
             continue
@@ -75,7 +77,31 @@ def maps_great_battles(root: Path) -> list[MapSource]:
         if hm is None:
             continue
         wm = files.get(hini.path("water_map") or "")
-        out.append(MapSource(name.split("/")[-2], hini, hm, wm, "Great Battles"))
+        folder = name.split("/")[-2]
+        src = MapSource(folder, hini, hm, wm, "Great Battles")
+        src.wtr = files.get(hini.path("water") or "")
+        # The ground-decal meshes the map draws (textures.tini's surface_meshN); their town faces are kept.
+        tini = files.get(name.rsplit("/", 1)[0] + "/textures.tini")
+        if tini is not None:
+            t = parse_hini(tini.read())
+            meshes = [t.path(k) for k in sorted(t.values) if k.startswith("surface_mesh")]
+            src.towns = [files[m] for m in meshes if m in files]
+        # A landmark fit for map families whose own corners are known to be wrong; used only where
+        # the build finds the corners do not span the map.
+        family = next((f for f in landmarks.LOCATION_PREFIX if f in folder), None)
+        if family:
+            if family not in fits:
+                found = []
+                for path, entry in files.items():
+                    base = path.rsplit("/", 1)[-1]
+                    if path.endswith(".ldfbin") and base.startswith(landmarks.LOCATION_PREFIX[family]):
+                        found += landmarks.parse_ldfbin(entry.read())
+                fits[family] = landmarks.fit_named(found, landmarks.WESTERN_FRONT)
+            src.affine = fits[family]
+            if src.affine:
+                src.notes.append(f"a landmark fit is attached: {len(src.affine['landmarks'])} towns and airfields of the "
+                                 f"game's location databases against their real positions (rms {src.affine['rmsMetres']} m)")
+        out.append(src)
     return out
 
 
