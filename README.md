@@ -24,6 +24,21 @@ This converter is kept apart from the 3DHeat tools on purpose: it reads the
 game's archives, whose terms (below) were not found. If it ever has to go,
 nothing else goes with it.
 
+| `extract` option | Does |
+|---|---|
+| `<map> ...` / `--all` | map names as `list` prints them (wildcards allowed) / every map |
+| `-o`, `--out FOLDER` | output folder; each map goes in `<out>/<map>/` (required) |
+| `--game FOLDER` | an IL-2 folder, repeatable (also for `list`) |
+| `--max-grid N` | heightmap samples a side at most (default 1024) |
+| `--frame enu` / `--frame game` | the frame (below; default `enu`) |
+| `--origin LAT LON` | origin of the `enu` frame (a recording's `geo`; default the map's centre) |
+| `--no-water`, `--no-towns` | leave the water / the town footprints out |
+| `--skip-existing` | leave maps whose `.glb` exists |
+
+**Documentation:** [holdi601.github.io/3DHeat-Ext-IL2](https://holdi601.github.io/3DHeat-Ext-IL2/), a page per command with step-by-step use and example output. This converter is part of [3DHeat](https://github.com/Holdi601/3DHeat) ([documentation](https://holdi601.github.io/3DHeat/)); the telemetry these levels carry, and the viewer's one-file-a-match container, are described in [One file a match (.3dheat)](https://holdi601.github.io/3DHeat/container.html).
+
+![From an IL-2 install to a 3DHeat level](docs/assets/img/flow.svg)
+
 ## What comes out
 
 `<out>/<map>/<map>.glb` and `<map>.json` beside it. The glb is written to

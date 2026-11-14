@@ -1,0 +1,12 @@
+title: 3DHeat IL-2
+description: IL-2 Sturmovik maps from your own install into 3D levels for the 3DHeat viewer.
+remote_theme: just-the-docs/just-the-docs@v0.10.0
+plugins:
+  - jekyll-remote-theme
+search_enabled: true
+heading_anchors: true
+aux_links:
+  "GitHub": "https://github.com/Holdi601/3DHeat-Ext-IL2"
+  "3DHeat": "https://holdi601.github.io/3DHeat/"
+exclude:
+  - "*.py"

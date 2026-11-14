@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="773" height="140" viewBox="0 0 773 140" role="img" aria-label="heat3d-il2-level on a synthetic install">
+<rect width="773" height="140" rx="8" fill="#1e1f24"/>
+<rect width="773" height="26" rx="8" fill="#2c2e35"/><rect y="18" width="773" height="8" fill="#2c2e35"/>
+<circle cx="16" cy="13" r="5" fill="#ff5f57"/><circle cx="32" cy="13" r="5" fill="#febc2e"/><circle cx="48" cy="13" r="5" fill="#28c840"/>
+<text x="386.5" y="17" fill="#9aa0aa" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="middle">heat3d-il2-level on a synthetic install</text>
+<g font-family="Consolas,Menlo,DejaVu Sans Mono,monospace" font-size="13" xml:space="preserve" style="white-space:pre">
+<text x="16" y="46" fill="#7ee787" xml:space="preserve" style="white-space:pre">$&#160;heat3d-il2-level&#160;extract&#160;landscape_example&#160;--game&#160;IL-2&#160;-o&#160;levels-game&#160;--frame&#160;game&#160;--no-water</text>
+<text x="16" y="64" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;landscape_example:&#160;90x70&#160;samples&#160;at&#160;50&#160;m,&#160;every&#160;1</text>
+<text x="16" y="82" fill="#d6d9df" xml:space="preserve" style="white-space:pre">ok&#160;levels-game\landscape_example\landscape_example.glb&#160;12282&#160;triangles&#160;(game&#160;frame)</text>
+<text x="16" y="100" fill="#7ee787" xml:space="preserve" style="white-space:pre">$&#160;echo&#160;$?</text>
+<text x="16" y="118" fill="#d6d9df" xml:space="preserve" style="white-space:pre">0</text>
+</g></svg>
