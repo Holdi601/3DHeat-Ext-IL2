@@ -24,9 +24,9 @@ from .level import DEFAULT_MAX_GRID, build
 
 def main(argv: list[str] | None = None) -> int:
     try:
-        import heat3d_update
+        from . import update
 
-        heat3d_update.startup("heat3d_ext_il2")
+        update.startup("heat3d_ext_il2")
     except Exception:  # an update check never stops a conversion
         pass
     ap = argparse.ArgumentParser(prog="heat3d-il2-level", description="IL-2 Sturmovik maps into 3DHeat .glb levels")

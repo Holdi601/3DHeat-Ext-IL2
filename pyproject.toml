@@ -20,7 +20,7 @@ test = ["pytest>=8.0"]
 heat3d-il2-level = "heat3d_ext_il2.cli:main"
 
 [tool.setuptools]
-packages = ["heat3d_ext_il2", "heat3d_update"]
+packages = ["heat3d_ext_il2"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

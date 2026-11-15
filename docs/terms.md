@@ -34,4 +34,4 @@ tests build every file they read.
 ## Licence
 
 MIT - see [`LICENSE`](https://github.com/Holdi601/3DHeat-Ext-IL2/blob/main/LICENSE). Uses numpy (BSD-3-Clause) and, optionally,
-numba (BSD-2-Clause). `heat3d_update` is the 3DHeat tools' shared updater.
+numba (BSD-2-Clause). `heat3d_ext_il2.update` is the 3DHeat tools' shared updater.
