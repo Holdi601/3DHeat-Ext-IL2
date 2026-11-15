@@ -1,7 +1,7 @@
 ---
 title: "Construirea nivelurilor: extract"
 nav_order: 3
-lang: ro
+lang: "ro"
 source: extract.md
 source_hash: "2a45af525c58"
 nav_exclude: true

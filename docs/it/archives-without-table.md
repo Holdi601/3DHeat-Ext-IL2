@@ -1,7 +1,7 @@
 ---
 title: Archivi senza tabella dei file
 nav_order: 6
-lang: it
+lang: "it"
 source: archives-without-table.md
 source_hash: "58c4c46721e5"
 nav_exclude: true

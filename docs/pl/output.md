@@ -1,7 +1,7 @@
 ---
 title: "Pliki poziomu i układy"
 nav_order: 4
-lang: pl
+lang: "pl"
 source: output.md
 source_hash: "b5c5a5f47a20"
 nav_exclude: true

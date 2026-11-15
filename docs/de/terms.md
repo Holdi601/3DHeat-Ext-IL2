@@ -1,7 +1,7 @@
 ---
 title: "Geschwindigkeit, Tests, Bedingungen"
 nav_order: 7
-lang: de
+lang: "de"
 source: terms.md
 source_hash: "5f420f7d2d05"
 nav_exclude: true

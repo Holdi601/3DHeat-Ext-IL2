@@ -1,7 +1,7 @@
 ---
 title: 没有文件表的归档
 nav_order: 6
-lang: zh
+lang: "zh"
 source: archives-without-table.md
 source_hash: "58c4c46721e5"
 nav_exclude: true

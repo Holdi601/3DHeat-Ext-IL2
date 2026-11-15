@@ -1,7 +1,7 @@
 ---
 title: "Пабудова ўзроўняў: extract"
 nav_order: 3
-lang: be
+lang: "be"
 source: extract.md
 source_hash: "2a45af525c58"
 nav_exclude: true

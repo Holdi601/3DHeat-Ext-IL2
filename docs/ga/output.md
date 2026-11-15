@@ -1,7 +1,7 @@
 ---
 title: Comhaid agus fráma an leibhéil
 nav_order: 4
-lang: ga
+lang: "ga"
 source: output.md
 source_hash: "b5c5a5f47a20"
 nav_exclude: true

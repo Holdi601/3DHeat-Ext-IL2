@@ -1,7 +1,7 @@
 ---
 title: "Wéi d'Dateie gelies ginn"
 nav_order: 5
-lang: lb
+lang: "lb"
 source: reading.md
 source_hash: "3c0d5d19e02e"
 nav_exclude: true

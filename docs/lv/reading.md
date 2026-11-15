@@ -1,7 +1,7 @@
 ---
 title: Kā tiek nolasīti faili
 nav_order: 5
-lang: lv
+lang: "lv"
 source: reading.md
 source_hash: "3c0d5d19e02e"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: "构建关卡：extract"
 nav_order: 3
-lang: zh
+lang: "zh"
 source: extract.md
 source_hash: "2a45af525c58"
 nav_exclude: true

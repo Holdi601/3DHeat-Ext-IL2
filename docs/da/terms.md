@@ -1,7 +1,7 @@
 ---
 title: Hastighed, tests, vilkår
 nav_order: 7
-lang: da
+lang: "da"
 source: terms.md
 source_hash: "5f420f7d2d05"
 nav_exclude: true

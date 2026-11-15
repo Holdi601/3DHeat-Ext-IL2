@@ -1,7 +1,7 @@
 ---
 title: "Kryefaqja"
 nav_order: 1
-lang: sq
+lang: "sq"
 source: index.md
 source_hash: "e5c9a5aa5acb"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: Архиви без табела со датотеки
 nav_order: 6
-lang: mk
+lang: "mk"
 source: archives-without-table.md
 source_hash: "58c4c46721e5"
 nav_exclude: true

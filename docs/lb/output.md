@@ -1,7 +1,7 @@
 ---
 title: "D'Level-Dateien an d'Frames"
 nav_order: 4
-lang: lb
+lang: "lb"
 source: output.md
 source_hash: "b5c5a5f47a20"
 nav_exclude: true

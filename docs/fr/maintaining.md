@@ -1,7 +1,7 @@
 ---
 title: "Maintenir ces documents"
 nav_order: 91
-lang: fr
+lang: "fr"
 source: maintaining.md
 source_hash: "a37a32cc5026"
 nav_exclude: true

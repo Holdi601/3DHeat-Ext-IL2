@@ -1,7 +1,7 @@
 ---
 title: "レベルのファイルと座標系"
 nav_order: 4
-lang: ja
+lang: "ja"
 source: output.md
 source_hash: "b5c5a5f47a20"
 nav_exclude: true

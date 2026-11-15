@@ -1,7 +1,7 @@
 ---
 title: "Iskanje zemljevidov: list"
 nav_order: 2
-lang: sl
+lang: "sl"
 source: list.md
 source_hash: "8c7cf438be16"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: "Tasemete ehitamine: extract"
 nav_order: 3
-lang: et
+lang: "et"
 source: extract.md
 source_hash: "2a45af525c58"
 nav_exclude: true

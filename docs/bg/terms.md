@@ -1,7 +1,7 @@
 ---
 title: "Скорост, тестове, условия"
 nav_order: 7
-lang: bg
+lang: "bg"
 source: terms.md
 source_hash: "5f420f7d2d05"
 nav_exclude: true

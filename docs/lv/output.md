@@ -1,7 +1,7 @@
 ---
 title: Līmeņa faili un sistēmas
 nav_order: 4
-lang: lv
+lang: "lv"
 source: output.md
 source_hash: "b5c5a5f47a20"
 nav_exclude: true

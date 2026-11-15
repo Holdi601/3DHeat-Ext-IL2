@@ -1,7 +1,7 @@
 ---
 title: Ātrums, testi, noteikumi
 nav_order: 7
-lang: lv
+lang: "lv"
 source: terms.md
 source_hash: "5f420f7d2d05"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: Arkiv utan filtabell
 nav_order: 6
-lang: sv
+lang: "sv"
 source: archives-without-table.md
 source_hash: "58c4c46721e5"
 nav_exclude: true

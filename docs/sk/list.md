@@ -1,7 +1,7 @@
 ---
 title: "Hľadanie máp: list"
 nav_order: 2
-lang: sk
+lang: "sk"
 source: list.md
 source_hash: "8c7cf438be16"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: Velocitat, proves, condicions
 nav_order: 7
-lang: ca
+lang: "ca"
 source: terms.md
 source_hash: "5f420f7d2d05"
 nav_exclude: true

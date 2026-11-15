@@ -1,7 +1,7 @@
 ---
 title: "Súbory úrovne a rámce"
 nav_order: 4
-lang: sk
+lang: "sk"
 source: output.md
 source_hash: "b5c5a5f47a20"
 nav_exclude: true

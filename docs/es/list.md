@@ -1,7 +1,7 @@
 ---
 title: "Buscar mapas: list"
 nav_order: 2
-lang: es
+lang: "es"
 source: list.md
 source_hash: "8c7cf438be16"
 nav_exclude: true

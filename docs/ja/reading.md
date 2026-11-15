@@ -1,7 +1,7 @@
 ---
 title: "ファイルの読み方"
 nav_order: 5
-lang: ja
+lang: "ja"
 source: reading.md
 source_hash: "3c0d5d19e02e"
 nav_exclude: true

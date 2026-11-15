@@ -1,7 +1,7 @@
 ---
 title: Els fitxers del nivell i els marcs
 nav_order: 4
-lang: ca
+lang: "ca"
 source: output.md
 source_hash: "b5c5a5f47a20"
 nav_exclude: true

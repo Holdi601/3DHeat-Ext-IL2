@@ -1,7 +1,7 @@
 ---
 title: Cartlanna gan tábla comhad
 nav_order: 6
-lang: ga
+lang: "ga"
 source: archives-without-table.md
 source_hash: "58c4c46721e5"
 nav_exclude: true

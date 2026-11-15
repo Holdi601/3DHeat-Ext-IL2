@@ -1,7 +1,7 @@
 ---
 title: "A pályafájlok és a keretek"
 nav_order: 4
-lang: hu
+lang: "hu"
 source: output.md
 source_hash: "b5c5a5f47a20"
 nav_exclude: true

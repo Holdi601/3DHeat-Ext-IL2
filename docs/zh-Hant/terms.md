@@ -1,7 +1,7 @@
 ---
 title: "速度、測試與條款"
 nav_order: 7
-lang: zh-Hant
+lang: "zh-Hant"
 source: terms.md
 source_hash: "5f420f7d2d05"
 nav_exclude: true

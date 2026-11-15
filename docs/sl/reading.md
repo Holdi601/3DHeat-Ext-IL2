@@ -1,7 +1,7 @@
 ---
 title: "Kako se datoteke berejo"
 nav_order: 5
-lang: sl
+lang: "sl"
 source: reading.md
 source_hash: "3c0d5d19e02e"
 nav_exclude: true

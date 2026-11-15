@@ -1,7 +1,7 @@
 ---
 title: "Пошук карт: list"
 nav_order: 2
-lang: uk
+lang: "uk"
 source: list.md
 source_hash: "8c7cf438be16"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: "關卡檔案與座標系"
 nav_order: 4
-lang: zh-Hant
+lang: "zh-Hant"
 source: output.md
 source_hash: "b5c5a5f47a20"
 nav_exclude: true

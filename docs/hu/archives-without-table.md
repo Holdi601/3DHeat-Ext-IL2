@@ -1,7 +1,7 @@
 ---
 title: "Archívumok fájltáblázat nélkül"
 nav_order: 6
-lang: hu
+lang: "hu"
 source: archives-without-table.md
 source_hash: "58c4c46721e5"
 nav_exclude: true

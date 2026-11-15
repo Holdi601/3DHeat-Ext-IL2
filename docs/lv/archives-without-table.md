@@ -1,7 +1,7 @@
 ---
 title: Arhīvi bez failu tabulas
 nav_order: 6
-lang: lv
+lang: "lv"
 source: archives-without-table.md
 source_hash: "58c4c46721e5"
 nav_exclude: true

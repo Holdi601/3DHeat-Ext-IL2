@@ -1,7 +1,7 @@
 ---
 title: "Skedarët e nivelit dhe kornizat"
 nav_order: 4
-lang: sq
+lang: "sq"
 source: output.md
 source_hash: "b5c5a5f47a20"
 nav_exclude: true

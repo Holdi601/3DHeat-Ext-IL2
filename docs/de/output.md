@@ -1,7 +1,7 @@
 ---
 title: "Die Level-Dateien und Rahmen"
 nav_order: 4
-lang: de
+lang: "de"
 source: output.md
 source_hash: "b5c5a5f47a20"
 nav_exclude: true

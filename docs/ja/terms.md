@@ -1,7 +1,7 @@
 ---
 title: "速度、テスト、利用条件"
 nav_order: 7
-lang: ja
+lang: "ja"
 source: terms.md
 source_hash: "5f420f7d2d05"
 nav_exclude: true

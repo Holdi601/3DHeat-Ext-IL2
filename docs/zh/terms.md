@@ -1,7 +1,7 @@
 ---
 title: "速度、测试与条款"
 nav_order: 7
-lang: zh
+lang: "zh"
 source: terms.md
 source_hash: "5f420f7d2d05"
 nav_exclude: true

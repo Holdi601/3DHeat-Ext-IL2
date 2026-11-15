@@ -1,7 +1,7 @@
 ---
 title: "Arhivi brez tabele datotek"
 nav_order: 6
-lang: sl
+lang: "sl"
 source: archives-without-table.md
 source_hash: "58c4c46721e5"
 nav_exclude: true

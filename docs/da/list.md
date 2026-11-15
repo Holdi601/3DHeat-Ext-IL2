@@ -1,7 +1,7 @@
 ---
 title: "Find kort: list"
 nav_order: 2
-lang: da
+lang: "da"
 source: list.md
 source_hash: "8c7cf438be16"
 nav_exclude: true

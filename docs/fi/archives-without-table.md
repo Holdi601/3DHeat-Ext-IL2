@@ -1,7 +1,7 @@
 ---
 title: "Arkistot ilman tiedostotaulukkoa"
 nav_order: 6
-lang: fi
+lang: "fi"
 source: archives-without-table.md
 source_hash: "58c4c46721e5"
 nav_exclude: true

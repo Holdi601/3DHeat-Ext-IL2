@@ -1,7 +1,7 @@
 ---
 title: "Kenttätiedostot ja kehykset"
 nav_order: 4
-lang: fi
+lang: "fi"
 source: output.md
 source_hash: "b5c5a5f47a20"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: "沒有檔案表的封存檔"
 nav_order: 6
-lang: zh-Hant
+lang: "zh-Hant"
 source: archives-without-table.md
 source_hash: "58c4c46721e5"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: Файлы уровней и системы координат
 nav_order: 4
-lang: ru
+lang: "ru"
 source: output.md
 source_hash: "b5c5a5f47a20"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: "关卡文件与坐标系"
 nav_order: 4
-lang: zh
+lang: "zh"
 source: output.md
 source_hash: "b5c5a5f47a20"
 nav_exclude: true

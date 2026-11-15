@@ -1,7 +1,7 @@
 ---
 title: "Dokumentaation ylläpito"
 nav_order: 91
-lang: fi
+lang: "fi"
 source: maintaining.md
 source_hash: "a37a32cc5026"
 nav_exclude: true

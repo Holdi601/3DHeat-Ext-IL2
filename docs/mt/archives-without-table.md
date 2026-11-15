@@ -1,7 +1,7 @@
 ---
 title: Arkivji mingħajr tabella tal-fajls
 nav_order: 6
-lang: mt
+lang: "mt"
 source: archives-without-table.md
 source_hash: "58c4c46721e5"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: "Karšu meklēšana: list"
 nav_order: 2
-lang: lv
+lang: "lv"
 source: list.md
 source_hash: "8c7cf438be16"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: "Construir niveles: extract"
 nav_order: 3
-lang: es
+lang: "es"
 source: extract.md
 source_hash: "2a45af525c58"
 nav_exclude: true

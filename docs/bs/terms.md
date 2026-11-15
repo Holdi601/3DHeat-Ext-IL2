@@ -1,7 +1,7 @@
 ---
 title: "Brzina, testovi, uvjeti"
 nav_order: 7
-lang: bs
+lang: "bs"
 source: terms.md
 source_hash: "5f420f7d2d05"
 nav_exclude: true

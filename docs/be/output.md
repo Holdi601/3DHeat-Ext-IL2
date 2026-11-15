@@ -1,7 +1,7 @@
 ---
 title: "Файлы ўзроўню і сістэмы каардынат"
 nav_order: 4
-lang: be
+lang: "be"
 source: output.md
 source_hash: "b5c5a5f47a20"
 nav_exclude: true
