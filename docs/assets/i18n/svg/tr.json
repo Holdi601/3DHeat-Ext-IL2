@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. IL-2 kurulumunuz",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. 3DHeat görüntüleyici",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Sentetik bir harita, yukarıdan",
+ "Background / level; a Tacview flight with": "Arka plan / bölüm; Tacview uçuşu",
+ "From an IL-2 install to a 3DHeat level": "IL-2 kurulumundan 3DHeat seviyesine",
+ "data/Maps*.gtp archives:": "data/Maps*.gtp arşivleri:",
+ "decodes the heightmap, finds the corners": "yükseklik haritasını çözer, köşeleri bulur",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "zemin, alçaktan yükseğe",
+ "heightmap, water, town footprints": "yükseklik haritası, su, kasaba izleri",
+ "the frame, notes": "çerçeve, notlar",
+ "the level: ground, water,": "seviye: zemin, su,",
+ "the same origin lands on it": "aynı kökenle oturur",
+ "town footprints": "kasaba izleri",
+ "water": "su",
+ "where it lies on the earth,": "yerkürede nerede durduğu,"
+}

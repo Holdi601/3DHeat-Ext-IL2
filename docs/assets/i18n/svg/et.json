@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Sinu IL-2 install",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. 3DHeat vaataja",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Sünteetiline kaart ülevalt",
+ "Background / level; a Tacview flight with": "Tasemepaneel; Tacview lend, kus",
+ "From an IL-2 install to a 3DHeat level": "IL-2 installist 3DHeati tasemeni",
+ "data/Maps*.gtp archives:": "data/Maps*.gtp arhiivid:",
+ "decodes the heightmap, finds the corners": "dekodeerib kõrgustikukaardi, leiab nurgad",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "maapind, madalast kõrgeks",
+ "heightmap, water, town footprints": "kõrgustikukaart, vesi, linnade jalajäljed",
+ "the frame, notes": "raamistik, märkused",
+ "the level: ground, water,": "tase: maapind, vesi,",
+ "the same origin lands on it": "sama algpunkt langeb sinna",
+ "town footprints": "linnade jalajäljed",
+ "water": "vesi",
+ "where it lies on the earth,": "kus see asub maakeral,"
+}

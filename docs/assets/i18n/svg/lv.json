@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Tavs IL-2 uzstādījums",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. 3DHeat skatītājs",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Sintētiska karte no augšas",
+ "Background / level; a Tacview flight with": "Līmeņa panelis; Tacview lidojums ar",
+ "From an IL-2 install to a 3DHeat level": "No IL-2 uzstādījuma līdz 3DHeat līmenim",
+ "data/Maps*.gtp archives:": "data/Maps*.gtp arhīvi:",
+ "decodes the heightmap, finds the corners": "dekodē augstuma karti, atrod stūrus",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "zeme, no zema līdz augstam",
+ "heightmap, water, town footprints": "augstuma karte, ūdens, pilsētu laukumi",
+ "the frame, notes": "sistēma, piezīmes",
+ "the level: ground, water,": "līmenis: zeme, ūdens,",
+ "the same origin lands on it": "tas pats sākumpunkts uz tā nokrīt",
+ "town footprints": "pilsētu laukumi",
+ "water": "ūdens",
+ "where it lies on the earth,": "kur tas atrodas uz zemes,"
+}

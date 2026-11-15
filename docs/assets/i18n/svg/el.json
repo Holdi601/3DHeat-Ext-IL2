@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Η εγκατάστασή σας IL-2",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. Ο προβολέας 3DHeat",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Συνθετικός χάρτης από πάνω",
+ "Background / level; a Tacview flight with": "Φόντο / πίστα· μια πτήση Tacview με",
+ "From an IL-2 install to a 3DHeat level": "Από εγκατάσταση IL-2 σε επίπεδο 3DHeat",
+ "data/Maps*.gtp archives:": "archives data/Maps*.gtp:",
+ "decodes the heightmap, finds the corners": "αποκωδικοποιεί τον χάρτη υψομέτρων, βρίσκει τις γωνίες",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "έδαφος, από χαμηλό σε υψηλό",
+ "heightmap, water, town footprints": "χάρτης υψομέτρων, νερό, ίχνη πόλεων",
+ "the frame, notes": "το πλαίσιο, σημειώσεις",
+ "the level: ground, water,": "το επίπεδο: έδαφος, νερό,",
+ "the same origin lands on it": "η ίδια αρχή πέφτει πάνω του",
+ "town footprints": "ίχνη πόλεων",
+ "water": "νερό",
+ "where it lies on the earth,": "πού βρίσκεται στη γη,"
+}

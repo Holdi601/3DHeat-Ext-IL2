@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Ваша установка IL-2",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. Визуализатор 3DHeat",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Синтетическая карта сверху",
+ "Background / level; a Tacview flight with": "Фон/уровень; полёт Tacview с",
+ "From an IL-2 install to a 3DHeat level": "От установки IL-2 до уровня 3DHeat",
+ "data/Maps*.gtp archives:": "архивы data/Maps*.gtp:",
+ "decodes the heightmap, finds the corners": "декодирует карту высот, находит углы",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "земля, от низкой к высокой",
+ "heightmap, water, town footprints": "карта высот, вода, контуры городов",
+ "the frame, notes": "система, примечания",
+ "the level: ground, water,": "уровень: земля, вода,",
+ "the same origin lands on it": "то же начало ложится на него",
+ "town footprints": "контуры городов",
+ "water": "вода",
+ "where it lies on the earth,": "где он лежит на Земле,"
+}

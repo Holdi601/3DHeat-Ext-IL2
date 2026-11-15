@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. IL-2 uppsetningin þín",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. 3DHeat-skoðarinn",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Gervikort að ofan",
+ "Background / level; a Tacview flight with": "Bakgrunnur / borð; Tacview-flug með",
+ "From an IL-2 install to a 3DHeat level": "Frá IL-2 uppsetningu að 3DHeat-borði",
+ "data/Maps*.gtp archives:": "data/Maps*.gtp skjalasöfn:",
+ "decodes the heightmap, finds the corners": "afkóðar hæðarkortið, finnur hornin",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "land, lágt til hátt",
+ "heightmap, water, town footprints": "hæðarkort, vatn, fótspor bæja",
+ "the frame, notes": "ramminn, athugasemdir",
+ "the level: ground, water,": "borðið: land, vatn,",
+ "the same origin lands on it": "sama upphafspunkt lendir á því",
+ "town footprints": "fótspor bæja",
+ "water": "vatn",
+ "where it lies on the earth,": "hvar það liggur á jörðinni,"
+}

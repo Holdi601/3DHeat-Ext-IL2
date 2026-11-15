@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Din IL-2-installasjon",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. 3DHeat-visningsprogrammet",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Et syntetisk kart ovenfra",
+ "Background / level; a Tacview flight with": "Banepanel; en Tacview-flyvning med",
+ "From an IL-2 install to a 3DHeat level": "Fra en IL-2-installasjon til en 3DHeat-bane",
+ "data/Maps*.gtp archives:": "data/Maps*.gtp-arkiver:",
+ "decodes the heightmap, finds the corners": "dekoder høydekartet, finner hjørnene",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "bakke, lav til høy",
+ "heightmap, water, town footprints": "høydekart, vann, byfotavtrykk",
+ "the frame, notes": "rammen, merknader",
+ "the level: ground, water,": "banen: bakke, vann,",
+ "the same origin lands on it": "samme origo havner på den",
+ "town footprints": "byfotavtrykk",
+ "water": "vann",
+ "where it lies on the earth,": "der den ligger på jorden,"
+}

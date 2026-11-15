@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Är IL-2-Installatioun",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. Den 3DHeat-Viewer",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Eng synthetesch Map vun uewen",
+ "Background / level; a Tacview flight with": "Level-Panneau; e Tacview-Fluch mat",
+ "From an IL-2 install to a 3DHeat level": "Vun enger IL-2-Installatioun bei en 3DHeat-Level",
+ "data/Maps*.gtp archives:": "data/Maps*.gtp-Archiver:",
+ "decodes the heightmap, finds the corners": "dekodéiert d'Heightmap, fënnt d'Ecken",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "Buedem, niddreg bis héich",
+ "heightmap, water, town footprints": "Heightmap, Waasser, Stad-Foussofdrëck",
+ "the frame, notes": "de Frame, Notizen",
+ "the level: ground, water,": "d'Level: Buedem, Waasser,",
+ "the same origin lands on it": "dee selwechten Urspronk landet drop",
+ "town footprints": "Stad-Foussofdrëck",
+ "water": "Waasser",
+ "where it lies on the earth,": "wou et op der Äerd läit,"
+}

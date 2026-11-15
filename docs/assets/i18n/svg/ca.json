@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Instal·lació d'IL-2",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. Visualitzador 3DHeat",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Un mapa sintètic des de dalt",
+ "Background / level; a Tacview flight with": "Panell Fons / nivell; un vol de Tacview amb",
+ "From an IL-2 install to a 3DHeat level": "D'instal·lació d'IL-2 a nivell 3DHeat",
+ "data/Maps*.gtp archives:": "arxius data/Maps*.gtp:",
+ "decodes the heightmap, finds the corners": "descodifica el mapa d'alçades, troba les cantonades",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "terreny, de baix a dalt",
+ "heightmap, water, town footprints": "mapa d'alçades, aigua, petjades",
+ "the frame, notes": "el marc, notes",
+ "the level: ground, water,": "el nivell: terreny, aigua,",
+ "the same origin lands on it": "el mateix origen hi cau",
+ "town footprints": "petjades de pobles",
+ "water": "aigua",
+ "where it lies on the earth,": "on es troba a la Terra,"
+}

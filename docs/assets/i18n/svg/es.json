@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Tu instalación de IL-2",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. El visor 3DHeat",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Un mapa sintético desde arriba",
+ "Background / level; a Tacview flight with": "Panel Nivel; un vuelo de Tacview con",
+ "From an IL-2 install to a 3DHeat level": "De una instalación de IL-2 a un nivel 3DHeat",
+ "data/Maps*.gtp archives:": "archivos data/Maps*.gtp:",
+ "decodes the heightmap, finds the corners": "decodifica el mapa de altura, halla las esquinas",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "terreno, de bajo a alto",
+ "heightmap, water, town footprints": "mapa de altura, agua, huellas de pueblos",
+ "the frame, notes": "el marco, notas",
+ "the level: ground, water,": "el nivel: terreno, agua,",
+ "the same origin lands on it": "el mismo origen cae sobre él",
+ "town footprints": "huellas de pueblos",
+ "water": "agua",
+ "where it lies on the earth,": "dónde está sobre la tierra,"
+}

@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Vaša IL-2 instalacija",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. Preglednik 3DHeat",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Sintetička karta odozgo",
+ "Background / level; a Tacview flight with": "panel Pozadina / razina; Tacview let s",
+ "From an IL-2 install to a 3DHeat level": "Od IL-2 instalacije do 3DHeat razine",
+ "data/Maps*.gtp archives:": "arhivi data/Maps*.gtp:",
+ "decodes the heightmap, finds the corners": "dekodira visinsku mapu, pronalazi kutove",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "tlo, od niskog do visokog",
+ "heightmap, water, town footprints": "visinska mapa, voda, tlocrti gradova",
+ "the frame, notes": "okvir, bilješke",
+ "the level: ground, water,": "razina: tlo, voda,",
+ "the same origin lands on it": "isto ishodište pada na nju",
+ "town footprints": "tlocrti gradova",
+ "water": "voda",
+ "where it lies on the earth,": "gdje leži na Zemlji,"
+}

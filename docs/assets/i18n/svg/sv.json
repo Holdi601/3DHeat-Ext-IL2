@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Din IL-2-installation",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. 3DHeat-visaren",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "En syntetisk karta uppifrån",
+ "Background / level; a Tacview flight with": "Nivåpanelen; en Tacview-flygning med",
+ "From an IL-2 install to a 3DHeat level": "Från en IL-2-installation till en 3DHeat-nivå",
+ "data/Maps*.gtp archives:": "data/Maps*.gtp-arkiv:",
+ "decodes the heightmap, finds the corners": "avkodar höjdkartan, hittar hörnen",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "mark, låg till hög",
+ "heightmap, water, town footprints": "höjdkarta, vatten, stadsavtryck",
+ "the frame, notes": "ramen, noteringar",
+ "the level: ground, water,": "nivån: mark, vatten,",
+ "the same origin lands on it": "samma ursprung hamnar på den",
+ "town footprints": "stadsavtryck",
+ "water": "vatten",
+ "where it lies on the earth,": "var den ligger på jorden,"
+}

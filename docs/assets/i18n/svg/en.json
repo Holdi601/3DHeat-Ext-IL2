@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Your IL-2 install",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. The 3DHeat viewer",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "A synthetic map from above",
+ "Background / level; a Tacview flight with": "Background / level; a Tacview flight with",
+ "From an IL-2 install to a 3DHeat level": "From an IL-2 install to a 3DHeat level",
+ "data/Maps*.gtp archives:": "data/Maps*.gtp archives:",
+ "decodes the heightmap, finds the corners": "decodes the heightmap, finds the corners",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "ground, low to high",
+ "heightmap, water, town footprints": "heightmap, water, town footprints",
+ "the frame, notes": "the frame, notes",
+ "the level: ground, water,": "the level: ground, water,",
+ "the same origin lands on it": "the same origin lands on it",
+ "town footprints": "town footprints",
+ "water": "water",
+ "where it lies on the earth,": "where it lies on the earth,"
+}

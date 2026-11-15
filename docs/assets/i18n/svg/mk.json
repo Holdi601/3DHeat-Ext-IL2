@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Вашата инсталација на IL-2",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. Прегледувачот 3DHeat",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Синтетичка мапа одозгора",
+ "Background / level; a Tacview flight with": "Панел Позадина / ниво; лет од Tacview со",
+ "From an IL-2 install to a 3DHeat level": "Од инсталација на IL-2 до ниво на 3DHeat",
+ "data/Maps*.gtp archives:": "архиви data/Maps*.gtp:",
+ "decodes the heightmap, finds the corners": "ја декодира мапата на височини, ги наоѓа аглите",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "терен, од низок до висок",
+ "heightmap, water, town footprints": "мапа на височини, вода, отпечатоци на градови",
+ "the frame, notes": "рамката, белешки",
+ "the level: ground, water,": "нивото: терен, вода,",
+ "the same origin lands on it": "исто потекло се поставува врз него",
+ "town footprints": "отпечатоци на градови",
+ "water": "вода",
+ "where it lies on the earth,": "каде лежи на земјата,"
+}

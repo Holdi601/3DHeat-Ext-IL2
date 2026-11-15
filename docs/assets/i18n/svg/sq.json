@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Instalimi juaj i IL-2",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. Shikuesi 3DHeat",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Një hartë sintetike nga lart",
+ "Background / level; a Tacview flight with": "Paneli Sfondi / niveli; një fluturim Tacview me",
+ "From an IL-2 install to a 3DHeat level": "Nga një instalim IL-2 te një nivel 3DHeat",
+ "data/Maps*.gtp archives:": "arkivat data/Maps*.gtp:",
+ "decodes the heightmap, finds the corners": "dekodon heightmap, gjen qoshet",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "toka, nga e ulëta te e lartë",
+ "heightmap, water, town footprints": "heightmap, uji, gjurmët e qyteteve",
+ "the frame, notes": "korniza, shënimet",
+ "the level: ground, water,": "niveli: toka, uji,",
+ "the same origin lands on it": "e njëjta origjinë bie mbi të",
+ "town footprints": "gjurmët e qyteteve",
+ "water": "ujë",
+ "where it lies on the earth,": "ku shtrihet mbi tokë,"
+}

@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Je IL-2-installatie",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. De 3DHeat-viewer",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Een synthetische kaart van bovenaf",
+ "Background / level; a Tacview flight with": "Achtergrond; een Tacview-vlucht met",
+ "From an IL-2 install to a 3DHeat level": "Van een IL-2-installatie naar een 3DHeat-level",
+ "data/Maps*.gtp archives:": "data/Maps*.gtp-archieven:",
+ "decodes the heightmap, finds the corners": "decodeert de hoogtekaart, vindt de hoeken",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "grond, laag tot hoog",
+ "heightmap, water, town footprints": "hoogtekaart, water, voetafdrukken van steden",
+ "the frame, notes": "het frame, opmerkingen",
+ "the level: ground, water,": "het level: grond, water,",
+ "the same origin lands on it": "dezelfde oorsprong komt erop terecht",
+ "town footprints": "voetafdrukken van steden",
+ "water": "water",
+ "where it lies on the earth,": "waar het op aarde ligt,"
+}

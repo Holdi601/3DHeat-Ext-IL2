@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. あなたのIL-2インストール",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. 3DHeatビューア",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "合成マップを上から",
+ "Background / level; a Tacview flight with": "背景/レベルパネル; Tacviewのフライト",
+ "From an IL-2 install to a 3DHeat level": "IL-2のインストールから3DHeatのレベルまで",
+ "data/Maps*.gtp archives:": "data/Maps*.gtp アーカイブ:",
+ "decodes the heightmap, finds the corners": "ハイトマップをデコードし、四隅を見つける",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "地面、低い所から高い所",
+ "heightmap, water, town footprints": "ハイトマップ、水、町の範囲",
+ "the frame, notes": "座標系、注記",
+ "the level: ground, water,": "レベル: 地面、水、",
+ "the same origin lands on it": "同じ原点で重なる",
+ "town footprints": "町の範囲",
+ "water": "水",
+ "where it lies on the earth,": "地球上のどこにあるか、"
+}

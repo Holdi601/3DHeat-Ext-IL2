@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="498" viewBox="0 0 860 498" font-family="Segoe UI,Helvetica,Arial,sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#5b6270"/></marker></defs>
+<rect width="860" height="498" rx="10" fill="#f6f7f9"/>
+<text x="16" y="32" font-size="18" fill="#1f2328" font-weight="600">No IL-2 uzstādījuma līdz 3DHeat līmenim</text>
+<rect x="16" y="52" width="828" height="82" rx="8" fill="#ffffff" stroke="#8c95a3"/>
+<text x="28" y="79" font-size="15" fill="#1f2328" font-weight="600">1. Tavs IL-2 uzstādījums</text>
+<text x="28" y="99" font-size="14" fill="#3d4450">data/Maps*.gtp arhīvi:</text>
+<text x="28" y="119" font-size="14" fill="#3d4450">augstuma karte, ūdens, pilsētu laukumi</text>
+<rect x="16" y="168" width="828" height="82" rx="8" fill="#eef4ff" stroke="#8c95a3"/>
+<text x="28" y="195" font-size="15" fill="#1f2328" font-weight="600">2. heat3d-il2-level extract</text>
+<text x="28" y="215" font-size="14" fill="#3d4450" font-family="Consolas,Menlo,monospace">extract &lt;map&gt; -o levels</text>
+<text x="28" y="235" font-size="14" fill="#3d4450">dekodē augstuma karti, atrod stūrus</text>
+<path d="M430,136 C430,151.0 430,151.0 430,165" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="16" y="284" width="405" height="82" rx="8" fill="#ffffff" stroke="#8c95a3"/>
+<text x="28" y="311" font-size="15" fill="#1f2328" font-weight="600">&lt;map&gt;.glb</text>
+<text x="28" y="331" font-size="14" fill="#3d4450">līmenis: zeme, ūdens,</text>
+<text x="28" y="351" font-size="14" fill="#3d4450">pilsētu laukumi</text>
+<rect x="439" y="284" width="405" height="82" rx="8" fill="#ffffff" stroke="#8c95a3"/>
+<text x="451" y="311" font-size="15" fill="#1f2328" font-weight="600">&lt;map&gt;.json</text>
+<text x="451" y="331" font-size="14" fill="#3d4450">kur tas atrodas uz zemes,</text>
+<text x="451" y="351" font-size="14" fill="#3d4450">sistēma, piezīmes</text>
+<path d="M430,252 C430,267.0 218,267.0 218,281" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M430,252 C430,267.0 642,267.0 642,281" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="16" y="400" width="828" height="82" rx="8" fill="#eef4ff" stroke="#8c95a3"/>
+<text x="28" y="427" font-size="15" fill="#1f2328" font-weight="600">3. 3DHeat skatītājs</text>
+<text x="28" y="447" font-size="14" fill="#3d4450">Līmeņa panelis; Tacview lidojums ar</text>
+<text x="28" y="467" font-size="14" fill="#3d4450">tas pats sākumpunkts uz tā nokrīt</text>
+<path d="M218,368 C218,383.0 430,383.0 430,397" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M642,368 C642,383.0 430,383.0 430,397" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
+</svg>

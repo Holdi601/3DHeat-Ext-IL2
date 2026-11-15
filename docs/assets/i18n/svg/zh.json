@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. 你的 IL-2 安装",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. 3DHeat 查看器",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "从上方看合成地图",
+ "Background / level; a Tacview flight with": "背景/关卡面板；Tacview 飞行，",
+ "From an IL-2 install to a 3DHeat level": "从 IL-2 安装到 3DHeat 关卡",
+ "data/Maps*.gtp archives:": "data/Maps*.gtp 归档：",
+ "decodes the heightmap, finds the corners": "解码高度图，找到角点",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "地面，由低到高",
+ "heightmap, water, town footprints": "高度图、水域、城镇占地",
+ "the frame, notes": "坐标系、备注",
+ "the level: ground, water,": "关卡：地面、水域、",
+ "the same origin lands on it": "相同原点的数据落在其上",
+ "town footprints": "城镇占地",
+ "water": "水域",
+ "where it lies on the earth,": "它在地球上的位置，"
+}

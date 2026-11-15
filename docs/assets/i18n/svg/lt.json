@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Jūsų IL-2 įdiegimas",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. 3DHeat žiūrintojas",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Sintetinis žemėlapis iš viršaus",
+ "Background / level; a Tacview flight with": "Lygio skydelis; Tacview skrydis su",
+ "From an IL-2 install to a 3DHeat level": "Nuo IL-2 įdiegimo iki 3DHeat lygio",
+ "data/Maps*.gtp archives:": "data/Maps*.gtp archyvai:",
+ "decodes the heightmap, finds the corners": "iškoduoja reljefą, randa kampus",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "žemė, nuo žemo iki aukšto",
+ "heightmap, water, town footprints": "reljefas, vanduo, miestų plotai",
+ "the frame, notes": "koordinačių sistema, pastabos",
+ "the level: ground, water,": "lygis: žemė, vanduo,",
+ "the same origin lands on it": "ta pati pradžia jį atitinka",
+ "town footprints": "miestų plotai",
+ "water": "vanduo",
+ "where it lies on the earth,": "kur jis yra žemėje,"
+}

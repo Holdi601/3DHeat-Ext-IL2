@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Instalarea dvs. IL-2",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. Vizualizatorul 3DHeat",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "O hartă sintetică de sus",
+ "Background / level; a Tacview flight with": "Panou Fundal / nivel; un zbor Tacview cu",
+ "From an IL-2 install to a 3DHeat level": "De la o instalare IL-2 la un nivel 3DHeat",
+ "data/Maps*.gtp archives:": "arhivele data/Maps*.gtp:",
+ "decodes the heightmap, finds the corners": "decodează harta de înălțimi, găsește colțurile",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "sol, de jos în sus",
+ "heightmap, water, town footprints": "hartă de înălțimi, apă, amprente de orașe",
+ "the frame, notes": "sistemul, notele",
+ "the level: ground, water,": "nivelul: sol, apă,",
+ "the same origin lands on it": "aceeași origine ajunge pe el",
+ "town footprints": "amprente de orașe",
+ "water": "apă",
+ "where it lies on the earth,": "unde se află pe pământ,"
+}

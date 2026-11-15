@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. L-installazzjoni tiegħek ta' IL-2",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. Il-viewer ta' 3DHeat",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Mappa sintetika minn fuq",
+ "Background / level; a Tacview flight with": "Pannell Sfond / livell; titjira Tacview bl-",
+ "From an IL-2 install to a 3DHeat level": "Minn installazzjoni ta' IL-2 għal livell ta' 3DHeat",
+ "data/Maps*.gtp archives:": "arkivji data/Maps*.gtp:",
+ "decodes the heightmap, finds the corners": "jiddekodifika l-heightmap, isib il-kantunieri",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "art, minn baxx għal għoli",
+ "heightmap, water, town footprints": "heightmap, ilma, footprints tal-irħula",
+ "the frame, notes": "il-frame, noti",
+ "the level: ground, water,": "il-livell: art, ilma,",
+ "the same origin lands on it": "istess oriġini tinżel fuqu",
+ "town footprints": "footprints tal-irħula",
+ "water": "ilma",
+ "where it lies on the earth,": "fejn jinsab fuq l-art,"
+}

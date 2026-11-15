@@ -1,0 +1,21 @@
+{
+ "1. Your IL-2 install": "1. Vaša inštalácia IL-2",
+ "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
+ "3. The 3DHeat viewer": "3. Prehliadač 3DHeat",
+ "<map>.glb": "<map>.glb",
+ "<map>.json": "<map>.json",
+ "A synthetic map from above": "Syntetická mapa zhora",
+ "Background / level; a Tacview flight with": "Panel Pozadie / level; let Tacview s",
+ "From an IL-2 install to a 3DHeat level": "Od inštalácie IL-2 k úrovni 3DHeat",
+ "data/Maps*.gtp archives:": "archívy data/Maps*.gtp:",
+ "decodes the heightmap, finds the corners": "dekóduje výškovú mapu, nájde rohy",
+ "extract <map> -o levels": "extract <map> -o levels",
+ "ground, low to high": "zem, od nízkej po vysokú",
+ "heightmap, water, town footprints": "výšková mapa, voda, stopy miest",
+ "the frame, notes": "rámec, poznámky",
+ "the level: ground, water,": "úroveň: zem, voda,",
+ "the same origin lands on it": "rovnaký začiatok na nej pristane",
+ "town footprints": "stopy miest",
+ "water": "voda",
+ "where it lies on the earth,": "kde leží na zemi,"
+}
