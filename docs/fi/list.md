@@ -28,7 +28,7 @@ Uusi komentorivin kanssa? Lue ensin [Ennen aloittamista](before-you-start.md).
 
 ![list synteettisessä asennuksessa](../assets/img/list.svg)
 
-Kuva on ajo asennuksella, joka on rakennettu testien kirjoittajista (`tests/synth.py`), ei itse pelillä.
+Kuva on ajo asennuksella, jonka testit rakentavat (`tests/synth.py`), ei itse pelillä.
 
 ## Mistä asennukset löytyvät {#where-the-installs-are-found}
 

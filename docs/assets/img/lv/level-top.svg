@@ -1570,7 +1570,7 @@
 <polygon points="74,33 60,20 74,20" fill="#294c6b" stroke="#294c6b" stroke-width="0.4"/>
 </g>
 <rect x="480" y="56" width="34" height="20" rx="3" fill="url(#ramp)" stroke="#8c95a3"/>
-<text x="524" y="71" font-size="15" fill="#1f2328">zeme, no zema līdz augstam</text>
+<text x="524" y="71" font-size="15" fill="#1f2328">zeme, zems→augsts</text>
 <rect x="480" y="86" width="34" height="20" rx="3" fill="#294c6b" stroke="#8c95a3"/>
 <text x="524" y="101" font-size="15" fill="#1f2328">ūdens</text>
 </svg>

@@ -3,7 +3,7 @@ title: "ホーム"
 nav_order: 1
 lang: ja
 source: index.md
-source_hash: "413bf250161a"
+source_hash: "e5c9a5aa5acb"
 nav_exclude: true
 search_exclude: true
 permalink: /ja/
@@ -60,13 +60,13 @@ heat3d-il2-level extract --all -o levels           # すべてのマップ
 ## 関連 {#related}
 
 - 3DHeatビューア: [github.com/Holdi601/3DHeat](https://github.com/Holdi601/3DHeat)。ドキュメントは [holdi601.github.io/3DHeat](https://holdi601.github.io/3DHeat/)。
-- これらのレベルのテレメトリ: [3DHeat Watcher](https://holdi601.github.io/3DHeat-Watcher/) がIL-2のTacview記録を変換します。1試合1ファイルのコンテナを含む、ビューアのファイル形式は [1試合1ファイル (.3dheat)](https://holdi601.github.io/3DHeat/container.html) に説明があります。
+- これらのレベルのテレメトリ: [3DHeat Watcher](https://holdi601.github.io/3DHeat-Watcher/) がIL-2のTacview記録を変換します。1 マッチを 1 ファイルにまとめたコンテナを含む、ビューアのファイル形式は [1 マッチを 1 ファイルに（.3dheat）](https://holdi601.github.io/3DHeat/container.html) に説明があります。
 
 ## 3DHeatのツール {#the-3dheat-tools}
 
 | ツール | 内容 | コード | ドキュメント |
 |---|---|---|---|
-| 3DHeat viewer | データを表示：ヒートマップ、レース分析、試合の振り返り | [3DHeat](https://github.com/Holdi601/3DHeat) | [ドキュメント](https://holdi601.github.io/3DHeat/) |
+| 3DHeat viewer | データを表示：ヒートマップ、レース分析、マッチの振り返り | [3DHeat](https://github.com/Holdi601/3DHeat) | [ドキュメント](https://holdi601.github.io/3DHeat/) |
 | GameFiles | ゲーム自身のファイルからのレベルとコース | [3DHeat-GameFiles](https://github.com/Holdi601/3DHeat-GameFiles) | [ドキュメント](https://holdi601.github.io/3DHeat-GameFiles/) |
 | GameCapture | ラップのテレメトリ、およびゲーム映像から再構築したレベル | [3DHeat-GameCapture](https://github.com/Holdi601/3DHeat-GameCapture) | [ドキュメント](https://holdi601.github.io/3DHeat-GameCapture/) |
 | Unreal Exporter | Unreal Editorのプラグイン：レベルを1つの `.glb` として書き出し | [3DHeat-UnrealExporter](https://github.com/Holdi601/3DHeat-UnrealExporter) | [ドキュメント](https://holdi601.github.io/3DHeat-UnrealExporter/) |

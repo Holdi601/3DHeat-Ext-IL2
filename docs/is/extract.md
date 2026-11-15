@@ -3,7 +3,7 @@ title: "Að smíða borð: extract"
 nav_order: 3
 lang: is
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
@@ -17,7 +17,7 @@ heat3d-il2-level extract (<map> ... | --all) -o <folder> [--game FOLDER ...]
 
 ## Skref fyrir skref {#step-by-step}
 
-Ertu ný/r í skipanalínunni? Lestu fyrst [Áður en þú byrjar](before-you-start.md).
+Hefurðu aldrei notað skipanalínu? Lestu fyrst [Áður en þú byrjar](before-you-start.md).
 
 1. Finndu nafn kortsins með [`list`](list.md).
 2. Keyrðu `heat3d-il2-level extract <map> -o levels`. Nöfn mega nota algildisstafi,

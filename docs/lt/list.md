@@ -28,7 +28,7 @@ Nesate įpratę prie komandinės eilutės? Pirmiausia perskaitykite [Prieš prad
 
 ![list ant sintetinio įdiegimo](../assets/img/list.svg)
 
-Paveikslėlis – paleidimas ant įdiegimo, sukurto iš testų rašytojų (`tests/synth.py`), o ne ant žaidimo.
+Paveikslėlis – paleidimas ant įdiegimo, sukurto testais (`tests/synth.py`), o ne ant žaidimo.
 
 ## Kur randami įdiegimai {#where-the-installs-are-found}
 

@@ -30,12 +30,12 @@ fitxers `height.hini` i arxius sense taula de fitxers.
 El contracte de llicència d'IL-2 Sturmovik: Great Battles i IL-2 Series (1C Game
 Studios / 777 Studios) **no s'ha trobat**: ni a la instal·lació (el fitxer
 `data/Licenses.txt` només conté llicències de tercers), ni al lloc de l'editor, i la pàgina
-de l'EULA de Steam no es va carregar. Comprovi-la vostè mateix abans de confiar en això.
+de l'EULA de Steam no es va carregar. Comprova-la tu mateix abans de confiar-hi.
 Aquesta eina només llegeix els arxius i mai els canvia. Els nivells que escriu es queden a la
-vostra màquina: **no els publiqui mai**. Aquí no s'envia cap dada del joc, i les
+teva màquina: **no els publiquis mai**. Aquí no s'envia cap dada del joc, i les
 proves construeixen tots els fitxers que llegeixen.
 
 ## Llicència {#licence}
 
-MIT: vegi [`LICENSE`](https://github.com/Holdi601/3DHeat-Ext-IL2/blob/main/LICENSE). Utilitza numpy (BSD-3-Clause) i, opcionalment,
+MIT: mira [`LICENSE`](https://github.com/Holdi601/3DHeat-Ext-IL2/blob/main/LICENSE). Utilitza numpy (BSD-3-Clause) i, opcionalment,
 numba (BSD-2-Clause). `heat3d_update` és l'actualitzador compartit de les eines de 3DHeat.

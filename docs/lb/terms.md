@@ -1,5 +1,5 @@
 ---
-title: "Vitesse, Tester, Bedingungen"
+title: "Geschwindegkeet, Tester, Bedingungen"
 nav_order: 7
 lang: lb
 source: terms.md
@@ -7,9 +7,9 @@ source_hash: "5f420f7d2d05"
 nav_exclude: true
 search_exclude: true
 ---
-# Vitesse, Tester, Bedingungen {#speed-tests-terms}
+# Geschwindegkeet, Tester, Bedingungen {#speed-tests-terms}
 
-## Vitesse {#speed}
+## Geschwindegkeet {#speed}
 
 D'Dekodéieren ass reng Python, ausser numba ass installéiert (`python -m pip install -e .[fast]`):
 eng mëttelgrouss Map brauch ongeféier 15 s ouni et an ongeféier eng Sekonn domat; déi
@@ -28,7 +28,7 @@ python -m pytest -q
 ## D'Bedingungen {#the-terms}
 
 D'Lizenzofkommes vun IL-2 Sturmovik: Great Battles an IL-2 Series (1C Game
-Studios / 777 Studios) gouf **net fonnt**: net an der Installatioun (dessen
+Studios / 777 Studios) gouf **net fonnt**: net an der Installatioun (deem säin
 `data/Licenses.txt` nëmmen Drëttlizenze hält), net um Site vum Verleeër,
 an d'Steam-EULA-Säit huet sech net gelueden. Préift et selwer, ier Dir Iech drop verléisst.
 Dëst Tool liest nëmmen d'Archiver a veränneert se ni. D'Levelen, déi et schreift, bleiwen

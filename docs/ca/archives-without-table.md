@@ -16,7 +16,7 @@ s'emmagatzemen llegibles. `list` mostra el seu mapa amb el joc `Korea`. Així do
 - el seu mapa d'alçades i el seu mapa d'aigua es troben per la seva capçalera (la disposició
   de `height.dat`, sectors de 128 mostres; una quadrícula molt gran amb una mida de cel·la fina);
 - es col·loca a la Terra ajustant els aeròdroms que col·loquen les seves missions
-  (`data/Missions/**/*.Mission`, llegides a la vostra màquina) a les coordenades publicades
+  (`data/Missions/**/*.Mission`, llegides a la teva màquina) a les coordenades publicades
   dels aeròdroms reals (`korea.py`): residus de desenes a pocs centenars de
   metres. El JSON enumera cada punt de referència i el seu residu;
 - heightMul i SeaLevel s'estimen: els vaixells de les missions estan sobre el mar, de manera que

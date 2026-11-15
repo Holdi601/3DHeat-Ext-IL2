@@ -43,4 +43,4 @@ Dhá fhráma, `--frame`:
   fhráma seo is cuma cad a iarradh, le nóta.
 
 Is glTF dénártha le codanna ainmnithe é an leibhéal, mar atá gach leibhéal 3DHeat; insíonn leathanach
-[Leibhéil](https://holdi601.github.io/3DHeat/levels.html) an lucht féachana conas a lódálann sé iad.
+[Leibhéil](https://holdi601.github.io/3DHeat/levels.html) an amharcán conas a lódálann sé iad.

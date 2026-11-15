@@ -30,7 +30,7 @@ python -m pytest -q
 IL-2 Sturmovik: Great Battles -pelin ja IL-2 Series -pelin (1C Game Studios / 777 Studios) lisenssisopimusta
 **ei löytynyt**: ei asennuksesta (jonka `data/Licenses.txt` kantaa vain kolmansien osapuolten lisenssejä),
 ei julkaisijan sivulta, eikä Steamin EULA-sivu latautunut. Tarkista se itse ennen kuin luotat tähän.
-Tämä työkalu vain lukee arkistot eikä koskaan muuta niitä. Tasot, joita se kirjoittaa, pysyvät
+Tämä työkalu vain lukee arkistot eikä koskaan muuta niitä. Kentät, joita se kirjoittaa, pysyvät
 koneellasi: **älä koskaan julkaise niitä**. Mikään tässä ei toimita pelin dataa, ja testit rakentavat
 jokaisen tiedoston, jonka ne lukevat.
 

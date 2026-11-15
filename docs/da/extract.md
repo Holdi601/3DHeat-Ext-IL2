@@ -3,7 +3,7 @@ title: Byg baner: extract
 nav_order: 3
 lang: da
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
@@ -27,7 +27,7 @@ Ny til kommandolinjen? Læs [Før du går i gang](before-you-start.md) først.
    midte udgangspunktet, og `.json`'ens `geo` siger, hvilket.
 4. Kommandoen udskriver en linje pr. kort, mens den afkoder det, og derefter
    `ok <glb> <triangles> (<frame> frame)` eller `failed <map>: <why>`.
-5. Indlæs `<folder>/<map>/<map>.glb` i fremviserens Baggrund / bane-panel.
+5. Indlæs `<folder>/<map>/<map>.glb` i viewerens Baggrund / bane-panel.
 
 ![extract på en syntetisk installation](../assets/img/extract.svg)
 
@@ -48,7 +48,7 @@ En anden kørsel over kort, der allerede er skrevet:
 | `-o`, `--out` | påkrævet | output-mappen; hvert kort havner i `<out>/<map>/` |
 | `--game FOLDER` | fundet | en IL-2-mappe (kan gentages) |
 | `--max-grid N` | `1024` | højst så mange højdekortprøver pr. side (1024: cirka 2 millioner trekanter); kortet prøves for hver *k*. prøve for at passe |
-| `--frame` `enu` eller `game` | `enu` | `enu`: meter øst, højde, nord for `--origin`, ligesom Watchers Tacview-tabeller; `game`: spillets egne meter (x nord, y op, z øst). Et kort, der ikke kan placeres på jorden, skrives i `game`, uanset hvad der bedes om |
+| `--frame` `enu` eller `game` | `enu` | `enu`: meter øst, højde, nord for `--origin`, ligesom Watcherens Tacview-tabeller; `game`: spillets egne meter (x nord, y op, z øst). Et kort, der ikke kan placeres på jorden, skrives i `game`, uanset hvad der bedes om |
 | `--origin LAT LON` | kortets midte | udgangspunktet for `enu`-rammen (en optagelses `geo`) |
 | `--no-water` | fra | udelad vandet |
 | `--no-towns` | fra | udelad byernes fodaftryk |

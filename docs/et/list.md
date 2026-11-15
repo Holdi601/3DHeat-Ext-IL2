@@ -14,7 +14,7 @@ heat3d-il2-level list [--game FOLDER ...]
 python -m heat3d_ext_il2 list ...          sama, ilma paigaldamata
 ```
 
-Pole sul käsurealt kogemust? Loe enne [Enne alustamist](before-you-start.md).
+Pole sul käsurealt kogemust? Loe esmalt [Enne alustamist](before-you-start.md).
 
 1. Paigalda üks kord: `git clone https://github.com/Holdi601/3DHeat-Ext-IL2`, ava
    terminal selles kaustas ja käivita `python -m pip install -e .` (Python 3.10

@@ -9,7 +9,7 @@ search_exclude: true
 ---
 # 시작하기 전에 {#before-you-start}
 
-명령줄이 처음이신가요? 이 페이지는 아무것도 없는 상태에서 첫 실행까지 안내합니다.
+명령줄이 처음입니까? 이 페이지는 아무것도 없는 상태에서 첫 실행까지 안내합니다.
 한 번만 하면 되고, 약 10분 걸립니다.
 
 ## 1. Python 설치 {#install-python}
@@ -21,7 +21,7 @@ search_exclude: true
 
 ## 2. 이 도구 받기 {#get-this-tool}
 
-[github.com/Holdi601/3DHeat-Ext-IL2](https://github.com/Holdi601/3DHeat-Ext-IL2)를 여세요. 초록색 **Code** 버튼을 누르고 **Download ZIP**을 선택한 뒤, 원하는 폴더에 압축을 푸세요. git을 쓰신다면: `git clone https://github.com/Holdi601/3DHeat-Ext-IL2`.
+[github.com/Holdi601/3DHeat-Ext-IL2](https://github.com/Holdi601/3DHeat-Ext-IL2)를 여세요. 초록색 **Code** 버튼을 누르고 **Download ZIP**을 선택한 뒤, 원하는 폴더에 압축을 푸세요. git을 쓴다면: `git clone https://github.com/Holdi601/3DHeat-Ext-IL2`.
 
 ## 3. 그 폴더에서 터미널 열기 {#open-a-terminal-in-that-folder}
 
@@ -55,7 +55,7 @@ heat3d-il2-level list
 <n> maps in C:\Games\IL-2 Sturmovik Great Battles
 ```
 
-다음 단계: [지도 찾기: list](list.md), 그다음 [레벨 만들기: extract](extract.md).
+다음 단계: [맵 찾기: list](list.md), 그다음 [레벨 만들기: extract](extract.md).
 
 ## 이 페이지의 명령 읽는 법 {#how-to-read-the-commands-on-these-pages}
 

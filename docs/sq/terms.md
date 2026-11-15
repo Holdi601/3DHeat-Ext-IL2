@@ -32,7 +32,7 @@ Studios / 777 Studios) **nuk u gjet**: jo në instalim (`data/Licenses.txt` e t�
 mban vetëm licenca të palëve të treta), jo në faqen e botuesit, dhe faqja e EULA të Steam
 nuk u ngarkua. Kontrolloje vetë para se të mbështetesh te kjo.
 Ky mjet vetëm i lexon arkivat dhe kurrë nuk i ndryshon. Nivelet që shkruan mbeten
-në kompjuterin tënd: **mos i boto kurrë**. Asgjë këtu nuk shpërndan të dhëna loje, dhe
+në kompjuterin tënd: **mos i publiko kurrë**. Asgjë këtu nuk shpërndan të dhëna loje, dhe
 testet ndërtojnë çdo skedar që lexojnë.
 
 ## Licenca {#licence}

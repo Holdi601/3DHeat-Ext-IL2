@@ -3,7 +3,7 @@ title: "Leibhéil a thógáil: extract"
 nav_order: 3
 lang: ga
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
@@ -28,7 +28,7 @@ An bhfuil tú nua leis an líne ordaithe? Léigh [Sula dtosaíonn tú](before-yo
    `geo` an `.json` cé acu.
 4. Priontálann an t-ordú líne in aghaidh na léarscáile de réir mar a dhíchódaíonn sé í, ansin
    `ok <glb> <triangles> (<frame> frame)` nó `failed <map>: <why>`.
-5. Lódáil `<folder>/<map>/<map>.glb` i bpainéal Cúlra / leibhéal an lucht féachana.
+5. Lódáil `<folder>/<map>/<map>.glb` i bpainéal Cúlra / leibhéal an amharcáin.
 
 ![extract ar shuiteáil sintéiseach](../assets/img/extract.svg)
 

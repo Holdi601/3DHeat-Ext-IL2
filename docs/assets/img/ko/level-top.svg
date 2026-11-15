@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="780" height="419" viewBox="0 0 780 419" font-family="Segoe UI,Helvetica,Arial,sans-serif">
 <defs><linearGradient id="ramp" x1="0" x2="1"><stop offset="0" stop-color="#8cad6b"/><stop offset="1" stop-color="#d1925e"/></linearGradient></defs>
 <rect width="780" height="419" rx="10" fill="#f6f7f9"/>
-<text x="16" y="32" font-size="18" font-weight="600" fill="#1f2328">가상 지도를 위에서 본 모습</text>
+<text x="16" y="32" font-size="18" font-weight="600" fill="#1f2328">가상 맵을 위에서 본 모습</text>
 <g transform="translate(16,48) scale(1.0)">
 <rect width="440" height="347" fill="#f6f7f9"/>
 <polygon points="209,33 195,20 209,20" fill="#8cad6b" stroke="#8cad6b" stroke-width="0.4"/>

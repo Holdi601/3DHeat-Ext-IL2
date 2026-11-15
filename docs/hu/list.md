@@ -14,12 +14,12 @@ heat3d-il2-level list [--game FOLDER ...]
 python -m heat3d_ext_il2 list ...          ugyanaz, telepítés nélkül
 ```
 
-Még nem használt parancssort? Előbb olvassa el a [Mielőtt elkezdi](before-you-start.md) oldalt.
+Még nem használt parancssort? Előbb olvasd el a [Mielőtt elkezded](before-you-start.md) oldalt.
 
-1. Telepítés egyszer: `git clone https://github.com/Holdi601/3DHeat-Ext-IL2`, nyisson terminált ebben a
-   mappában, és futtassa a `python -m pip install -e .` parancsot (Python 3.10 vagy újabb; ez hozza a numpy-t;
+1. Telepítés egyszer: `git clone https://github.com/Holdi601/3DHeat-Ext-IL2`, nyiss terminált ebben a
+   mappában, és futtasd a `python -m pip install -e .` parancsot (Python 3.10 vagy újabb; ez hozza a numpy-t;
    a `python -m pip install -e .[fast]` a numba-t is hozzáadja).
-2. Futtassa a `heat3d-il2-level list` parancsot.
+2. Futtasd a `heat3d-il2-level list` parancsot.
 3. Minden térkép egy sort ír ki, tabulátorral elválasztva: a nevét (ezt veszi át az `extract`), a játékot
    (`Great Battles`, vagy `Korea` [a második játékhoz](archives-without-table.md)), a magassági térképet, amelyet
    olvas, és hogy hol fekszik a földön – a szélességi/hosszúsági fokos doboza a térkép sarkaiból, vagy az a

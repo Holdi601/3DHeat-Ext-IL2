@@ -14,7 +14,7 @@ search_exclude: true
 Dekoding er ren Python med mindre numba er installert (`python -m pip install -e .[fast]`):
 et middels stort kart tar omtrent 15 s uten den og omtrent et sekund med den; det
 største kartet, flere hundre millioner prøver, omtrent 7 s med den (den første
-kjøringen kompilerer også). Minnet holder seg til én rad med sektorer pluss utrutenettet.
+kjøringen kompilerer også). Minnet holder seg til én rad med sektorer pluss utgangsrutenettet.
 
 ## Tester {#tests}
 
@@ -31,7 +31,7 @@ Lisensavtalen for IL-2 Sturmovik: Great Battles og IL-2 Series (1C Game
 Studios / 777 Studios) ble **ikke funnet**: ikke i installasjonen (hvis
 `data/Licenses.txt` bare holder tredjepartslisenser), ikke på utgiverens nettsted,
 og Steam-EULA-siden lastet ikke. Sjekk den selv før du stoler på dette.
-Dette verktøyet leser bare arkivene og endrer dem aldri. Banene det skriver blir
+Dette verktøyet leser bare arkivene og endrer dem aldri. Nivåene det skriver blir
 på din egen maskin: **publiser dem aldri**. Ingenting her leverer spilldata, og
 testene bygger alle filene de leser.
 

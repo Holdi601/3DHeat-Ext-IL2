@@ -17,7 +17,7 @@ python -m heat3d_ext_il2 list ...          the same, without installing
 Nei op der Kommandozeil? Liest fir d'éischt [Ier Dir ufänkt](before-you-start.md).
 
 1. Eemol installéieren: `git clone https://github.com/Holdi601/3DHeat-Ext-IL2`, e
-   Terminal an deem Ordner opmaachen an `python -m pip install -e .` ausféieren (Python 3.10
+   Terminal an deem Dossier opmaachen an `python -m pip install -e .` ausféieren (Python 3.10
    oder méi nei; et bréngt numpy mat; `python -m pip install -e .[fast]` füügt numba derbäi).
 2. `heat3d-il2-level list` ausféieren.
 3. All Map gëtt eng Zeil aus, mat Tab getrennt: säin Numm (den Numm, deen `extract`
@@ -34,11 +34,11 @@ D'Bild ass en Duerchlaf op enger Installatioun, gebaut aus de Schreiwer vun den 
 ## Wou d'Installatioune fonnt ginn {#where-the-installs-are-found}
 
 Iwwer Steam; soss `--game <folder>` (widderhuelbar, eng pro Installatioun) oder d'
-Ëmgéigungsvariabel `HEAT3D_IL2_GAME`. Eng Installatioun ass en Ordner, dessen `data`
+Ëmgéigungsvariabel `HEAT3D_IL2_GAME`. Eng Installatioun ass en Dossier, deem säin `data`
 `Maps*.gtp`-Archiver hält.
 
 | Optioun | Mécht |
 |---|---|
-| `--game FOLDER` | en IL-2-Ordner; widderhuelt et fir e puer Installatiounen |
+| `--game FOLDER` | en IL-2-Dossier; widderhuelt et fir e puer Installatiounen |
 
 Exit-Status: 0 fäerdeg, 2 keng Installatioun fonnt.

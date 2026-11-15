@@ -3,7 +3,7 @@ title: "Ana sayfa"
 nav_order: 1
 lang: tr
 source: index.md
-source_hash: "413bf250161a"
+source_hash: "e5c9a5aa5acb"
 nav_exclude: true
 search_exclude: true
 permalink: /tr/
@@ -29,11 +29,11 @@ Bu şunlar için işe yarar:
 Komut satırında yeni misiniz? Önce [Başlamadan önce](before-you-start.md) sayfasını okuyun. Bunları klonladığınız ya da açtığınız klasörde çalıştırın:
 
 ```bash
-python -m pip install -e .                         # installs the heat3d-il2-level command
-python -m pip install -e .[fast]                            # with numba: decoding 20 to 50 times faster
-heat3d-il2-level list                              # every map found, with its latitude/longitude box
-heat3d-il2-level extract <map> -o levels           # one map (names as `list` prints them, wildcards allowed)
-heat3d-il2-level extract --all -o levels           # every map
+python -m pip install -e .                         # heat3d-il2-level komutunu kurar
+python -m pip install -e .[fast]                            # numba ile: çözme 20 ila 50 kat daha hızlı
+heat3d-il2-level list                              # bulunan her harita, enlem/boylam kutusuyla
+heat3d-il2-level extract <map> -o levels           # tek bir harita (`list`in yazdığı adlar; joker karakter serbest)
+heat3d-il2-level extract --all -o levels           # her harita
 ```
 
 `list` komutundan her harita için bir satır, `extract` komutundan ise `ok ...` görmelisiniz. Sonra `levels/<map>/<map>.glb` dosyasını görüntüleyicinin Arka plan / bölüm panelinde yükleyin ([Seviyeler](https://holdi601.github.io/3DHeat/levels.html)).
@@ -68,7 +68,7 @@ Yazdığı seviyeler oyunun verilerinden yapılır: **kendi makinenizde** kalır
 | GameCapture | tur telemetrisi ve oynanış videosundan yeniden kurulan seviyeler | [3DHeat-GameCapture](https://github.com/Holdi601/3DHeat-GameCapture) | [belgeler](https://holdi601.github.io/3DHeat-GameCapture/) |
 | Unreal Exporter | bir Unreal Editor eklentisi: bir seviye tek bir `.glb` olarak | [3DHeat-UnrealExporter](https://github.com/Holdi601/3DHeat-UnrealExporter) | [belgeler](https://holdi601.github.io/3DHeat-UnrealExporter/) |
 | CS2 | Counter-Strike 2 demoları ve haritaları | [3DHeat-CS2](https://github.com/Holdi601/3DHeat-CS2) | [belgeler](https://holdi601.github.io/3DHeat-CS2/) |
-| Watcher | oynarken oyunların yayınladığını kaydeder | [3DHeat-Watcher](https://github.com/Holdi601/3DHeat-Watcher) | [belgeler](https://holdi601.github.io/3DHeat-Watcher/) |
+| Watcher | oynarken oyunların yayımladıklarını kaydeder | [3DHeat-Watcher](https://github.com/Holdi601/3DHeat-Watcher) | [belgeler](https://holdi601.github.io/3DHeat-Watcher/) |
 | Ext-WarThunder | War Thunder tekrarları | [3DHeat-Ext-WarThunder](https://github.com/Holdi601/3DHeat-Ext-WarThunder) | [belgeler](https://holdi601.github.io/3DHeat-Ext-WarThunder/) |
 | Ext-WoT | World of Tanks tekrarları | [3DHeat-Ext-WoT](https://github.com/Holdi601/3DHeat-Ext-WoT) | [belgeler](https://holdi601.github.io/3DHeat-Ext-WoT/) |
 | Ext-WoWs | World of Warships tekrarları | [3DHeat-Ext-WoWs](https://github.com/Holdi601/3DHeat-Ext-WoWs) | [belgeler](https://holdi601.github.io/3DHeat-Ext-WoWs/) |

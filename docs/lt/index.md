@@ -3,7 +3,7 @@ title: "Pradžia"
 nav_order: 1
 lang: lt
 source: index.md
-source_hash: "413bf250161a"
+source_hash: "e5c9a5aa5acb"
 nav_exclude: true
 search_exclude: true
 permalink: /lt/
@@ -11,7 +11,7 @@ permalink: /lt/
 # 3DHeat IL-2 {#dheat-il-2}
 
 **Kas tai?** Nedidelė programa, kuri paverčia **IL-2 Sturmovik: Great Battles** žemėlapius, perskaitytus iš **jūsų pačių
-įdiegimo**, į 3D modelius – lygius – virš kurių galima skraidyti [3DHeat](https://github.com/Holdi601/3DHeat) žiūrintuve
+įdiegimo**, į 3D modelius – lygius – virš kurių galima skraidyti [3DHeat](https://github.com/Holdi601/3DHeat) žiūryklėje
 ([dokumentacija](https://holdi601.github.io/3DHeat/)): kalvas, upes, ežerus, jūrą ir miestus, patalpintus ten, kur jie yra žemės paviršiuje.
 Antras IL-2 žaidimas, kurio archyvuose paslėpta failų lentelė, skaitomas tiek, kiek archyvai leidžia
 ([išsamiau](archives-without-table.md)).
@@ -46,7 +46,7 @@ heat3d-il2-level extract --all -o levels           # visi žemėlapiai
 ```
 
 Iš `list` turėtumėte matyti po eilutę kiekvienam žemėlapiui, o iš `extract` – `ok ...`.
-Tada įkelkite `levels/<map>/<map>.glb` žiūrintojo Lygio skydelyje
+Tada įkelkite `levels/<map>/<map>.glb` žiūryklės Lygio skydelyje
 ([Lygiai](https://holdi601.github.io/3DHeat/levels.html)).
 
 Lygiai, kuriuos jis įrašo, sukurti iš žaidimo duomenų, todėl jie lieka **jūsų kompiuteryje**; niekada jų neskelbkite
@@ -68,17 +68,17 @@ Lygiai, kuriuos jis įrašo, sukurti iš žaidimo duomenų, todėl jie lieka **j
 
 ## Susiję {#related}
 
-- 3DHeat žiūrintojas: [github.com/Holdi601/3DHeat](https://github.com/Holdi601/3DHeat),
+- 3DHeat žiūryklė: [github.com/Holdi601/3DHeat](https://github.com/Holdi601/3DHeat),
   dokumentacija – [holdi601.github.io/3DHeat](https://holdi601.github.io/3DHeat/).
 - Šių lygių telemetrija: [3DHeat Watcher](https://holdi601.github.io/3DHeat-Watcher/)
-  konvertuoja IL-2 Tacview įrašus; žiūrintojo failų formatai, įskaitant vieno failo rungtynių konteinerį, aprašyti
+  konvertuoja IL-2 Tacview įrašus; žiūryklės failų formatai, įskaitant vieno failo rungtynių konteinerį, aprašyti
   [Vienas failas rungtynėms (.3dheat)](https://holdi601.github.io/3DHeat/container.html).
 
 ## 3DHeat įrankiai {#the-3dheat-tools}
 
 | Įrankis | Ką daro | Kodas | Dokumentacija |
 |---|---|---|---|
-| 3DHeat žiūrintojas | rodo duomenis: šilumos žemėlapius, lenktynių analizę, rungtynių apžvalgą | [3DHeat](https://github.com/Holdi601/3DHeat) | [dokumentacija](https://holdi601.github.io/3DHeat/) |
+| 3DHeat žiūryklė | rodo duomenis: šilumos žemėlapius, lenktynių analizę, rungtynių apžvalgą | [3DHeat](https://github.com/Holdi601/3DHeat) | [dokumentacija](https://holdi601.github.io/3DHeat/) |
 | GameFiles | lygiai ir trasos iš žaidimo pačio failų | [3DHeat-GameFiles](https://github.com/Holdi601/3DHeat-GameFiles) | [dokumentacija](https://holdi601.github.io/3DHeat-GameFiles/) |
 | GameCapture | ratų telemetrija ir lygiai, atkurti iš žaidimo vaizdo | [3DHeat-GameCapture](https://github.com/Holdi601/3DHeat-GameCapture) | [dokumentacija](https://holdi601.github.io/3DHeat-GameCapture/) |
 | Unreal Exporter | Unreal Editor papildinys: lygis kaip vienas `.glb` | [3DHeat-UnrealExporter](https://github.com/Holdi601/3DHeat-UnrealExporter) | [dokumentacija](https://holdi601.github.io/3DHeat-UnrealExporter/) |

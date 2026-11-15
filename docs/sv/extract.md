@@ -3,7 +3,7 @@ title: "Bygga nivåer: extract"
 nav_order: 3
 lang: sv
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
@@ -25,7 +25,7 @@ Har du aldrig använt kommandoraden förut? Läs [Innan du börjar](before-you-s
    `--origin <lat> <lon>` satt till inspelningens `geo` (dess sessions referenspunkt). Utan den är kartans mitt ursprunget, och `.json`:ens `geo` säger vilket.
 4. Kommandot skriver en rad per karta när det avkodar den, sedan
    `ok <glb> <triangles> (<frame> frame)` eller `failed <map>: <why>`.
-5. Läs in `<folder>/<map>/<map>.glb` i visarens nivåpanel.
+5. Läs in `<folder>/<map>/<map>.glb` i visarens panel Bakgrund / nivå.
 
 ![extract på en syntetisk installation](../assets/img/extract.svg)
 
@@ -62,7 +62,7 @@ Avslutskod: 0 varje karta skriven, 1 någon misslyckades (de andra skrivs ändå
 
 ```bash
 heat3d-il2-level extract <map> -o levels                         # en karta, enu-ram runt dess mitt
-heat3d-il2-level extract <map> --origin <lat> <lon> -o levels    # i den platta kartan för en inspelning med den geon
+heat3d-il2-level extract <map> --origin <lat> <lon> -o levels    # i den platta kartan för en inspelning med dess `geo`
 heat3d-il2-level extract "<family>_*" --max-grid 2048 -o levels  # finare, flera kartor
 heat3d-il2-level extract --all --skip-existing -o levels         # varje karta, bara de nya
 heat3d-il2-level extract <map> --frame game -o levels            # spelets egna meter, så som uppdragsfiler har dem

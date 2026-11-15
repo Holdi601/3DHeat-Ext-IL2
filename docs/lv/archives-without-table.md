@@ -13,5 +13,5 @@ IL-2 Series: Korea arhīvos neglabā lasāmu failu tabulu (vārdi ir sajaukti bl
 un tās iestatījumu faili nav saglabāti lasāmi. `list` rāda tās karti ar spēli `Korea`. Tātad:
 
 - tās augstuma karti un ūdens karti atrod pēc galvenes (`height.dat` izkārtojums, sektori pa 128 paraugiem; ļoti liels režģis ar smalku šūnas izmēru);
-- tā tiek novietota uz zemes, pieskaņojot lidlaukus, ko tās misijas novieto (`data/Missions/**/*.Mission`, nolasīti tavā datorā), reāliem lidlaukiem ar publicētām koordinātēm (`korea.py`): atlikumi desmiti līdz dažu simtu metru. JSON uzskaita katru orientieri un tā atlikumu;
+- tā tiek novietota uz zemes, pieskaņojot lidlaukus, ko tās misijas novieto (`data/Missions/**/*.Mission`, nolasīti jūsu datorā), reāliem lidlaukiem ar publicētām koordinātēm (`korea.py`): atlikumi desmiti līdz dažu simtu metru. JSON uzskaita katru orientieri un tā atlikumu;
 - heightMul un SeaLevel tiek novērtēti: kuģi misijās atrodas uz jūras, tāpēc to augstums virs ūdens kartes visbiežāk sastopamās (jūras) vērtības dod mērogu. Augstumi izrādās ticami (jūra zem jūras līmeņa, piekrastes pilsētas dažu metru augstumā), tālāk nav pārbaudīti. JSON atzīmē tos kā novērtētus.

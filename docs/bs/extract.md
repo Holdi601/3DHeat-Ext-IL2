@@ -3,7 +3,7 @@ title: "Gradnja nivoa: extract"
 nav_order: 3
 lang: bs
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---

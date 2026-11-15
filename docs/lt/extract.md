@@ -3,7 +3,7 @@ title: "Lygių kūrimas: extract"
 nav_order: 3
 lang: lt
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
@@ -27,7 +27,7 @@ Nesate įpratę prie komandinės eilutės? Pirmiausia perskaitykite [Prieš prad
    o `.json` `geo` parodo, koks jis.
 4. Komanda išveda po eilutę kiekvienam žemėlapiui, kai jį iškoduoja, tada
    `ok <glb> <triangles> (<frame> frame)` arba `failed <map>: <why>`.
-5. Įkelkite `<folder>/<map>/<map>.glb` žiūrintojo Lygio skydelyje.
+5. Įkelkite `<folder>/<map>/<map>.glb` žiūryklės Lygio skydelyje.
 
 ![extract ant sintetinio įdiegimo](../assets/img/extract.svg)
 
@@ -66,7 +66,7 @@ nė vienas žemėlapis neatitiko.
 
 ```bash
 heat3d-il2-level extract <map> -o levels                         # vienas žemėlapis, enu frame aplink jo centrą
-heat3d-il2-level extract <map> --origin <lat> <lon> -o levels    # plokščiame įrašo su tuo geo žemėlapyje
+heat3d-il2-level extract <map> --origin <lat> <lon> -o levels    # plokščias koordinates nuo įrašo `geo` taško
 heat3d-il2-level extract "<family>_*" --max-grid 2048 -o levels  # smulkiau, keli žemėlapiai
 heat3d-il2-level extract --all --skip-existing -o levels         # kiekvienas žemėlapis, tik nauji
 heat3d-il2-level extract <map> --frame game -o levels            # žaidimo paties metrais, kaip jas turi misijų failai

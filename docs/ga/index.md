@@ -3,7 +3,7 @@ title: Baile
 nav_order: 1
 lang: ga
 source: index.md
-source_hash: "413bf250161a"
+source_hash: "e5c9a5aa5acb"
 nav_exclude: true
 search_exclude: true
 permalink: /ga/
@@ -12,7 +12,7 @@ permalink: /ga/
 
 **Cad é?** Clár beag a thiontaíonn léarscáileanna **IL-2 Sturmovik:
 Great Battles**, léite ó **do shuiteáil féin**, ina samhlacha 3D - leibhéil -
-a fhéadann tú eitilt os a gcionn sa lucht féachana [3DHeat](https://github.com/Holdi601/3DHeat)
+a fhéadann tú eitilt os a gcionn san amharcán [3DHeat](https://github.com/Holdi601/3DHeat)
 ([doiciméadúchán](https://holdi601.github.io/3DHeat/)): na cnoic, aibhneacha,
 locha, farraige agus bailte, curtha san áit a luíonn siad ar an domhan. Léitear dara cluiche IL-2
 a bhfolaíonn a chartlanna a dtábla comhad chomh fada agus a ligeann siad
@@ -50,7 +50,7 @@ heat3d-il2-level extract --all -o levels           # every map
 ```
 
 Ba chóir duit líne in aghaidh na léarscáile a fheiceáil ó `list`, agus `ok ...` ó `extract`.
-Ansin lódáil `levels/<map>/<map>.glb` i bpainéal Cúlra / leibhéal an lucht féachana
+Ansin lódáil `levels/<map>/<map>.glb` i bpainéal Cúlra / leibhéal an amharcáin
 ([Leibhéil](https://holdi601.github.io/3DHeat/levels.html)).
 
 Tógtar na leibhéil a scríobhann sé ó shonraí an chluiche: fanann siad **ar do
@@ -72,10 +72,10 @@ mheaisín**; ná foilsigh iad choíche ([Téarmaí](terms.md)).
 
 ## Gaolmhar {#related}
 
-- An lucht féachana 3DHeat: [github.com/Holdi601/3DHeat](https://github.com/Holdi601/3DHeat),
+- An t-amharcán 3DHeat: [github.com/Holdi601/3DHeat](https://github.com/Holdi601/3DHeat),
   doiciméadúchán ag [holdi601.github.io/3DHeat](https://holdi601.github.io/3DHeat/).
 - Telemetry do na leibhéil seo: tiontaíonn [3DHeat Watcher](https://holdi601.github.io/3DHeat-Watcher/)
-  taifeadtaí Tacview IL-2; tá formáidí comhad an lucht féachana, lena n-áirítear a
+  taifeadtaí Tacview IL-2; tá formáidí comhad an amharcáin, lena n-áirítear a
   choimeádán comhad-amháin-in-aghaidh-an-chluiche, curtha síos in
   [Comhad amháin in aghaidh an chluiche (.3dheat)](https://holdi601.github.io/3DHeat/container.html).
 
@@ -83,7 +83,7 @@ mheaisín**; ná foilsigh iad choíche ([Téarmaí](terms.md)).
 
 | Uirlis | Cad a dhéanann sí | Cód | Doiciméid |
 |---|---|---|---|
-| Lucht féachana 3DHeat | taispeánann sé na sonraí: léarscáileanna teasa, anailís rása, athbhreithniú cluiche | [3DHeat](https://github.com/Holdi601/3DHeat) | [docs](https://holdi601.github.io/3DHeat/) |
+| Amharcán 3DHeat | taispeánann sé na sonraí: léarscáileanna teasa, anailís rása, athbhreithniú cluiche | [3DHeat](https://github.com/Holdi601/3DHeat) | [docs](https://holdi601.github.io/3DHeat/) |
 | GameFiles | leibhéil agus cúrsaí ó chomhaid féin cluiche | [3DHeat-GameFiles](https://github.com/Holdi601/3DHeat-GameFiles) | [docs](https://holdi601.github.io/3DHeat-GameFiles/) |
 | GameCapture | telemetry cuarta, agus leibhéil atógtha ó fhíseán cluiche | [3DHeat-GameCapture](https://github.com/Holdi601/3DHeat-GameCapture) | [docs](https://holdi601.github.io/3DHeat-GameCapture/) |
 | Unreal Exporter | breiseán d'Unreal Editor: leibhéal mar `.glb` amháin | [3DHeat-UnrealExporter](https://github.com/Holdi601/3DHeat-UnrealExporter) | [docs](https://holdi601.github.io/3DHeat-UnrealExporter/) |

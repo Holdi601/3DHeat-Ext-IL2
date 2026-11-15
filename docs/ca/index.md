@@ -3,7 +3,7 @@ title: Inici
 nav_order: 1
 lang: ca
 source: index.md
-source_hash: "413bf250161a"
+source_hash: "e5c9a5aa5acb"
 nav_exclude: true
 search_exclude: true
 permalink: /ca/
@@ -11,14 +11,14 @@ permalink: /ca/
 # 3DHeat IL-2 {#dheat-il-2}
 
 **Què és?** Un petit programa que converteix els mapes de **IL-2 Sturmovik:
-Great Battles**, llegits de la **vostra pròpia instal·lació**, en models 3D —nivells—
+Great Battles**, llegits de la **teva pròpia instal·lació**, en models 3D —nivells—
 sobre els quals es pot volar al visualitzador [3DHeat](https://github.com/Holdi601/3DHeat)
 ([documentació](https://holdi601.github.io/3DHeat/)): els turons, els rius,
 els llacs, el mar i els pobles, col·locats on es troben a la Terra. Un segon joc
-d'IL-2 els arxius del qual amaguen la seva taula de fitxers es llegeix fins on els
+d'IL-2, els arxius del qual amaguen la seva taula de fitxers, es llegeix fins on ho
 permeten ([detalls](archives-without-table.md)).
 
-**Per a què el faria servir?** Per veure els vostres vols d'IL-2 sobre el mapa propi del joc.
+**Per a què el faria servir?** Per veure els teus vols d'IL-2 sobre el mapa propi del joc.
 
 **Exemple:** `heat3d-il2-level extract <mapa> -o levels` ->
 `levels/<mapa>/<mapa>.glb` (el nivell) + `<mapa>.json` (on es troba a la
@@ -38,8 +38,8 @@ Per a què serveix:
 
 ## Inici ràpid {#quick-start}
 
-Si és nou amb la línia d'ordres, llegeixi primer [Abans de començar](before-you-start.md).
-Executi això a la carpeta on ha clonat o descomprimit l'eina:
+Si ets nou amb la línia d'ordres, llegeix primer [Abans de començar](before-you-start.md).
+Executa això a la carpeta on has clonat o descomprimit l'eina:
 
 ```bash
 python -m pip install -e .                         # instal·la l'ordre heat3d-il2-level
@@ -49,12 +49,12 @@ heat3d-il2-level extract <mapa> -o levels          # un mapa (els noms tal com e
 heat3d-il2-level extract --all -o levels           # cada mapa
 ```
 
-Hauria de veure una línia per mapa des de `list`, i `ok ...` des de `extract`.
-Després carregui `levels/<mapa>/<mapa>.glb` al panell Fons / nivell del visualitzador
+Hauries de veure una línia per mapa des de `list`, i `ok ...` des de `extract`.
+Després carrega `levels/<mapa>/<mapa>.glb` al panell Fons / nivell del visualitzador
 ([Nivells](https://holdi601.github.io/3DHeat/levels.html)).
 
-Els nivells que escriu estan construïts a partir de les dades del joc: es queden a la **vostra
-màquina**; no els publiqui mai ([Condicions](terms.md)).
+Els nivells que escrius estan construïts a partir de les dades del joc: es queden a la **teva
+màquina**; no els publiquis mai ([Condicions](terms.md)).
 
 ## Pàgines {#pages}
 
@@ -88,7 +88,7 @@ màquina**; no els publiqui mai ([Condicions](terms.md)).
 | GameCapture | telemetria de voltes, i nivells reconstruïts a partir de vídeo de joc | [3DHeat-GameCapture](https://github.com/Holdi601/3DHeat-GameCapture) | [documentació](https://holdi601.github.io/3DHeat-GameCapture/) |
 | Unreal Exporter | un connector per a l'editor d'Unreal: un nivell com un sol `.glb` | [3DHeat-UnrealExporter](https://github.com/Holdi601/3DHeat-UnrealExporter) | [documentació](https://holdi601.github.io/3DHeat-UnrealExporter/) |
 | CS2 | demos i mapes de Counter-Strike 2 | [3DHeat-CS2](https://github.com/Holdi601/3DHeat-CS2) | [documentació](https://holdi601.github.io/3DHeat-CS2/) |
-| Watcher | registra el que publiquen els jocs mentre juga | [3DHeat-Watcher](https://github.com/Holdi601/3DHeat-Watcher) | [documentació](https://holdi601.github.io/3DHeat-Watcher/) |
+| Watcher | registra el que publiquen els jocs mentre hi jugues | [3DHeat-Watcher](https://github.com/Holdi601/3DHeat-Watcher) | [documentació](https://holdi601.github.io/3DHeat-Watcher/) |
 | Ext-WarThunder | repeticions de War Thunder | [3DHeat-Ext-WarThunder](https://github.com/Holdi601/3DHeat-Ext-WarThunder) | [documentació](https://holdi601.github.io/3DHeat-Ext-WarThunder/) |
 | Ext-WoT | repeticions de World of Tanks | [3DHeat-Ext-WoT](https://github.com/Holdi601/3DHeat-Ext-WoT) | [documentació](https://holdi601.github.io/3DHeat-Ext-WoT/) |
 | Ext-WoWs | repeticions de World of Warships | [3DHeat-Ext-WoWs](https://github.com/Holdi601/3DHeat-Ext-WoWs) | [documentació](https://holdi601.github.io/3DHeat-Ext-WoWs/) |

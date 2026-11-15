@@ -14,12 +14,12 @@ heat3d-il2-level list [--game FOLDER ...]
 python -m heat3d_ext_il2 list ...          tas pats, bez uzstādīšanas
 ```
 
-Nekad nav strādāts ar komandrindu? Vispirms izlasi [Pirms sākat](before-you-start.md).
+Nekad neesat strādājis ar komandrindu? Vispirms izlasiet [Pirms sākat](before-you-start.md).
 
-1. Uzstādi vienreiz: `git clone https://github.com/Holdi601/3DHeat-Ext-IL2`, atver
-   terminali šajā mapē un palaid `python -m pip install -e .` (Python 3.10
+1. Uzstādiet vienreiz: `git clone https://github.com/Holdi601/3DHeat-Ext-IL2`, atveriet
+   termināli šajā mapē un palaidiet `python -m pip install -e .` (Python 3.10
    vai jaunāks; tas atnes numpy; `python -m pip install -e .[fast]` pievieno numba).
-2. Palaid `heat3d-il2-level list`.
+2. Palaidiet `heat3d-il2-level list`.
 3. Katra karte izdrukā vienu rindu, atdalītu ar tabulācijas zīmi: tās nosaukumu (nosaukumu, ko pieņem `extract`), spēli (`Great Battles` vai `Korea` [otrajai spēlei](archives-without-table.md)), augstuma karti, ko tā nolasa, un to, kur tā atrodas uz zemes - tās platuma/garuma kasti no kartes stūriem, orientieru pieskaņojumu, kas to novieto, vai "not placed on the earth".
    Pēdējā rindā (standarta kļūdu izvadā) ir kartu skaits un uzstādījumu nosaukumi.
 

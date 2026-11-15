@@ -18,11 +18,11 @@
 <rect x="439" y="284" width="405" height="82" rx="8" fill="#ffffff" stroke="#8c95a3"/>
 <text x="451" y="311" font-size="15" fill="#1f2328" font-weight="600">&lt;map&gt;.json</text>
 <text x="451" y="331" font-size="14" fill="#3d4450">kur jis yra žemėje,</text>
-<text x="451" y="351" font-size="14" fill="#3d4450">koordinačių sistema, pastabos</text>
+<text x="451" y="351" font-size="14" fill="#3d4450">sistema, pastabos</text>
 <path d="M430,252 C430,267.0 218,267.0 218,281" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
 <path d="M430,252 C430,267.0 642,267.0 642,281" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
 <rect x="16" y="400" width="828" height="82" rx="8" fill="#eef4ff" stroke="#8c95a3"/>
-<text x="28" y="427" font-size="15" fill="#1f2328" font-weight="600">3. 3DHeat žiūrintojas</text>
+<text x="28" y="427" font-size="15" fill="#1f2328" font-weight="600">3. 3DHeat žiūryklė</text>
 <text x="28" y="447" font-size="14" fill="#3d4450">Lygio skydelis; Tacview skrydis su</text>
 <text x="28" y="467" font-size="14" fill="#3d4450">ta pati pradžia jį atitinka</text>
 <path d="M218,368 C218,383.0 430,383.0 430,397" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>

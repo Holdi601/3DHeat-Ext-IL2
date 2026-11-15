@@ -1,5 +1,5 @@
 ---
-title: Før du begynner
+title: Før du starter
 nav_order: 1.5
 lang: no
 source: before-you-start.md
@@ -7,7 +7,7 @@ source_hash: "9e62d9ba2baa"
 nav_exclude: true
 search_exclude: true
 ---
-# Før du begynner {#before-you-start}
+# Før du starter {#before-you-start}
 
 Ny til kommandolinjen? Denne siden tar deg fra null til en første kjøring.
 Det tar omtrent ti minutter, én gang.
@@ -17,7 +17,7 @@ Det tar omtrent ti minutter, én gang.
 Dette verktøyet krever **Python 3.10 eller nyere**.
 
 - **Windows:** last ned Python fra [python.org/downloads](https://www.python.org/downloads/)
-  og kjør installasjonen. På første skjerm, huk av for **Add python.exe to PATH**,
+  og kjør installasjonen. På første skjerm, kryss av for **Add python.exe to PATH**,
   og klikk deretter på **Install Now**.
 - **macOS og Linux:** Python 3 er ofte allerede installert. Der disse sidene skriver
   `python`, skriv `python3`.
@@ -32,7 +32,7 @@ grønne knappen **Code**, deretter **Download ZIP**, og pakk den ut i en mappe e
 
 En terminal er et vindu der du skriver kommandoer.
 
-- **Windows:** åpne mappen i Utforsker, klikk i adressefeltet, skriv
+- **Windows:** åpne mappen i Filutforsker, klikk i adressefeltet, skriv
   `powershell` og trykk Enter. Et blått eller svart vindu åpnes, allerede i
   den mappen.
 - **macOS:** åpne **Terminal**, skriv `cd ` (med et mellomrom), dra mappen inn i
@@ -63,7 +63,7 @@ Du bør se noe slikt:
 <n> maps in C:\Games\IL-2 Sturmovik Great Battles
 ```
 
-Neste: [Finne kart: list](list.md), deretter [Bygge baner: extract](extract.md).
+Neste: [Finne kart: list](list.md), deretter [Bygge nivåer: extract](extract.md).
 
 ## Slik leser du kommandoene på disse sidene {#how-to-read-the-commands-on-these-pages}
 

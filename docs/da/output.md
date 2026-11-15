@@ -19,7 +19,7 @@ ved siden af. glb-filen skrives til
 | `water:<map>` | floder, søer og hav: flade firkanter i vandets højde, én pr. gittercelle, hvis tilstrækkeligt mange af højdekortets prøver ligger under vand (en tredjedel med kortets vandmaske, halvdelen uden) |
 | `ground:<map> towns` | byernes og landsbyernes bebyggede fodaftryk, lagt 1,5 m over jorden |
 
-![Et syntetisk korts bane set oppefra, farvet efter højde, med dets vandstrimmel;forklaringen viser farverne](../assets/img/da/level-top.svg)
+![Et syntetisk korts bane set oppefra, farvet efter højde, med dets vandstrimmel; forklaringen viser farverne](../assets/img/da/level-top.svg)
 
 JSON'en holder kortets **hjørner og breddegrad/længdegrad-boks** (`corners`,
 `extent`), hvordan de blev fundet (`georeference`), højdeindstillingerne
@@ -41,5 +41,5 @@ To rammer, `--frame`:
   højde, z øst fra vestkanten (højrehåndet, som den er, så glb = (x, y, z)). Kort, der
   ikke kan placeres på jorden, skrives i denne ramme, uanset hvad der blev bedt om, med en note.
 
-Banen er en glTF-binærfil med navngivne dele, som alle 3DHeat-baner er; fremviserens
+Banen er en glTF-binærfil med navngivne dele, som alle 3DHeat-baner er; viewerens
 side [Baner](https://holdi601.github.io/3DHeat/levels.html) forklarer, hvordan den indlæses.

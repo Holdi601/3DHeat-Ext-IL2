@@ -3,7 +3,7 @@ title: "Levelen bauen: extract"
 nav_order: 3
 lang: lb
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
@@ -28,7 +28,7 @@ Nei op der Kommandozeil? Liest fir d'éischt [Ier Dir ufänkt](before-you-start.
    `.json` säi `geo` seet, wéi eng.
 4. De Kommando gëtt eng Zeil pro Map aus, wéi en se dekodéiert, dann
    `ok <glb> <triangles> (<frame> frame)` oder `failed <map>: <why>`.
-5. Lued `<folder>/<map>/<map>.glb` am Level-Panneau vum Viewer.
+5. Lued `<folder>/<map>/<map>.glb` am Panel „Hannergrond / Level“ vum Viewer.
 
 ![extract op enger syntheteschen Installatioun](../assets/img/extract.svg)
 
@@ -46,10 +46,10 @@ E zweeten Duerchlaf iwwer Mappen, déi schonn geschriwwe sinn:
 |---|---|---|
 | `maps` | - | Mappennimm, wéi `list` se ausgëtt; Wildcards erlaabt |
 | `--all` | aus | all Map; Joreszäiten, déi eng Heightmap a Waasserkaart deelen, ginn eemol geschriwwen |
-| `-o`, `--out` | erfuerderlech | den Ausgabeordner; all Map geet an `<out>/<map>/` |
-| `--game FOLDER` | fonnt | en IL-2-Ordner (widderhuelbar) |
+| `-o`, `--out` | erfuerderlech | den Ausgabdossier; all Map geet an `<out>/<map>/` |
+| `--game FOLDER` | fonnt | en IL-2-Dossier (widderhuelbar) |
 | `--max-grid N` | `1024` | héchstens sou vill Heightmap-Echantillonen pro Säit (1024: ongeféier 2 Millioune Dräiecker); d'Map gëtt all *k* Echantillone gesampelt, fir ze passen |
-| `--frame` `enu` oder `game` | `enu` | `enu`: Meter Osten, Héicht, Norden vun `--origin`, wéi dem Watcher seng Tacview-Tabellen; `game`: dem Spill seng eegen Meter (x Norden, y no uewen, z Osten). Eng Map, déi net op der Äerd placéiert ka ginn, gëtt a `game` geschriwwen, egal wat gefrot gëtt |
+| `--frame` `enu` oder `game` | `enu` | `enu`: Meter Ouschten, Héicht, Norden vun `--origin`, wéi dem Watcher seng Tacview-Tabellen; `game`: dem Spill seng eegen Meter (x Norden, y no uewen, z Ouschten). Eng Map, déi net op der Äerd placéiert ka ginn, gëtt a `game` geschriwwen, egal wat gefrot gëtt |
 | `--origin LAT LON` | d'Mëtt vun der Map | den Urspronk vum `enu`-Frame (dat `geo` vun enger Opnam) |
 | `--no-water` | aus | d'Waasser auslooss |
 | `--no-towns` | aus | d'Stad-Foussofdrëck auslooss |

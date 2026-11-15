@@ -27,7 +27,7 @@ search_exclude: true
 
 ## 3. 在該資料夾開啟終端機 {#open-a-terminal-in-that-folder}
 
-終端機是讓你輸入命令的視窗。
+終端機是讓你輸入指令的視窗。
 
 - **Windows：** 在檔案總管中打開該資料夾，點一下網址列，輸入
   `powershell` 再按 Enter。會開啟一個藍色或黑色的視窗，已經位於該資料夾中。
@@ -60,7 +60,7 @@ heat3d-il2-level list
 
 接下來：[尋找地圖：list](list.md)，然後是[建立關卡：extract](extract.md)。
 
-## 如何閱讀本頁的命令 {#how-to-read-the-commands-on-these-pages}
+## 如何閱讀本頁的指令 {#how-to-read-the-commands-on-these-pages}
 
 | 你看到的 | 意思 |
 |---|---|
@@ -81,5 +81,5 @@ heat3d-il2-level list
 | `No module named pip` | 執行 `python -m ensurepip`，然後執行第 4 步。 |
 | 其他任何情況 | 看訊息的最後一行，然後附上它在 GitHub 上開一個 issue。 |
 
-每個命令結束時都會有一個**結束狀態**：0 代表成功。要查看它，
+每個指令結束時都會有一個**結束狀態**：0 代表成功。要查看它，
 在 PowerShell 中輸入 `echo $LASTEXITCODE`，在 macOS 和 Linux 中輸入 `echo $?`。

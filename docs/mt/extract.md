@@ -3,7 +3,7 @@ title: "Nibnu livelli: extract"
 nav_order: 3
 lang: mt
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
@@ -42,7 +42,7 @@ It-tieni użu fuq mapep diġà miktuba:
 
 ## Għażliet {#options}
 
-| Għażla | Default | Tagħmel |
+| Għażla | Default | X'jagħmel |
 |---|---|---|
 | `maps` | - | ismijiet tal-mapep kif jistampahom `list`; wildcards permessi |
 | `--all` | mitfi | kull mappa; staġuni li jaqsmu heightmap u water map jinkitbu darba |
@@ -60,7 +60,7 @@ Kull għażla, kif jistampaha l-programm: [Referenza tal-kmandi](../cli-referenc
 Issettja `HEAT3D_DEBUG` biex jistampa t-traceback sħiħ ta' mappa li fallet. Il-`.glb` jinkiteb
 f'`<map>.glb.part` u jinbidel isimu meta jkun komplut.
 
-Exit status: 0 kull mappa nkitbet, 1 xi waħda falliet (l-oħrajn xorta
+Status tal-ħruġ: 0 kull mappa nkitbet, 1 xi waħda falliet (l-oħrajn xorta
 nkitbu), 2 ebda installazzjoni jew mappa ma qabblet.
 
 ## Eżempji {#examples}

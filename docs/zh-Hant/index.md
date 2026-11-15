@@ -3,7 +3,7 @@ title: "首頁"
 nav_order: 1
 lang: zh-Hant
 source: index.md
-source_hash: "413bf250161a"
+source_hash: "e5c9a5aa5acb"
 nav_exclude: true
 search_exclude: true
 permalink: /zh-Hant/
@@ -28,7 +28,7 @@ permalink: /zh-Hant/
 ## 快速開始 {#quick-start}
 
 第一次使用命令列？請先閱讀[開始之前](before-you-start.md)。
-在你複製或解壓縮的資料夾中執行以下命令：
+在你複製或解壓縮的資料夾中執行以下指令：
 
 ```bash
 python -m pip install -e .                         # installs the heat3d-il2-level command
@@ -39,7 +39,7 @@ heat3d-il2-level extract --all -o levels           # every map
 ```
 
 你應該會看到 `list` 每張地圖一行，以及 `extract` 輸出的 `ok ...`。
-接著在檢視器的關卡面板中載入 `levels/<map>/<map>.glb`（[關卡](https://holdi601.github.io/3DHeat/levels.html)）。
+接著在檢視器的背景／關卡面板中載入 `levels/<map>/<map>.glb`（[關卡](https://holdi601.github.io/3DHeat/levels.html)）。
 
 它所寫出的關卡是由遊戲的資料建成的，只能**留在你的電腦上**；請勿發布（[條款](terms.md)）。
 
@@ -54,7 +54,7 @@ heat3d-il2-level extract --all -o levels           # every map
 | [檔案如何被讀取](reading.md) | 封存檔、高度圖編碼、水域、城鎮、地標擬合 |
 | [沒有檔案表的封存檔](archives-without-table.md) | 第二款遊戲，在其封存檔允許的範圍內讀取 |
 | [速度、測試與條款](terms.md) | numba、測試、遊戲條款、授權 |
-| [命令參考](../cli-reference.md) | 每個選項，由程式碼產生 |
+| [指令參考](../cli-reference.md) | 每個選項，由程式碼產生 |
 | [維護這些文件](maintaining.md) | 發行檢查清單 |
 
 ## 相關連結 {#related}

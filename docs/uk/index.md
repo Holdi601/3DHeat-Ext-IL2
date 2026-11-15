@@ -3,7 +3,7 @@ title: Головна
 nav_order: 1
 lang: uk
 source: index.md
-source_hash: "413bf250161a"
+source_hash: "e5c9a5aa5acb"
 nav_exclude: true
 search_exclude: true
 permalink: /uk/
@@ -11,7 +11,7 @@ permalink: /uk/
 # 3DHeat IL-2 {#dheat-il-2}
 
 **Що це?** Невелика програма, яка перетворює карти **IL-2 Sturmovik: Great Battles**,
-прочитані з **вашої власної інсталяції**, на 3D-моделі - рівні - над якими можна
+прочитані з **вашої власної інсталяції**, на 3D-моделі — рівні — над якими можна
 летіти в переглядачі [3DHeat](https://github.com/Holdi601/3DHeat)
 ([документація](https://holdi601.github.io/3DHeat/)): пагорби, річки, озера, море
 і міста, розташовані там, де вони лежать на Землі. Друга гра IL-2, чиї архіви
@@ -22,7 +22,7 @@ permalink: /uk/
 
 **Приклад:** `heat3d-il2-level extract <map> -o levels` ->
 `levels/<map>/<map>.glb` (рівень) + `<map>.json` (де він лежить на Землі). Карта
-висот - це сітка висот, схожа на рельєфну карту; запис Tacview - це файл польоту,
+висот — це сітка висот, схожа на рельєфну карту; запис Tacview — це файл польоту,
 який записує Tacview.
 
 Для чого це корисно:
@@ -51,7 +51,7 @@ heat3d-il2-level extract --all -o levels           # кожна карта
 ```
 
 Ви маєте побачити рядок на кожну карту з `list` і `ok ...` від `extract`.
-Потім завантажте `levels/<map>/<map>.glb` у панелі Level переглядача
+Потім завантажте `levels/<map>/<map>.glb` у панелі «Тло / рівень» переглядача
 ([Рівні](https://holdi601.github.io/3DHeat/levels.html)).
 
 Рівні, які він записує, побудовано з даних гри, тож вони лишаються **на вашому

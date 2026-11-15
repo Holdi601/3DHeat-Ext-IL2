@@ -3,7 +3,7 @@ title: Start
 nav_order: 1
 lang: da
 source: index.md
-source_hash: "413bf250161a"
+source_hash: "e5c9a5aa5acb"
 nav_exclude: true
 search_exclude: true
 permalink: /da/
@@ -12,7 +12,7 @@ permalink: /da/
 
 **Hvad er det?** Et lille program, der laver kortene i **IL-2 Sturmovik:
 Great Battles**, læst fra **din egen installation**, om til 3D-modeller - baner -
-du kan flyve over i [3DHeat](https://github.com/Holdi601/3DHeat)-fremviseren
+du kan flyve over i [3DHeat](https://github.com/Holdi601/3DHeat)-vieweren
 ([dokumentation](https://holdi601.github.io/3DHeat/)): bakkerne, floderne,
 søerne, havet og byerne, placeret der, hvor de ligger på jorden. Et andet IL-2-spil,
 hvis arkiver skjuler deres filtabel, læses så langt, arkiverne tillader
@@ -50,7 +50,7 @@ heat3d-il2-level extract --all -o levels           # every map
 ```
 
 Du bør se en linje pr. kort fra `list`, og `ok ...` fra `extract`.
-Indlæs derefter `levels/<map>/<map>.glb` i fremviserens Baggrund / bane-panel
+Indlæs derefter `levels/<map>/<map>.glb` i viewerens Baggrund / bane-panel
 ([Baner](https://holdi601.github.io/3DHeat/levels.html)).
 
 De baner, den skriver, er bygget af spillets data: de bliver **på din maskine**;
@@ -72,10 +72,10 @@ offentliggør dem aldrig ([Vilkår](terms.md)).
 
 ## Relateret {#related}
 
-- 3DHeat-fremviseren: [github.com/Holdi601/3DHeat](https://github.com/Holdi601/3DHeat),
+- 3DHeat-vieweren: [github.com/Holdi601/3DHeat](https://github.com/Holdi601/3DHeat),
   dokumentation på [holdi601.github.io/3DHeat](https://holdi601.github.io/3DHeat/).
 - Telemetri til disse baner: [3DHeat Watcher](https://holdi601.github.io/3DHeat-Watcher/)
-  konverterer IL-2 Tacview-optagelser; fremviserens filformater, inklusive dens
+  konverterer IL-2 Tacview-optagelser; viewerens filformater, inklusive dens
   container med én fil pr. kamp, beskrives i
   [Én fil pr. kamp (.3dheat)](https://holdi601.github.io/3DHeat/container.html).
 
@@ -83,7 +83,7 @@ offentliggør dem aldrig ([Vilkår](terms.md)).
 
 | Værktøj | Hvad det gør | Kode | Dokumentation |
 |---|---|---|---|
-| 3DHeat-fremviser | viser data: varmekort, løbsanalyse, kampgennemgang | [3DHeat](https://github.com/Holdi601/3DHeat) | [dokumentation](https://holdi601.github.io/3DHeat/) |
+| 3DHeat-viewer | viser data: varmekort, løbsanalyse, kampgennemgang | [3DHeat](https://github.com/Holdi601/3DHeat) | [dokumentation](https://holdi601.github.io/3DHeat/) |
 | GameFiles | baner og løb fra et spils egne filer | [3DHeat-GameFiles](https://github.com/Holdi601/3DHeat-GameFiles) | [dokumentation](https://holdi601.github.io/3DHeat-GameFiles/) |
 | GameCapture | telemetri fra omgange, og baner genskabt ud fra spilvideo | [3DHeat-GameCapture](https://github.com/Holdi601/3DHeat-GameCapture) | [dokumentation](https://holdi601.github.io/3DHeat-GameCapture/) |
 | Unreal Exporter | et plugin til Unreal Editor: en bane som én `.glb` | [3DHeat-UnrealExporter](https://github.com/Holdi601/3DHeat-UnrealExporter) | [dokumentation](https://holdi601.github.io/3DHeat-UnrealExporter/) |

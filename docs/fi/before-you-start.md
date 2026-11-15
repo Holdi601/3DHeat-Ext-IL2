@@ -62,7 +62,7 @@ Pitäisi näkyä jotain tämän kaltaista:
 <n> maps in C:\Games\IL-2 Sturmovik Great Battles
 ```
 
-Seuraavaksi: [Karttojen etsiminen: list](list.md), sitten [Tasojen rakentaminen: extract](extract.md).
+Seuraavaksi: [Karttojen etsiminen: list](list.md), sitten [Kenttien rakentaminen: extract](extract.md).
 
 ## Miten näitä komentoja luetaan {#how-to-read-the-commands-on-these-pages}
 

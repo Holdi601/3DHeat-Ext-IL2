@@ -7,7 +7,7 @@ source_hash: "58c4c46721e5"
 nav_exclude: true
 search_exclude: true
 ---
-# E Spill, dessen Archiver keng Dateitabell hunn {#a-game-whose-archives-have-no-file-table}
+# E Spill, deem seng Archiver keng Dateitabell hunn {#a-game-whose-archives-have-no-file-table}
 
 IL-2 Series: Korea hält keng liesbar Dateitabell a sengen Archiver (d'Nimm
 si gehasht an engem Block um Enn vun all Archiv), a seng Astellungsdateien sinn

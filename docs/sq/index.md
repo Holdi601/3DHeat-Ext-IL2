@@ -3,7 +3,7 @@ title: "Kryefaqja"
 nav_order: 1
 lang: sq
 source: index.md
-source_hash: "413bf250161a"
+source_hash: "e5c9a5aa5acb"
 nav_exclude: true
 search_exclude: true
 permalink: /sq/
@@ -36,10 +36,10 @@ Për çfarë është e dobishme:
 
 ![Nga një instalim IL-2 te një nivel 3DHeat](../assets/img/sq/flow.svg)
 
-## Fillim i shpejtë {#quick-start}
+## Fillimi i shpejtë {#quick-start}
 
-Je i ri me vijën e komandës? Lexo së pari [Para se të fillosh](before-you-start.md).
-Ekzekuto këto në dosjen që klonove ose çzipove:
+Je i ri me rreshtin e komandave? Lexo së pari [Para se të fillosh](before-you-start.md).
+Ekzekuto këto në dosjen që klonove ose shpaketove:
 
 ```bash
 python -m pip install -e .                         # installs the heat3d-il2-level command
@@ -54,7 +54,7 @@ Pastaj ngarko `levels/<map>/<map>.glb` te paneli Sfondi / niveli i shikuesit
 ([Levels](https://holdi601.github.io/3DHeat/levels.html)).
 
 Nivelet që shkruan ndërtohen nga të dhënat e lojës: ato mbeten **në kompjuterin
-tënd**; mos i boto kurrë ([Kushtet](terms.md)).
+tënd**; mos i publiko kurrë ([Kushtet](terms.md)).
 
 ## Faqet {#pages}
 

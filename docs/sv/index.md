@@ -3,7 +3,7 @@ title: Startsida
 nav_order: 1
 lang: sv
 source: index.md
-source_hash: "413bf250161a"
+source_hash: "e5c9a5aa5acb"
 nav_exclude: true
 search_exclude: true
 permalink: /sv/
@@ -45,7 +45,7 @@ heat3d-il2-level extract --all -o levels           # varje karta
 ```
 
 Du ser en rad per karta från `list`, och `ok ...` från `extract`.
-Läs sedan in `levels/<map>/<map>.glb` i visarens nivåpanel
+Läs sedan in `levels/<map>/<map>.glb` i visarens panel Bakgrund / nivå
 ([Nivåer](https://holdi601.github.io/3DHeat/levels.html)).
 
 Nivåerna den skriver är byggda av spelets data: de stannar på **din dator**; publicera dem aldrig ([Villkor](terms.md)).
@@ -76,7 +76,7 @@ Nivåerna den skriver är byggda av spelets data: de stannar på **din dator**; 
 
 | Verktyg | Vad det gör | Kod | Dokumentation |
 |---|---|---|---|
-| 3DHeat-visaren | visar datan: värmekartor, racinganalys, matchgenomgång | [3DHeat](https://github.com/Holdi601/3DHeat) | [dokumentation](https://holdi601.github.io/3DHeat/) |
+| 3DHeat-visaren | visar datan: värmekartor, Racinganalys, matchgenomgång | [3DHeat](https://github.com/Holdi601/3DHeat) | [dokumentation](https://holdi601.github.io/3DHeat/) |
 | GameFiles | nivåer och banor från ett spels egna filer | [3DHeat-GameFiles](https://github.com/Holdi601/3DHeat-GameFiles) | [dokumentation](https://holdi601.github.io/3DHeat-GameFiles/) |
 | GameCapture | varvtelemetri, och nivåer återskapade från spelvideo | [3DHeat-GameCapture](https://github.com/Holdi601/3DHeat-GameCapture) | [dokumentation](https://holdi601.github.io/3DHeat-GameCapture/) |
 | Unreal Exporter | ett Unreal Editor-tillägg: en nivå som en `.glb`-fil | [3DHeat-UnrealExporter](https://github.com/Holdi601/3DHeat-UnrealExporter) | [dokumentation](https://holdi601.github.io/3DHeat-UnrealExporter/) |

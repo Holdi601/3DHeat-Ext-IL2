@@ -14,7 +14,7 @@ heat3d-il2-level list [--game FOLDER ...]
 python -m heat3d_ext_il2 list ...          the same, without installing
 ```
 
-Je i ri me vijën e komandës? Lexo së pari [Para se të fillosh](before-you-start.md).
+Je i ri me rreshtin e komandave? Lexo së pari [Para se të fillosh](before-you-start.md).
 
 1. Instalo një herë: `git clone https://github.com/Holdi601/3DHeat-Ext-IL2`, hap
    një terminal në atë dosje dhe ekzekuto `python -m pip install -e .` (Python 3.10
@@ -28,7 +28,7 @@ Je i ri me vijën e komandës? Lexo së pari [Para se të fillosh](before-you-st
 
 ![list mbi një instalim sintetik](../assets/img/list.svg)
 
-Fotoja është një ekzekutim mbi një instalim të ndërtuar nga shkruesit e testeve
+Pamja është një ekzekutim mbi një instalim të ndërtuar nga shkruesit e testeve
 (`tests/synth.py`), jo mbi lojën.
 
 ## Ku gjenden instalimet {#where-the-installs-are-found}
@@ -41,4 +41,4 @@ mban arkiva `Maps*.gtp`.
 |---|---|
 | `--game FOLDER` | një dosje IL-2; përsërite për disa instalime |
 
-Kodi i daljes: 0 u krye, 2 nuk u gjet instalim.
+Statusi i daljes: 0 u krye, 2 nuk u gjet instalim.

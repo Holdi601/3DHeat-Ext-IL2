@@ -10,7 +10,7 @@
  "data/Maps*.gtp archives:": "data/Maps*.gtp arhīvi:",
  "decodes the heightmap, finds the corners": "dekodē augstuma karti, atrod stūrus",
  "extract <map> -o levels": "extract <map> -o levels",
- "ground, low to high": "zeme, no zema līdz augstam",
+ "ground, low to high": "zeme, zems→augsts",
  "heightmap, water, town footprints": "augstuma karte, ūdens, pilsētu laukumi",
  "the frame, notes": "sistēma, piezīmes",
  "the level: ground, water,": "līmenis: zeme, ūdens,",

@@ -1,13 +1,13 @@
 ---
-title: "Tasojen rakentaminen: extract"
+title: "Kenttien rakentaminen: extract"
 nav_order: 3
 lang: fi
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
-# Tasojen rakentaminen: `extract` {#building-levels-extract}
+# Kenttien rakentaminen: `extract` {#building-levels-extract}
 
 ```text
 heat3d-il2-level extract (<map> ... | --all) -o <folder> [--game FOLDER ...]
@@ -22,12 +22,12 @@ Uusi komentorivin kanssa? Lue ensin [Ennen aloittamista](before-you-start.md).
 1. Selvitä kartan nimi komennolla [`list`](list.md).
 2. Suorita `heat3d-il2-level extract <map> -o levels`. Nimissä voi käyttää jokerimerkkejä
    lainausmerkeissä (`"<family>_*"`); `--all` ottaa jokaisen kartan.
-3. Jotta tallenne saadaan tasolle ilman sijoittelua, anna sen origo: `--origin <lat> <lon>`,
+3. Jotta tallenne saadaan kentälle ilman sijoittelua, anna sen origo: `--origin <lat> <lon>`,
    asetettuna tallenteen `geo`-arvoon (sen istunnon viitepisteeseen). Ilman sitä kartan keskikohta on
    origo, ja `.json`-tiedoston `geo` kertoo, mikä se on.
 4. Komento tulostaa rivin kartaa kohden sen dekoodauksen aikana, sitten
    `ok <glb> <triangles> (<frame> frame)` tai `failed <map>: <why>`.
-5. Lataa `<folder>/<map>/<map>.glb` katselimen tasopaneeliin.
+5. Lataa `<folder>/<map>/<map>.glb` katselimen Tausta / kenttä -paneeliin.
 
 ![extract synteettisessä asennuksessa](../assets/img/extract.svg)
 
@@ -72,4 +72,4 @@ heat3d-il2-level extract --all --skip-existing -o levels         # jokainen kart
 heat3d-il2-level extract <map> --frame game -o levels            # pelin omat metrit, kuten tehtäväntiedostoissa
 ```
 
-Mitä tiedostoissa on: [Tasotiedostot ja kehykset](output.md).
+Mitä tiedostoissa on: [Kenttätiedostot ja kehykset](output.md).

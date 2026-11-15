@@ -3,7 +3,7 @@ title: "建立關卡：extract"
 nav_order: 3
 lang: zh-Hant
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
@@ -22,8 +22,8 @@ heat3d-il2-level extract (<map> ... | --all) -o <folder> [--game FOLDER ...]
 1. 用 [`list`](list.md) 找出地圖的名稱。
 2. 執行 `heat3d-il2-level extract <map> -o levels`。名稱可以使用萬用字元，並以引號括起來（`"<family>_*"`）；`--all` 會處理每一張地圖。
 3. 若要在不需擺放步驟的情況下，把錄製放到關卡上，請指定其原點：`--origin <lat> <lon>`，設為該錄製的 `geo`（其工作階段的參考點）。若未指定，地圖的中心即為原點，而 `.json` 中的 `geo` 會說明是哪一點。
-4. 此命令會在解碼每張地圖時印出一行，然後是 `ok <glb> <triangles> (<frame> frame)` 或 `failed <map>: <why>`。
-5. 在檢視器的關卡面板中載入 `<folder>/<map>/<map>.glb`。
+4. 此指令會在解碼每張地圖時印出一行，然後是 `ok <glb> <triangles> (<frame> frame)` 或 `failed <map>: <why>`。
+5. 在檢視器的背景／關卡面板中載入 `<folder>/<map>/<map>.glb`。
 
 ![在合成安裝上執行 extract](../assets/img/extract.svg)
 
@@ -50,7 +50,7 @@ heat3d-il2-level extract (<map> ... | --all) -o <folder> [--game FOLDER ...]
 | `--no-towns` | 關閉 | 不包含城鎮的輪廓 |
 | `--skip-existing` | 關閉 | 略過已存在 `.glb` 的地圖 |
 
-程式列出的每個選項：[命令參考](../cli-reference.md)。
+程式列出的每個選項：[指令參考](../cli-reference.md)。
 
 設定 `HEAT3D_DEBUG` 可印出失敗地圖的完整追蹤資訊。`.glb` 會先寫入 `<map>.glb.part`，完成後再更名。
 

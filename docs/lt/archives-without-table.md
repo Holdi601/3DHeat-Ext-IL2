@@ -9,7 +9,7 @@ search_exclude: true
 ---
 # Žaidimas, kurio archyvuose nėra failų lentelės {#a-game-whose-archives-have-no-file-table}
 
-IL-2 Series: Korea archyvuose neišlaiko skaitomos failų lentelės (pavadinimai sumaišyti bloke
+IL-2 Series: Korea archyvuose nėra skaitomos failų lentelės (pavadinimai sumaišyti bloke
 kiekvieno archyvo pabaigoje), o jo nustatymų failai nesaugomi skaitomai. `list` rodo jo žemėlapį su žaidimu
 `Korea`. Taigi:
 

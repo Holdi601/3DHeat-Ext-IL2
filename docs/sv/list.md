@@ -22,7 +22,7 @@ Har du aldrig använt kommandoraden förut? Läs [Innan du börjar](before-you-s
 2. Kör `heat3d-il2-level list`.
 3. Varje karta skriver en rad, med tabb mellan fälten: dess namn (namnet `extract`
    tar), spelet (`Great Battles`, eller `Korea` för [det andra spelet](archives-without-table.md)), höjdkartan den läser, och
-   var den ligger på jorden - dess latitud/longitud-ruta från kartans hörn, eller landmärkesanpassningen som placerar den, eller "not placed on the earth".
+   var den ligger på jorden - dess latitud/longitud-ruta från kartans hörn, eller landmärkesanpassningen som placerar den, eller `not placed on the earth`.
    Den sista raden (på stderr) räknar kartorna och anger installationerna.
 
 ![list på en syntetisk installation](../assets/img/list.svg)

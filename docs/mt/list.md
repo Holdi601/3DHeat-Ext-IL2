@@ -37,8 +37,8 @@ Permezz ta' Steam; inkella `--game <folder>` (jista' jiġi ripetut, wieħed għa
 variabbli tal-ambjent `HEAT3D_IL2_GAME`. Installazzjoni hija folder li l-`data` tiegħu
 fih arkivji `Maps*.gtp`.
 
-| Għażla | Tagħmel |
+| Għażla | X'jagħmel |
 |---|---|
 | `--game FOLDER` | folder ta' IL-2; irrepetiha għal bosta installazzjonijiet |
 
-Exit status: 0 lest, 2 ebda installazzjoni ma nstabet.
+Status tal-ħruġ: 0 lest, 2 ebda installazzjoni ma nstabet.

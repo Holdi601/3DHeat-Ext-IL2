@@ -30,15 +30,15 @@ Frame a säin Urspronk (`frame`, `geo`), Dräieckszuelen an all `notes`.
 
 Zwee Frames, `--frame`:
 
-- `enu` (Standard): Meter Osten, Héicht iwwer Mieresniveau, Norden vun engem Urspronk op
+- `enu` (Standard): Meter Ouschten, Héicht iwwer Mieresniveau, Norden vun engem Urspronk op
   der WGS-84-Tangentialebene: déi flaach Map, an déi den 3DHeat Watcher eng IL-2-Tacview-
-  Opnam setzt (x Osten, y Héicht, z Norden, mat gespigeltem z gezeechent). D'glb
-  späichert (Osten, Héicht, -Norden). Konvertéiert mat `--origin <lat> <lon>` op dat `geo`
+  Opnam setzt (x Ouschten, y Héicht, z Norden, mat gespigeltem z gezeechent). D'glb
+  späichert (Ouschten, Héicht, -Norden). Konvertéiert mat `--origin <lat> <lon>` op dat `geo`
   vun enger Opnam gesat (de Referenzpunkt vun hirer Sessioun), an d'Opnam landet um
   Level ouni Placement-Schrëtt; ouni et ass d'Mëtt vun der Map den Urspronk,
   an dem JSON säi `geo` seet, wéi eng.
 - `game`: dem Spill seng eegen Meter, wéi Missiounsdateien se hunn: x Norden vum
-  Südrand, y d'Héicht vum Spill, z Osten vum Westrand (rechtshändeg wéi et ass,
+  Südrand, y d'Héicht vum Spill, z Ouschten vum Westrand (rechtshändeg wéi et ass,
   also glb = (x, y, z)). Mappen, déi net op der Äerd placéiert kënne ginn, ginn an
   dësem Frame geschriwwen, egal wat gefrot gouf, mat enger Notiz.
 

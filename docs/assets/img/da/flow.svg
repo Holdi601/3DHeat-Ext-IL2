@@ -22,7 +22,7 @@
 <path d="M430,252 C430,267.0 218,267.0 218,281" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
 <path d="M430,252 C430,267.0 642,267.0 642,281" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
 <rect x="16" y="400" width="828" height="82" rx="8" fill="#eef4ff" stroke="#8c95a3"/>
-<text x="28" y="427" font-size="15" fill="#1f2328" font-weight="600">3. 3DHeat-fremviseren</text>
+<text x="28" y="427" font-size="15" fill="#1f2328" font-weight="600">3. 3DHeat-vieweren</text>
 <text x="28" y="447" font-size="14" fill="#3d4450">Baggrund / bane; en Tacview-flyvning med</text>
 <text x="28" y="467" font-size="14" fill="#3d4450">samme udgangspunkt lander på den</text>
 <path d="M218,368 C218,383.0 430,383.0 430,397" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>

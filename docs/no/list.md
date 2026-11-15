@@ -11,10 +11,10 @@ search_exclude: true
 
 ```text
 heat3d-il2-level list [--game FOLDER ...]
-python -m heat3d_ext_il2 list ...          the same, without installing
+python -m heat3d_ext_il2 list ...          det samme, uten å installere
 ```
 
-Ny til kommandolinjen? Les [Før du begynner](before-you-start.md) først.
+Ny til kommandolinjen? Les [Før du starter](before-you-start.md) først.
 
 1. Installer én gang: `git clone https://github.com/Holdi601/3DHeat-Ext-IL2`, åpne
    en terminal i den mappen og kjør `python -m pip install -e .` (Python 3.10

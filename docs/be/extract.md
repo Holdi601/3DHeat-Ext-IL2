@@ -3,7 +3,7 @@ title: "Пабудова ўзроўняў: extract"
 nav_order: 3
 lang: be
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
@@ -30,9 +30,9 @@ heat3d-il2-level extract (<map> ... | --all) -o <folder> [--game FOLDER ...]
    `ok <glb> <triangles> (<frame> frame)` або `failed <map>: <why>`.
 5. Загрузіце `<folder>/<map>/<map>.glb` на панэлі «Фон / узровень» праглядальніка.
 
-![extract на сінтэтычнай устаноўцы](../assets/img/extract.svg)
+![extract на сінтэтычнай усталёўцы](../assets/img/extract.svg)
 
-У ўласных метрах гульні, без вады:
+Ва ўласных метрах гульні, без вады:
 
 ![extract --frame game --no-water](../assets/img/extract-game.svg)
 
@@ -60,8 +60,8 @@ heat3d-il2-level extract (<map> ... | --all) -o <folder> [--game FOLDER ...]
 Задайце `HEAT3D_DEBUG`, каб надрукаваць поўны traceback збойнай карты. `.glb`
 пішацца ў `<map>.glb.part` і перайменоўваецца, калі гатовы.
 
-Код выхаду: 0 — кожная карта запісана, 1 — якая-небудзь не ўдалася (астатнія
-усё роўна запісаны), 2 — няма ўстаноўкі або ніводная карта не падышла.
+Статус выхаду: 0 — кожная карта запісана, 1 — якая-небудзь не ўдалася (астатнія
+усё роўна запісаны), 2 — няма ўсталёўкі або ніводная карта не падышла.
 
 ## Прыклады {#examples}
 

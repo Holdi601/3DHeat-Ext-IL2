@@ -28,7 +28,7 @@ python -m pytest -q
 ## Tingimused {#the-terms}
 
 IL-2 Sturmovik: Great Battles'i ja IL-2 Series'i (1C Game Studios / 777 Studios)
-litsentsileping **ei leitud**: mitte installist (kus `data/Licenses.txt` sisaldab ainult kolmanda osapoole litsentse), mitte kirjastaja saidilt ja Steami EULA leht ei laadinud. Kontrolli seda ise, enne kui sellele toetud. See tööriist ainult loeb arhiive ja ei muuda neid kunagi. Tasemed, mida see kirjutab, jäävad
+litsentsileping **ei leitud**: ei installist (kus `data/Licenses.txt` sisaldab ainult kolmanda osapoole litsentse), ei kirjastaja saidilt ning Steami EULA lehte ei õnnestunud laadida. Kontrolli seda ise, enne kui sellele toetud. See tööriist ainult loeb arhiive ja ei muuda neid kunagi. Tasemed, mida see kirjutab, jäävad
 sinu masinasse: **ära kunagi avalda neid**. Siin ei ole ühtegi mängu andmeid kaasas ja
 testid koostavad kõik failid, mida nad loevad.
 

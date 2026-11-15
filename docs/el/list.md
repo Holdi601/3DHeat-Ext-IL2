@@ -28,7 +28,7 @@ python -m heat3d_ext_il2 list ...          the same, without installing
 
 ![list σε συνθετική εγκατάσταση](../assets/img/list.svg)
 
-Η εικόνα είναι μια εκτέλεση σε εγκατάσταση φτιαγμένη από τους writers των δοκιμών
+Η εικόνα είναι μια εκτέλεση σε εγκατάσταση που φτιάχνουν τα τεστ
 (`tests/synth.py`), όχι από το παιχνίδι.
 
 ## Πού βρίσκονται οι εγκαταστάσεις {#where-the-installs-are-found}

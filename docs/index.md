@@ -46,7 +46,7 @@ heat3d-il2-level extract --all -o levels           # every map
 ```
 
 You should see a line per map from `list`, and `ok ...` from `extract`.
-Then load `levels/<map>/<map>.glb` in the viewer's Background / Background / level panel
+Then load `levels/<map>/<map>.glb` in the viewer's Background / level panel
 ([Levels](https://holdi601.github.io/3DHeat/levels.html)).
 
 The levels it writes are built from the game's data: they stay **on your

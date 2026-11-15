@@ -3,7 +3,7 @@ title: "Construir nivells: extract"
 nav_order: 3
 lang: ca
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
@@ -17,17 +17,17 @@ heat3d-il2-level extract (<mapa> ... | --all) -o <carpeta> [--game CARPETA ...]
 
 ## Pas a pas {#step-by-step}
 
-Si és nou amb la línia d'ordres, llegeixi primer [Abans de començar](before-you-start.md).
+Si ets nou amb la línia d'ordres, llegeix primer [Abans de començar](before-you-start.md).
 
-1. Trobi el nom del mapa amb [`list`](list.md).
-2. Executi `heat3d-il2-level extract <mapa> -o levels`. Els noms poden usar comodins,
+1. Troba el nom del mapa amb [`list`](list.md).
+2. Executa `heat3d-il2-level extract <mapa> -o levels`. Els noms poden usar comodins,
    entre cometes (`"<família>_*"`); `--all` pren cada mapa.
-3. Per posar una gravació sobre el nivell sense cap pas de col·locació, indiqui el seu origen:
+3. Per posar una gravació sobre el nivell sense cap pas de col·locació, indica el seu origen:
    `--origin <lat> <lon>` amb el `geo` de la gravació (el punt de referència de la seva sessió).
    Sense això, el centre del mapa és l'origen, i el `geo` del `.json` indica quin és.
 4. L'ordre imprimeix una línia per mapa a mesura que el descodifica, i després
    `ok <glb> <triangles> (<marc> frame)` o `failed <mapa>: <per què>`.
-5. Carregui `<carpeta>/<mapa>/<mapa>.glb` al panell Fons / nivell del visualitzador.
+5. Carrega `<carpeta>/<mapa>/<mapa>.glb` al panell Fons / nivell del visualitzador.
 
 ![extract sobre una instal·lació sintètica](../assets/img/extract.svg)
 
@@ -56,7 +56,7 @@ Una segona execució sobre mapes ja escrits:
 
 Totes les opcions, tal com les imprimeix el programa: [Referència de l'ordre](../cli-reference.md).
 
-Defineixi `HEAT3D_DEBUG` per imprimir el rastreig complet d'un mapa que ha fallat. El `.glb` s'escriu a
+Defineix `HEAT3D_DEBUG` per imprimir el rastreig complet d'un mapa que ha fallat. El `.glb` s'escriu a
 `<mapa>.glb.part` i es reanomena quan està acabat.
 
 Estat de sortida: 0 cada mapa escrit; 1 algun ha fallat (els altres s'escriuen igualment);

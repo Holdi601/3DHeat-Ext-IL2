@@ -3,7 +3,7 @@ title: "Startseite"
 nav_order: 1
 lang: de
 source: index.md
-source_hash: "413bf250161a"
+source_hash: "e5c9a5aa5acb"
 nav_exclude: true
 search_exclude: true
 permalink: /de/

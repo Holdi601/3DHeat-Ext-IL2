@@ -3,7 +3,7 @@ title: "Seviyeleri oluşturma: extract"
 nav_order: 3
 lang: tr
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
@@ -48,7 +48,7 @@ Zaten yazılmış haritaların üzerine ikinci bir çalıştırma:
 | `--origin LAT LON` | haritanın merkezi | `enu` çerçevesinin başlangıç noktası (bir kaydın `geo`'su) |
 | `--no-water` | kapalı | suyu dışarıda bırak |
 | `--no-towns` | kapalı | kasaba izlerini dışarıda bırak |
-| `--skip-existing` | kapalı | `.glb`'si zaten olan haritaları bırak |
+| `--skip-existing` | kapalı | `.glb`'si zaten olan haritaları bırakın |
 
 Her seçenek, programın yazdığı gibi: [Komut başvurusu](../cli-reference.md).
 
@@ -59,11 +59,11 @@ Başarısız bir haritanın tam izini yazdırmak için `HEAT3D_DEBUG` ortam değ
 ## Örnekler {#examples}
 
 ```bash
-heat3d-il2-level extract <map> -o levels                         # one map, enu frame round its centre
-heat3d-il2-level extract <map> --origin <lat> <lon> -o levels    # in the flat map of a recording with that geo
-heat3d-il2-level extract "<family>_*" --max-grid 2048 -o levels  # finer, several maps
-heat3d-il2-level extract --all --skip-existing -o levels         # every map, only the new ones
-heat3d-il2-level extract <map> --frame game -o levels            # the game's own metres, as mission files have them
+heat3d-il2-level extract <map> -o levels                         # tek bir harita, merkezi etrafında enu çerçevesi
+heat3d-il2-level extract <map> --origin <lat> <lon> -o levels    # o geo değerine sahip bir kaydın düz haritasında
+heat3d-il2-level extract "<family>_*" --max-grid 2048 -o levels  # daha ince, birkaç harita
+heat3d-il2-level extract --all --skip-existing -o levels         # her harita, yalnızca yenileri
+heat3d-il2-level extract <map> --frame game -o levels            # görev dosyalarındaki gibi oyunun kendi metreleri
 ```
 
 Dosyalarda ne var: [Seviye dosyaları ve çerçeveler](output.md).

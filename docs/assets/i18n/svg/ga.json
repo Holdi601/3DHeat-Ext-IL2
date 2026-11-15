@@ -1,11 +1,11 @@
 {
  "1. Your IL-2 install": "1. Do shuiteáil IL-2",
  "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
- "3. The 3DHeat viewer": "3. Lucht féachana 3DHeat",
+ "3. The 3DHeat viewer": "3. Amharcán 3DHeat",
  "<map>.glb": "<map>.glb",
  "<map>.json": "<map>.json",
  "A synthetic map from above": "Léarscáil sintéiseach ón taobh thuas",
- "Background / level; a Tacview flight with": "Painéal leibhéil; eitilt Tacview leis",
+ "Background / level; a Tacview flight with": "Painéal Cúlra / leibhéal; eitilt Tacview leis",
  "From an IL-2 install to a 3DHeat level": "Ó shuiteáil IL-2 go leibhéal 3DHeat",
  "data/Maps*.gtp archives:": "cartlanna data/Maps*.gtp:",
  "decodes the heightmap, finds the corners": "díchódaíonn an léarscáil airde, aimsíonn na coirnéil",

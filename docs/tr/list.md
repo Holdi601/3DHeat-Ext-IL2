@@ -22,7 +22,7 @@ Komut satırında yeni misiniz? Önce [Başlamadan önce](before-you-start.md) s
 
 ![Sentetik bir kurulumda list](../assets/img/list.svg)
 
-Resim, oyunda değil, testlerin yazıcılarından oluşturulan bir kurulumda (`tests/synth.py`) yapılan bir çalıştırmadır.
+Resim, oyunda değil, testlerin ürettiği bir kurulumda (`tests/synth.py`) yapılan bir çalıştırmadır.
 
 ## Kurulumların nerede bulunduğu {#where-the-installs-are-found}
 

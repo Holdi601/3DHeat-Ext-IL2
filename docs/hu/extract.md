@@ -3,7 +3,7 @@ title: "Pályák építése: extract"
 nav_order: 3
 lang: hu
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
@@ -17,17 +17,17 @@ heat3d-il2-level extract (<map> ... | --all) -o <folder> [--game FOLDER ...]
 
 ## Lépésről lépésre {#step-by-step}
 
-Még nem használt parancssort? Előbb olvassa el a [Mielőtt elkezdi](before-you-start.md) oldalt.
+Még nem használt parancssort? Előbb olvasd el a [Mielőtt elkezded](before-you-start.md) oldalt.
 
-1. Keresse meg a térkép nevét a [`list`](list.md) paranccsal.
-2. Futtassa a `heat3d-il2-level extract <map> -o levels` parancsot. A nevekben lehet helyettesítő karakter,
+1. Keresd meg a térkép nevét a [`list`](list.md) paranccsal.
+2. Futtasd a `heat3d-il2-level extract <map> -o levels` parancsot. A nevekben lehet helyettesítő karakter,
    idézőjelek között (`"<family>_*"`); az `--all` minden térképet átvesz.
-3. Ha egy felvételt elhelyezési lépés nélkül szeretne a pályára tenni, adja meg a kiindulópontját:
+3. Ha egy felvételt elhelyezési lépés nélkül szeretnél a pályára tenni, add meg a kiindulópontját:
    `--origin <lat> <lon>`, a felvétel `geo` értékével (a munkamenetének referenciapontjával). Ennek hiányában
    a térkép közepe lesz a kiindulópont, és a `.json` `geo` mezője mondja meg, melyik.
 4. A parancs térképenként egy sort ír ki, ahogy dekódolja, majd `ok <glb> <triangles> (<frame> frame)` vagy
    `failed <map>: <why>` sorokat.
-5. Töltse be a `<folder>/<map>/<map>.glb` fájlt a megjelenítő Háttér / pálya paneljén.
+5. Töltsd be a `<folder>/<map>/<map>.glb` fájlt a megjelenítő Háttér / pálya paneljén.
 
 ![extract egy szintetikus telepítésen](../assets/img/extract.svg)
 

@@ -1,8 +1,8 @@
 # The English pages' hashes; written by tools/docs_i18n.py hashes. Do not edit.
 archives-without-table.md: "58c4c46721e5"
 before-you-start.md: "9e62d9ba2baa"
-extract.md: "69fb5c2ddfa7"
-index.md: "413bf250161a"
+extract.md: "2a45af525c58"
+index.md: "e5c9a5aa5acb"
 list.md: "8c7cf438be16"
 maintaining.md: "a37a32cc5026"
 output.md: "b5c5a5f47a20"

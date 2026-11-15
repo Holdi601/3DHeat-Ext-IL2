@@ -37,5 +37,5 @@ Dvi sistemos, `--frame`:
   z – į rytus nuo vakarinės ribos (dešiniarankė, kaip yra, todėl glb = (x, y, z)). Žemėlapiai, kurių negalima įdėti į žemės
   paviršių, įrašomi šioje sistemoje, kad ir ko būtų prašoma, su pastaba.
 
-Lygis yra glTF dvejetainis failas su pavadintomis dalimis, kaip ir visi 3DHeat lygiai; žiūrintojo
+Lygis yra glTF dvejetainis failas su pavadintomis dalimis, kaip ir visi 3DHeat lygiai; žiūryklės
 [Lygiai](https://holdi601.github.io/3DHeat/levels.html) puslapis aprašo, kaip jie įkeliami.

@@ -1,13 +1,13 @@
 ---
-title: "Bygge baner: extract"
+title: "Bygge nivåer: extract"
 nav_order: 3
 lang: no
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
-# Bygge baner: `extract` {#building-levels-extract}
+# Bygge nivåer: `extract` {#building-levels-extract}
 
 ```text
 heat3d-il2-level extract (<map> ... | --all) -o <folder> [--game FOLDER ...]
@@ -17,17 +17,17 @@ heat3d-il2-level extract (<map> ... | --all) -o <folder> [--game FOLDER ...]
 
 ## Steg for steg {#step-by-step}
 
-Ny til kommandolinjen? Les [Før du begynner](before-you-start.md) først.
+Ny til kommandolinjen? Les [Før du starter](before-you-start.md) først.
 
 1. Finn kartets navn med [`list`](list.md).
 2. Kjør `heat3d-il2-level extract <map> -o levels`. Navn kan bruke jokertegn,
    i anførselstegn (`"<family>_*"`); `--all` tar hvert kart.
-3. For å legge en opptak på banen uten plasseringssteg, oppgi dens origo:
+3. For å legge et opptak på nivået uten plasseringssteg, oppgi dens origo:
    `--origin <lat> <lon>` satt til opptakets `geo` (øktens referansepunkt). Uten den er kartets
    senter origo, og `.json`-filens `geo` sier hvilket.
 4. Kommandoen skriver en linje per kart mens den avkoder det, deretter
    `ok <glb> <triangles> (<frame> frame)` eller `failed <map>: <why>`.
-5. Last inn `<folder>/<map>/<map>.glb` i visningsprogrammets Bane-panel.
+5. Last inn `<folder>/<map>/<map>.glb` i visningsprogrammets Bakgrunn / nivå-panel.
 
 ![extract på en syntetisk installasjon](../assets/img/extract.svg)
 
@@ -59,17 +59,17 @@ Alle alternativene, slik programmet skriver dem ut: [Kommandoreferanse](../cli-r
 Sett `HEAT3D_DEBUG` for å skrive ut hele sporingen av et mislykket kart. `.glb`-filen skrives til
 `<map>.glb.part` og gis nytt navn når den er ferdig.
 
-Avslutningsstatus: 0 hvert kart skrevet, 1 noen mislyktes (de andre skrives likevel),
+Avslutningsstatus: 0 hvert kart er skrevet, 1 noen mislyktes (de andre skrives likevel),
 2 ingen installasjon eller intet kart passet.
 
 ## Eksempler {#examples}
 
 ```bash
-heat3d-il2-level extract <map> -o levels                         # one map, enu frame round its centre
-heat3d-il2-level extract <map> --origin <lat> <lon> -o levels    # in the flat map of a recording with that geo
-heat3d-il2-level extract "<family>_*" --max-grid 2048 -o levels  # finer, several maps
-heat3d-il2-level extract --all --skip-existing -o levels         # every map, only the new ones
-heat3d-il2-level extract <map> --frame game -o levels            # the game's own metres, as mission files have them
+heat3d-il2-level extract <map> -o levels                         # ett kart, enu-ramme rundt sentrum
+heat3d-il2-level extract <map> --origin <lat> <lon> -o levels    # i det flate kartet til et opptak med den geoen
+heat3d-il2-level extract "<family>_*" --max-grid 2048 -o levels  # finere, flere kart
+heat3d-il2-level extract --all --skip-existing -o levels         # hvert kart, bare de nye
+heat3d-il2-level extract <map> --frame game -o levels            # spillets egne meter, slik oppdragsfilene har dem
 ```
 
-Hva som er i filene: [Banefilene og rammene](output.md).
+Hva som er i filene: [Nivåfilene og rammene](output.md).

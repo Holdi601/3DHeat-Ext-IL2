@@ -3,7 +3,7 @@ title: "Tasemete ehitamine: extract"
 nav_order: 3
 lang: et
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
@@ -17,7 +17,7 @@ heat3d-il2-level extract (<map> ... | --all) -o <folder> [--game FOLDER ...]
 
 ## Samm-sammult {#step-by-step}
 
-Pole sul käsurealt kogemust? Loe enne [Enne alustamist](before-you-start.md).
+Pole sul käsurealt kogemust? Loe esmalt [Enne alustamist](before-you-start.md).
 
 1. Leia kaardi nimi käsuga [`list`](list.md).
 2. Käivita `heat3d-il2-level extract <map> -o levels`. Nimes võib kasutada metamärke,
@@ -26,7 +26,7 @@ Pole sul käsurealt kogemust? Loe enne [Enne alustamist](before-you-start.md).
    `--origin <lat> <lon>`, mis on lindistuse `geo` (tema seansi viitepunkt). Ilma selleta on kaardi keskpunkt algpunkt, ja `.json`-i `geo` ütleb, mis see on.
 4. Käsk prindib rea kaardi kohta, kui ta seda dekodeerib, seejärel
    `ok <glb> <triangles> (<frame> frame)` või `failed <map>: <why>`.
-5. Laadi `<folder>/<map>/<map>.glb` vaataja Taseme paneelis.
+5. Laadi `<folder>/<map>/<map>.glb` vaataja paneelis **Taust / tase**.
 
 ![extract sünteetilisel installil](../assets/img/extract.svg)
 
@@ -47,7 +47,7 @@ Teine käivitus juba kirjutatud kaartidega:
 | `-o`, `--out` | nõutud | väljundkaust; iga kaart läheb kausta `<out>/<map>/` |
 | `--game FOLDER` | leitakse | IL-2 kaust (korduv) |
 | `--max-grid N` | `1024` | kõrgustikukaardi proove külje kohta kõige rohkem (1024: umbes 2 miljonit kolmnurka); kaarti proovitakse iga *k* proovi järel, et mahutada |
-| `--frame` `enu` või `game` | `enu` | `enu`: meetrit ida, kõrgus, põhja `--origin`-ist, nagu Watcheri Tacview tabelid; `game`: mängu enda meetrid (x põhja, y üles, z ida). Kaart, mida ei saa maakerale paigutada, kirjutatakse `game`-raamistikus, mida ka ei küsitaks |
+| `--frame` `enu` või `game` | `enu` | `enu`: meetrit ida, kõrgus, põhja `--origin`-ist, nagu Watcheri Tacview tabelid; `game`: mängu enda meetrid (x põhja, y üles, z ida). Kaart, mida ei saa maakerale paigutada, kirjutatakse `game`-raamistikus, isegi kui seda ei küsitud |
 | `--origin LAT LON` | kaardi keskpunkt | `enu` raamistiku algpunkt (lindistuse `geo`) |
 | `--no-water` | väljas | jäta vesi välja |
 | `--no-towns` | väljas | jäta linnade jalajäljed välja |

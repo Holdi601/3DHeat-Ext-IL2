@@ -33,7 +33,7 @@ Dos marcs, `--frame`:
 - `enu` (per defecte): metres a l'est, altitud sobre el nivell del mar, i nord respecte d'un origen
   en el pla tangent WGS-84: el mapa pla on el Watcher de 3DHeat col·loca una gravació de Tacview
   d'IL-2 (x est, y altitud, z nord, dibuixat amb z reflectida). El glb
-  guarda (est, altitud, -nord). Converteixi-ho amb `--origin <lat> <lon>` amb el `geo` d'una
+  guarda (est, altitud, -nord). Converteix-ho amb `--origin <lat> <lon>` amb el `geo` d'una
   gravació (el punt de referència de la seva sessió) i la gravació cau sobre el
   nivell sense cap pas de col·locació; sense això, el centre del mapa és l'origen, i el
   `geo` del JSON indica quin és.

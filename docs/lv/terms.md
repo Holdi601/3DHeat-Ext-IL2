@@ -24,8 +24,8 @@ python -m pytest -q
 
 ## Noteikumi {#the-terms}
 
-IL-2 Sturmovik: Great Battles un IL-2 Series (1C Game Studios / 777 Studios) licences līgums **netika atrasts**: ne uzstādījumā (kur `data/Licenses.txt` satur tikai trešo pušu licences), ne izdevēja vietnē, un Steam EULA lapa neielādējās. Pārbaudi pats, pirms paļaujies uz to.
-Šis rīks tikai nolasa arhīvus un nekad tos nemaina. Līmeņi, ko tas raksta, paliek tavā datorā: **nekad nepublicē tos**. Šeit nekas nepiegādā spēles datus, un testi veido katru failu, ko tie nolasa.
+IL-2 Sturmovik: Great Battles un IL-2 Series (1C Game Studios / 777 Studios) licences līgums **netika atrasts**: ne uzstādījumā (kur `data/Licenses.txt` satur tikai trešo pušu licences), ne izdevēja vietnē, un Steam EULA lapa neielādējās. Pārbaudiet paši, pirms paļaujaties uz to.
+Šis rīks tikai nolasa arhīvus un nekad tos nemaina. Līmeņi, ko tas raksta, paliek jūsu datorā: **nekad nepublicējiet tos**. Šeit nekas nepiegādā spēles datus, un testi veido katru failu, ko tie nolasa.
 
 ## Licence {#licence}
 

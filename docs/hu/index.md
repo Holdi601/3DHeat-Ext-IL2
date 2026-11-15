@@ -3,21 +3,21 @@ title: "Kezdőlap"
 nav_order: 1
 lang: hu
 source: index.md
-source_hash: "413bf250161a"
+source_hash: "e5c9a5aa5acb"
 nav_exclude: true
 search_exclude: true
 permalink: /hu/
 ---
 # 3DHeat IL-2 {#dheat-il-2}
 
-**Mi ez?** Egy kis program, amely az **IL-2 Sturmovik: Great Battles** térképeit, amelyeket **az Ön
-saját telepítéséből** olvas be, 3D modellekké alakítja – pályákká –, amelyek felett repülni lehet a
+**Mi ez?** Egy kis program, amely az **IL-2 Sturmovik: Great Battles** térképeit, amelyeket **a saját
+telepítésedből** olvas be, 3D modellekké alakít – pályákká –, amelyek felett repülni lehet a
 [3DHeat](https://github.com/Holdi601/3DHeat) megjelenítőben
 ([dokumentáció](https://holdi601.github.io/3DHeat/)): a dombok, folyók, tavak, a tenger és a városok,
 ott, ahol a földön fekszenek. Egy második IL-2-játék, amelynek archívumai elrejtik a fájltáblázatukat,
 annyira olvasódik, amennyire az archívumok engedik ([részletek](archives-without-table.md)).
 
-**Mire jó?** Hogy az IL-2-repüléseit a játék saját térképén lássa.
+**Mire jó?** Hogy az IL-2-repüléseidet a játék saját térképén lásd.
 
 **Példa:** `heat3d-il2-level extract <map> -o levels` ->
 `levels/<map>/<map>.glb` (a pálya) + `<map>.json` (hol fekszik a földön). A magassági térkép
@@ -37,8 +37,8 @@ Mire használható:
 
 ## Gyors kezdés {#quick-start}
 
-Még nem használt parancssort? Előbb olvassa el a [Mielőtt elkezdi](before-you-start.md) oldalt.
-Ezeket a mappában futtassa, ahová klónozta vagy kicsomagolta:
+Még nem használt parancssort? Előbb olvasd el a [Mielőtt elkezded](before-you-start.md) oldalt.
+Ezeket a mappában futtasd, ahová klónoztad vagy kicsomagoltad:
 
 ```bash
 python -m pip install -e .                         # telepíti a heat3d-il2-level parancsot
@@ -48,18 +48,18 @@ heat3d-il2-level extract <map> -o levels           # egy térkép (a nevek úgy,
 heat3d-il2-level extract --all -o levels           # minden térkép
 ```
 
-A `list` térképenként egy sort ír ki, az `extract` pedig `ok ...` sorokat. Ezután töltse be a
+A `list` térképenként egy sort ír ki, az `extract` pedig `ok ...` sorokat. Ezután töltsd be a
 `levels/<map>/<map>.glb` fájlt a megjelenítő Háttér / pálya paneljén
 ([Pályák](https://holdi601.github.io/3DHeat/levels.html)).
 
-Az általa írt pályák a játék adataiból készülnek, ezért **az Ön gépén maradnak**; soha ne tegye közzé
+Az általad írt pályák a játék adataiból készülnek, ezért **a te gépeden maradnak**; soha ne tedd közzé
 ([Feltételek](terms.md)).
 
 ## Oldalak {#pages}
 
 | Oldal | Mit tartalmaz |
 |---|---|
-| [Mielőtt elkezdi](before-you-start.md) | Python, egy terminál, az első futtatás |
+| [Mielőtt elkezded](before-you-start.md) | Python, egy terminál, az első futtatás |
 | [Térképek keresése: list](list.md) | hol találhatók a telepítések, mit ír ki a `list` |
 | [Pályák építése: extract](extract.md) | minden kapcsoló, lépésről lépésre, példák |
 | [A pályafájlok és a keretek](output.md) | a `.glb` részei, a `.json`, az `enu` és a `game` keret |

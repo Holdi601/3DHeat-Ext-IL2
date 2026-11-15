@@ -3,7 +3,7 @@ title: "Построение уровней: extract"
 nav_order: 3
 lang: ru
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
@@ -27,7 +27,7 @@ heat3d-il2-level extract (<map> ... | --all) -o <folder> [--game FOLDER ...]
    становится началом, а `geo` в `.json` показывает, какой именно.
 4. Команда выводит строку на каждую карту по мере её декодирования, затем
    `ok <glb> <triangles> (<frame> frame)` или `failed <map>: <why>`.
-5. Загрузите `<folder>/<map>/<map>.glb` в панель «Фон / уровень» визуализатора.
+5. Загрузите `<folder>/<map>/<map>.glb` в панель «Фон / уровень» просмотрщика.
 
 ![extract на синтетической установке](../assets/img/extract.svg)
 

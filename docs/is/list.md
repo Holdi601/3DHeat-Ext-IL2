@@ -14,7 +14,7 @@ heat3d-il2-level list [--game FOLDER ...]
 python -m heat3d_ext_il2 list ...          the same, without installing
 ```
 
-Ertu ný/r í skipanalínunni? Lestu fyrst [Áður en þú byrjar](before-you-start.md).
+Hefurðu aldrei notað skipanalínu? Lestu fyrst [Áður en þú byrjar](before-you-start.md).
 
 1. Settu upp einu sinni: `git clone https://github.com/Holdi601/3DHeat-Ext-IL2`, opnaðu
    skipanalínu í þeirri möppu og keyrðu `python -m pip install -e .` (Python 3.10

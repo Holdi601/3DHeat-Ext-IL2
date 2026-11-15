@@ -24,7 +24,7 @@ New to the command line? Read [Before you start](before-you-start.md) first.
    `.json`'s `geo` says which.
 4. The command prints a line per map as it decodes it, then
    `ok <glb> <triangles> (<frame> frame)` or `failed <map>: <why>`.
-5. Load `<folder>/<map>/<map>.glb` in the viewer's Background / Background / level panel.
+5. Load `<folder>/<map>/<map>.glb` in the viewer's Background / level panel.
 
 ![extract on a synthetic install](assets/img/extract.svg)
 

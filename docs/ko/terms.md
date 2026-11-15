@@ -11,7 +11,7 @@ search_exclude: true
 
 ## 속도 {#speed}
 
-numba가 설치되어 있지 않으면 해독은 순수 Python으로 합니다(`python -m pip install -e .[fast]`로 설치). 중간 크기의 지도는 numba 없이 약 15초, 있으면 약 1초가 걸립니다. 가장 큰 지도(샘플 수억 개)는 numba가 있을 때 약 7초입니다(첫 실행은 컴파일도 합니다). 메모리는 섹터 한 줄과 출력 격자만큼만 씁니다.
+numba가 설치되어 있지 않으면 해독은 순수 Python으로 합니다(`python -m pip install -e .[fast]`로 설치). 중간 크기의 맵은 numba 없이 약 15초, 있으면 약 1초가 걸립니다. 가장 큰 맵(샘플 수억 개)은 numba가 있을 때 약 7초입니다(첫 실행은 컴파일도 합니다). 메모리는 섹터 한 줄과 출력 격자만큼만 씁니다.
 
 ## 테스트 {#tests}
 
@@ -19,7 +19,7 @@ numba가 설치되어 있지 않으면 해독은 순수 Python으로 합니다(`
 python -m pytest -q
 ```
 
-`tests/synth.py`는 아카이브, 높이 지도(위 코덱의 인코더), `height.hini` 파일, 그리고 파일 표가 없는 아카이브를 코드로 만듭니다.
+`tests/synth.py`는 아카이브, 높이 맵(위 코덱의 인코더), `height.hini` 파일, 그리고 파일 표가 없는 아카이브를 코드로 만듭니다.
 
 ## 약관 {#the-terms}
 

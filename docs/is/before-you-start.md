@@ -9,12 +9,12 @@ search_exclude: true
 ---
 # Áður en þú byrjar {#before-you-start}
 
-Ertu ný/r í skipanalínunni? Þessi síða leiðir þig frá engu að fyrstu keyrslu.
+Hefurðu aldrei notað skipanalínu? Þessi síða leiðir þig frá engu að fyrstu keyrslu.
 Það tekur um tíu mínútur, einu sinni.
 
 ## 1. Settu upp Python {#install-python}
 
-Þetta tól þarf **Python 3.10 eða nýrra**.
+Þetta verkfæri þarf **Python 3.10 eða nýrra**.
 
 - **Windows:** sæktu Python á [python.org/downloads](https://www.python.org/downloads/)
   og keyrðu uppsetningarforritið. Á fyrsta skjánum skaltu haka við **Add python.exe to PATH**
@@ -22,7 +22,7 @@ Ertu ný/r í skipanalínunni? Þessi síða leiðir þig frá engu að fyrstu k
 - **macOS og Linux:** Python 3 er oft þegar til staðar. Þar sem þessar síður segja
   `python` skaltu skrifa `python3`.
 
-## 2. Náðu í þetta tól {#get-this-tool}
+## 2. Náðu í þetta verkfæri {#get-this-tool}
 
 Opnaðu [github.com/Holdi601/3DHeat-Ext-IL2](https://github.com/Holdi601/3DHeat-Ext-IL2), smelltu á
 græna hnappinn **Code**, síðan **Download ZIP**, og pakkaðu skránni upp í möppu að
@@ -40,7 +40,7 @@ Skipanalína er gluggi þar sem þú skrifar skipanir.
 
 `cd` þýðir „change folder“ (skipta um möppu): `cd C:\Tools\3DHeat-Ext-IL2` fer í þá möppu.
 
-## 4. Settu tólið upp {#install-the-tool}
+## 4. Settu verkfærið upp {#install-the-tool}
 
 Skrifaðu þetta og ýttu á Enter:
 
@@ -81,8 +81,8 @@ Næst: [Að finna kort: list](list.md), síðan [Að smíða borð: extract](ext
 | Skilaboðin | Hvað á að gera |
 |---|---|
 | `'python' is not recognized` | Python er ekki uppsett, eða PATH-reiturinn var ekki merktur: settu það upp aftur og hakaðu við hann (eða skrifaðu `py` í stað `python`). |
-| `'heat3d-il2-level' is not recognized` | Keyrðu skref 4 aftur í möppu tólsins, eða skrifaðu `python -m heat3d_ext_il2` í stað `heat3d-il2-level`: það gerir það sama. |
-| `No module named heat3d_ext_il2` | Þú ert ekki í möppu tólsins, eða skref 4 mistókst: farðu þangað með `cd` og keyrðu skref 4. |
+| `'heat3d-il2-level' is not recognized` | Keyrðu skref 4 aftur í möppu verkfærisins, eða skrifaðu `python -m heat3d_ext_il2` í stað `heat3d-il2-level`: það gerir það sama. |
+| `No module named heat3d_ext_il2` | Þú ert ekki í möppu verkfærisins, eða skref 4 mistókst: farðu þangað með `cd` og keyrðu skref 4. |
 | `No module named pip` | Keyrðu `python -m ensurepip`, síðan skref 4. |
 | allt annað | Lestu síðustu línu skilaboðanna og opnaðu síðan issue á GitHub með henni. |
 

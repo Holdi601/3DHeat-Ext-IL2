@@ -14,12 +14,12 @@ heat3d-il2-level list [--game CARPETA ...]
 python -m heat3d_ext_il2 list ...          el mateix, sense instal·lar-lo
 ```
 
-Si és nou amb la línia d'ordres, llegeixi primer [Abans de començar](before-you-start.md).
+Si ets nou amb la línia d'ordres, llegeix primer [Abans de començar](before-you-start.md).
 
-1. Instal·li-la una vegada: `git clone https://github.com/Holdi601/3DHeat-Ext-IL2`, obri
-   una terminal en aquesta carpeta i executi `python -m pip install -e .` (Python 3.10
+1. Instal·la-la una vegada: `git clone https://github.com/Holdi601/3DHeat-Ext-IL2`, obre
+   una terminal en aquesta carpeta i executa `python -m pip install -e .` (Python 3.10
    o posterior; porta numpy; `python -m pip install -e .[fast]` hi afegeix numba).
-2. Executi `heat3d-il2-level list`.
+2. Executa `heat3d-il2-level list`.
 3. Cada mapa imprimeix una línia, separada per tabulacions: el seu nom (el nom que pren
    `extract`), el joc (`Great Battles`, o `Korea` per al [segon joc](archives-without-table.md)),
    el mapa d'alçades que llegeix, i on es troba a la Terra: la seva caixa de latitud/longitud
@@ -35,11 +35,11 @@ La imatge és una execució sobre una instal·lació construïda amb els escript
 ## On es troben les instal·lacions {#where-the-installs-are-found}
 
 Per Steam; si no, `--game <carpeta>` (es pot repetir, un per instal·lació) o la variable
-d'entorn `HEAT3D_IL2_GAME`. Una instal·lació és una carpeta la carpeta `data` de la qual
+d'entorn `HEAT3D_IL2_GAME`. Una instal·lació és una carpeta amb una subcarpeta `data` que
 conté arxius `Maps*.gtp`.
 
 | Opció | Què fa |
 |---|---|
-| `--game CARPETA` | una carpeta d'IL-2; repetiu-la per a diverses instal·lacions |
+| `--game CARPETA` | una carpeta d'IL-2; repeteix-la per a diverses instal·lacions |
 
 Estat de sortida: 0 fet; 2 no s'ha trobat cap instal·lació.

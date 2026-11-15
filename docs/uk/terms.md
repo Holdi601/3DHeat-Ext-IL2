@@ -11,9 +11,9 @@ search_exclude: true
 
 ## Швидкість {#speed}
 
-Декодування - чистий Python, якщо не встановлено numba (`python -m pip install -e .[fast]`):
+Декодування — чистий Python, якщо не встановлено numba (`python -m pip install -e .[fast]`):
 середня карта займає близько 15 с без неї і близько секунди з нею; найбільша карта, кілька
-сотень мільйонів відліків, - близько 7 с з нею (перший запуск також компілює). Пам'ять
+сотень мільйонів відліків, — близько 7 с з нею (перший запуск також компілює). Пам'ять
 лишається на одному рядку секторів плюс вихідна сітка.
 
 ## Тести {#tests}
@@ -37,6 +37,6 @@ python -m pytest -q
 
 ## Ліцензія {#licence}
 
-MIT - див. [`LICENSE`](https://github.com/Holdi601/3DHeat-Ext-IL2/blob/main/LICENSE).
-Використовує numpy (BSD-3-Clause) і, за бажанням, numba (BSD-2-Clause). `heat3d_update` -
+MIT — див. [`LICENSE`](https://github.com/Holdi601/3DHeat-Ext-IL2/blob/main/LICENSE).
+Використовує numpy (BSD-3-Clause) і, за бажанням, numba (BSD-2-Clause). `heat3d_update` —
 спільний засіб оновлення інструментів 3DHeat.

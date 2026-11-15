@@ -3,7 +3,7 @@ title: "Ndërtimi i niveleve: extract"
 nav_order: 3
 lang: sq
 source: extract.md
-source_hash: "69fb5c2ddfa7"
+source_hash: "2a45af525c58"
 nav_exclude: true
 search_exclude: true
 ---
@@ -17,7 +17,7 @@ heat3d-il2-level extract (<map> ... | --all) -o <folder> [--game FOLDER ...]
 
 ## Hap pas hapi {#step-by-step}
 
-Je i ri me vijën e komandës? Lexo së pari [Para se të fillosh](before-you-start.md).
+Je i ri me rreshtin e komandave? Lexo së pari [Para se të fillosh](before-you-start.md).
 
 1. Gjej emrin e hartës me [`list`](list.md).
 2. Ekzekuto `heat3d-il2-level extract <map> -o levels`. Emrat mund të përdorin
@@ -45,22 +45,22 @@ Një ekzekutim i dytë mbi harta të shkruara tashmë:
 | Opsioni | Parazgjedhja | Çfarë bën |
 |---|---|---|
 | `maps` | - | emrat e hartave siç i shtyp `list`; lejohen shenja zëvendësuese |
-| `--all` | off | çdo hartë; stinët që ndajnë një heightmap dhe hartë uji shkruhen një herë |
+| `--all` | joaktiv | çdo hartë; stinët që ndajnë një heightmap dhe hartë uji shkruhen një herë |
 | `-o`, `--out` | i detyrueshëm | dosja e daljes; çdo hartë shkon te `<out>/<map>/` |
 | `--game FOLDER` | gjendet | një dosje IL-2 (i përsëritshëm) |
 | `--max-grid N` | `1024` | më së shumti kaq mostra heightmap për anë (1024: rreth 2 milionë trekëndësha); harta mostrohet çdo *k* mostra që të përshtatet |
 | `--frame` `enu` ose `game` | `enu` | `enu`: metra drejt lindjes, lartësi, drejt veriut nga `--origin`, si tabelat Tacview të Watcher; `game`: metrat e vetë lojës (x veri, y lart, z lindje). Një hartë që nuk mund të vendoset mbi tokë shkruhet në `game` çfarëdo që kërkohet |
 | `--origin LAT LON` | qendra e hartës | origjina e kornizës `enu` (`geo` i një regjistrimi) |
-| `--no-water` | off | lë jashtë ujin |
-| `--no-towns` | off | lë jashtë gjurmët e qyteteve |
-| `--skip-existing` | off | lë harta që `.glb` i tyre ekziston tashmë |
+| `--no-water` | joaktiv | lë jashtë ujin |
+| `--no-towns` | joaktiv | lë jashtë gjurmët e qyteteve |
+| `--skip-existing` | joaktiv | lë harta që `.glb` i tyre ekziston tashmë |
 
 Çdo opsion, ashtu siç e shtyp programi: [Referenca e komandave](../cli-reference.md).
 
 Vendos `HEAT3D_DEBUG` që të shtypet gjurma e plotë e një harte që dështoi. `.glb` shkruhet
 te `<map>.glb.part` dhe riemërtohet kur përfundon.
 
-Kodi i daljes: 0 çdo hartë u shkrua, 1 ndonjë dështoi (të tjerat shkruhen
+Statusi i daljes: 0 çdo hartë u shkrua, 1 ndonjë dështoi (të tjerat shkruhen
 prapë), 2 nuk u gjet instalim ose hartë që përputhet.
 
 ## Shembuj {#examples}

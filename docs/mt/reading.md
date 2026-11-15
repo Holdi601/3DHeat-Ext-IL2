@@ -24,7 +24,7 @@ search_exclude: true
 
 ## Il-codec tal-heightmap {#the-heightmap-codec}
 
-Ħadem mid-data files biss; ebda kodiċi tal-logħba ma nqara jew ġie diżassemblat.
+Ħadem mill-fajls tad-dejta biss; ebda kodiċi tal-logħba ma nqara jew ġie diżassemblat.
 Little-endian:
 
 ```text
