@@ -1,49 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1096" height="403" viewBox="0 0 1096 403" font-family="Segoe UI,Helvetica,Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="498" viewBox="0 0 860 498" font-family="Segoe UI,Helvetica,Arial,sans-serif">
 <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#5b6270"/></marker></defs>
-<rect width="1096" height="403" rx="10" fill="#f6f7f9"/>
-<text x="16" y="28" font-size="16" font-weight="600" fill="#1f2328">From an IL-2 install to a 3DHeat level</text>
-<rect x="16" y="44.0" width="236" height="54" rx="7" fill="#fff" stroke="#8c95a3"/>
-<text x="26" y="67.0" font-size="13.5" font-weight="600" fill="#1f2328">Your IL-2 install</text>
-<text x="26" y="84.0" font-size="12.5" fill="#3d4450">data/Maps*.gtp archives</text>
-<rect x="16" y="112.0" width="236" height="71" rx="7" fill="#ffffff" stroke="#8c95a3"/>
-<text x="26" y="135.0" font-size="13.5" font-weight="600" fill="#1f2328">height.hini</text>
-<text x="26" y="152.0" font-size="12.5" fill="#3d4450">files, heightMul, SeaLevel,</text>
-<text x="26" y="169.0" font-size="12.5" fill="#3d4450">play limits, MapNW/NE/SE/SW</text>
-<rect x="16" y="197.0" width="236" height="54" rx="7" fill="#ffffff" stroke="#8c95a3"/>
-<text x="26" y="220.0" font-size="13.5" font-weight="600" fill="#1f2328">height.dat, height_w.dat</text>
-<text x="26" y="237.0" font-size="12.5" fill="#3d4450">heightmap and water map</text>
-<rect x="16" y="265.0" width="236" height="54" rx="7" fill="#ffffff" stroke="#8c95a3"/>
-<text x="26" y="288.0" font-size="13.5" font-weight="600" fill="#1f2328">water.wtr</text>
-<text x="26" y="305.0" font-size="12.5" fill="#3d4450">400 m water blocks</text>
-<rect x="16" y="333.0" width="236" height="54" rx="7" fill="#ffffff" stroke="#8c95a3"/>
-<text x="26" y="356.0" font-size="13.5" font-weight="600" fill="#1f2328">towns.mesh, city_*.mesh ...</text>
-<text x="26" y="373.0" font-size="12.5" fill="#3d4450">town footprints</text>
-<rect x="292" y="163.0" width="236" height="105" rx="7" fill="#eef4ff" stroke="#8c95a3"/>
-<text x="302" y="186.0" font-size="13.5" font-weight="600" fill="#1f2328">heat3d-il2-level extract</text>
-<text x="302" y="203.0" font-size="12.5" fill="#3d4450" font-family="Consolas,Menlo,monospace">extract &lt;map&gt; -o levels</text>
-<text x="302" y="220.0" font-size="12.5" fill="#3d4450" font-family="Consolas,Menlo,monospace">[--frame enu|game]</text>
-<text x="302" y="237.0" font-size="12.5" fill="#3d4450" font-family="Consolas,Menlo,monospace">[--origin LAT LON]</text>
-<text x="302" y="254.0" font-size="12.5" fill="#3d4450" font-family="Consolas,Menlo,monospace">[--max-grid N]</text>
-<rect x="568" y="129.0" width="236" height="88" rx="7" fill="#ffffff" stroke="#8c95a3"/>
-<text x="578" y="152.0" font-size="13.5" font-weight="600" fill="#1f2328">&lt;map&gt;/&lt;map&gt;.glb</text>
-<text x="578" y="169.0" font-size="12.5" fill="#3d4450">ground: the heightmap grid</text>
-<text x="578" y="186.0" font-size="12.5" fill="#3d4450">water: flat water quads</text>
-<text x="578" y="203.0" font-size="12.5" fill="#3d4450">ground towns: footprints</text>
-<rect x="568" y="231.0" width="236" height="71" rx="7" fill="#ffffff" stroke="#8c95a3"/>
-<text x="578" y="254.0" font-size="13.5" font-weight="600" fill="#1f2328">&lt;map&gt;/&lt;map&gt;.json</text>
-<text x="578" y="271.0" font-size="12.5" fill="#3d4450">corners, lat/lon box, frame,</text>
-<text x="578" y="288.0" font-size="12.5" fill="#3d4450">geo origin, triangles, notes</text>
-<rect x="844" y="180.0" width="236" height="71" rx="7" fill="#eef4ff" stroke="#8c95a3"/>
-<text x="854" y="203.0" font-size="13.5" font-weight="600" fill="#1f2328">3DHeat viewer</text>
-<text x="854" y="220.0" font-size="12.5" fill="#3d4450">Level panel; a Tacview recording</text>
-<text x="854" y="237.0" font-size="12.5" fill="#3d4450">with the same geo lands on it</text>
-<path d="M252,71.0 C272.0,71.0 272.0,215.5 290,215.5" fill="none" stroke="#5b6270" stroke-width="1.5" marker-end="url(#a)"/>
-<path d="M252,147.5 C272.0,147.5 272.0,215.5 290,215.5" fill="none" stroke="#5b6270" stroke-width="1.5" marker-end="url(#a)"/>
-<path d="M252,224.0 C272.0,224.0 272.0,215.5 290,215.5" fill="none" stroke="#5b6270" stroke-width="1.5" marker-end="url(#a)"/>
-<path d="M252,292.0 C272.0,292.0 272.0,215.5 290,215.5" fill="none" stroke="#5b6270" stroke-width="1.5" marker-end="url(#a)"/>
-<path d="M252,360.0 C272.0,360.0 272.0,215.5 290,215.5" fill="none" stroke="#5b6270" stroke-width="1.5" marker-end="url(#a)"/>
-<path d="M528,215.5 C548.0,215.5 548.0,173.0 566,173.0" fill="none" stroke="#5b6270" stroke-width="1.5" marker-end="url(#a)"/>
-<path d="M528,215.5 C548.0,215.5 548.0,266.5 566,266.5" fill="none" stroke="#5b6270" stroke-width="1.5" marker-end="url(#a)"/>
-<path d="M804,173.0 C824.0,173.0 824.0,215.5 842,215.5" fill="none" stroke="#5b6270" stroke-width="1.5" marker-end="url(#a)"/>
-<path d="M804,266.5 C824.0,266.5 824.0,215.5 842,215.5" fill="none" stroke="#5b6270" stroke-width="1.5" marker-end="url(#a)"/>
+<rect width="860" height="498" rx="10" fill="#f6f7f9"/>
+<text x="16" y="32" font-size="18" fill="#1f2328" font-weight="600">From an IL-2 install to a 3DHeat level</text>
+<rect x="16" y="52" width="828" height="82" rx="8" fill="#ffffff" stroke="#8c95a3"/>
+<text x="28" y="79" font-size="15" fill="#1f2328" font-weight="600">1. Your IL-2 install</text>
+<text x="28" y="99" font-size="14" fill="#3d4450">data/Maps*.gtp archives:</text>
+<text x="28" y="119" font-size="14" fill="#3d4450">heightmap, water, town footprints</text>
+<rect x="16" y="168" width="828" height="82" rx="8" fill="#eef4ff" stroke="#8c95a3"/>
+<text x="28" y="195" font-size="15" fill="#1f2328" font-weight="600">2. heat3d-il2-level extract</text>
+<text x="28" y="215" font-size="14" fill="#3d4450" font-family="Consolas,Menlo,monospace">extract &lt;map&gt; -o levels</text>
+<text x="28" y="235" font-size="14" fill="#3d4450">decodes the heightmap, finds the corners</text>
+<path d="M430,136 C430,151.0 430,151.0 430,165" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="16" y="284" width="405" height="82" rx="8" fill="#ffffff" stroke="#8c95a3"/>
+<text x="28" y="311" font-size="15" fill="#1f2328" font-weight="600">&lt;map&gt;.glb</text>
+<text x="28" y="331" font-size="14" fill="#3d4450">the level: ground, water,</text>
+<text x="28" y="351" font-size="14" fill="#3d4450">town footprints</text>
+<rect x="439" y="284" width="405" height="82" rx="8" fill="#ffffff" stroke="#8c95a3"/>
+<text x="451" y="311" font-size="15" fill="#1f2328" font-weight="600">&lt;map&gt;.json</text>
+<text x="451" y="331" font-size="14" fill="#3d4450">where it lies on the earth,</text>
+<text x="451" y="351" font-size="14" fill="#3d4450">the frame, notes</text>
+<path d="M430,252 C430,267.0 218,267.0 218,281" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M430,252 C430,267.0 642,267.0 642,281" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="16" y="400" width="828" height="82" rx="8" fill="#eef4ff" stroke="#8c95a3"/>
+<text x="28" y="427" font-size="15" fill="#1f2328" font-weight="600">3. The 3DHeat viewer</text>
+<text x="28" y="447" font-size="14" fill="#3d4450">Level panel; a Tacview flight with</text>
+<text x="28" y="467" font-size="14" fill="#3d4450">the same origin lands on it</text>
+<path d="M218,368 C218,383.0 430,383.0 430,397" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M642,368 C642,383.0 430,383.0 430,397" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
 </svg>

@@ -7,10 +7,10 @@ nav_order: 7
 
 ## Speed
 
-Decoding is pure Python unless numba is installed (`pip install -e .[fast]`):
-a 5632-sample map takes about 15 s without it and about a second with it; the
-Korea map's 400 million samples about 7 s with it (the first run also compiles).
-Memory stays at one row of sectors plus the output grid.
+Decoding is pure Python unless numba is installed (`python -m pip install -e .[fast]`):
+a mid-sized map takes about 15 s without it and about a second with it; the
+largest map, several hundred million samples, about 7 s with it (the first
+run also compiles). Memory stays at one row of sectors plus the output grid.
 
 ## Tests
 
@@ -19,7 +19,7 @@ python -m pytest -q
 ```
 
 `tests/synth.py` builds archives, heightmaps (an encoder for the codec above),
-`height.hini` files and Korea-style archives in code.
+`height.hini` files and archives without a file table in code.
 
 ## The terms
 

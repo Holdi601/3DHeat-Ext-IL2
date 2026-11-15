@@ -66,7 +66,7 @@ def main(argv: list[str] | None = None) -> int:
             if corners and m.affine:
                 where += f" per height.hini, which looks wrong: landmark fit (rms {m.affine['rmsMetres']} m) used instead"
             print(f"{m.name}\t{m.game}\theight {m.height.name or m.height.archive.name}\t{where}")
-        print(f"{len(maps)} maps in {', '.join(str(r) for r in roots)}", file=sys.stderr)
+        print(f"{len(maps)} {'map' if len(maps) == 1 else 'maps'} in {', '.join(str(r) for r in roots)}", file=sys.stderr)
         return 0
 
     wanted = [m for m in maps if args.all or any(fnmatch.fnmatch(m.name, w) for w in args.maps)]

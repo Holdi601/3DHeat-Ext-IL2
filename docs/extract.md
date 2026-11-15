@@ -13,9 +13,11 @@ heat3d-il2-level extract (<map> ... | --all) -o <folder> [--game FOLDER ...]
 
 ## Step by step
 
+New to the command line? Read [Before you start](before-you-start.md) first.
+
 1. Find the map's name with [`list`](list.md).
-2. Run `heat3d-il2-level extract <map> -o levels`. Names may use wildcards
-   (`landscape_*`); `--all` takes every map.
+2. Run `heat3d-il2-level extract <map> -o levels`. Names may use wildcards,
+   in quotes (`"<family>_*"`); `--all` takes every map.
 3. To put a recording on the level with no placement step, give its origin:
    `--origin <lat> <lon>` set to the recording's `geo` (its session's
    reference point). Without it the map's centre is the origin, and the
@@ -49,6 +51,8 @@ A second run over maps already written:
 | `--no-towns` | off | leave the town footprints out |
 | `--skip-existing` | off | leave maps whose `.glb` already exists |
 
+Every option, as the program prints it: [Command reference](cli-reference.md).
+
 Set `HEAT3D_DEBUG` to print the full traceback of a failed map. The `.glb` is
 written to `<map>.glb.part` and renamed when complete.
 
@@ -59,7 +63,7 @@ written), 2 no install or no map matched.
 
 ```bash
 heat3d-il2-level extract <map> -o levels                         # one map, enu frame round its centre
-heat3d-il2-level extract <map> --origin 56.0 37.0 -o levels      # in the flat map of a recording with that geo
+heat3d-il2-level extract <map> --origin <lat> <lon> -o levels    # in the flat map of a recording with that geo
 heat3d-il2-level extract "<family>_*" --max-grid 2048 -o levels  # finer, several maps
 heat3d-il2-level extract --all --skip-existing -o levels         # every map, only the new ones
 heat3d-il2-level extract <map> --frame game -o levels            # the game's own metres, as mission files have them

@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="624" height="140" viewBox="0 0 624 140" role="img" aria-label="heat3d-il2-level on a synthetic install">
-<rect width="624" height="140" rx="8" fill="#1e1f24"/>
-<rect width="624" height="26" rx="8" fill="#2c2e35"/><rect y="18" width="624" height="8" fill="#2c2e35"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="657" height="152" viewBox="0 0 657 152" role="img" aria-label="heat3d-il2-level extract &quot;example_*&quot; --game IL-2 -o levels --max-grid 32 (synthetic install)">
+<rect width="657" height="152" rx="8" fill="#1e1f24"/>
+<rect width="657" height="26" rx="8" fill="#2c2e35"/><rect y="18" width="657" height="8" fill="#2c2e35"/>
 <circle cx="16" cy="13" r="5" fill="#ff5f57"/><circle cx="32" cy="13" r="5" fill="#febc2e"/><circle cx="48" cy="13" r="5" fill="#28c840"/>
-<text x="312.0" y="17" fill="#9aa0aa" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="middle">heat3d-il2-level on a synthetic install</text>
-<g font-family="Consolas,Menlo,DejaVu Sans Mono,monospace" font-size="13" xml:space="preserve" style="white-space:pre">
-<text x="16" y="46" fill="#7ee787" xml:space="preserve" style="white-space:pre">$&#160;heat3d-il2-level&#160;extract&#160;landscape_*&#160;--game&#160;IL-2&#160;-o&#160;levels&#160;--max-grid&#160;32</text>
-<text x="16" y="64" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;landscape_example:&#160;90x70&#160;samples&#160;at&#160;50&#160;m,&#160;every&#160;3</text>
-<text x="16" y="82" fill="#d6d9df" xml:space="preserve" style="white-space:pre">ok&#160;levels\landscape_example\landscape_example.glb&#160;1564&#160;triangles&#160;(enu&#160;frame)</text>
-<text x="16" y="100" fill="#7ee787" xml:space="preserve" style="white-space:pre">$&#160;echo&#160;$?</text>
-<text x="16" y="118" fill="#d6d9df" xml:space="preserve" style="white-space:pre">0</text>
+<text x="328.5" y="18" fill="#9aa0aa" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="14" text-anchor="middle">heat3d-il2-level extract &quot;example_*&quot; --game IL-2 -o levels --max-grid 32 (synthetic install)</text>
+<g font-family="Consolas,Menlo,DejaVu Sans Mono,monospace" font-size="14" xml:space="preserve" style="white-space:pre">
+<text x="16" y="50" fill="#7ee787" xml:space="preserve" style="white-space:pre">$&#160;heat3d-il2-level&#160;extract&#160;&quot;example_*&quot;&#160;--game&#160;IL-2&#160;-o&#160;levels&#160;--max-grid&#160;32</text>
+<text x="16" y="70" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;example_map:&#160;90x70&#160;samples&#160;at&#160;50&#160;m,&#160;every&#160;3</text>
+<text x="16" y="90" fill="#d6d9df" xml:space="preserve" style="white-space:pre">ok&#160;levels\example_map\example_map.glb&#160;1564&#160;triangles&#160;(enu&#160;frame)</text>
+<text x="16" y="110" fill="#7ee787" xml:space="preserve" style="white-space:pre">$&#160;echo&#160;$?</text>
+<text x="16" y="130" fill="#d6d9df" xml:space="preserve" style="white-space:pre">0</text>
 </g></svg>

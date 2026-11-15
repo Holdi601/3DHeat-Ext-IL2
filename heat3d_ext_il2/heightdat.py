@@ -257,7 +257,7 @@ def read_height_dat(payload, height_mul=None, use_numba=True, return_raw=False):
 def read_region(payload, x0, y0, x1, y1, use_numba=True):
     """Decode only the sectors covering samples [y0:y1, x0:x1] (raw uint16).
 
-    Useful for very large maps (Korea: 19968^2) to keep memory low."""
+    Useful for very large maps (hundreds of millions of samples) to keep memory low."""
     payload = _strip(payload)
     hd = parse_header(payload)
     w, h, sx, ss = hd["width"], hd["height"], hd["sectors_x"], hd["sector_size"]

@@ -198,3 +198,18 @@ def test_build_with_water_mask_and_towns(tmp_path):
     assert rec["parts"]["towns"]["triangles"] == 2
     doc = _doc(tmp_path / "out" / "landscape_x.glb")
     assert [n["name"] for n in doc["nodes"]] == ["ground:landscape_x", "water:landscape_x", "ground:landscape_x towns"]
+
+
+def test_list_counts_one_map_in_the_singular(tmp_path, monkeypatch, capsys):
+    from heat3d_ext_il2 import cli
+    monkeypatch.setenv("HEAT3D_NO_UPDATE", "1")
+    raw = _terrain()
+    corners = {"MapNW": (50.031, 30.0), "MapNE": (50.031, 30.0625), "MapSE": (50.0, 30.0625), "MapSW": (50.0, 30.0)}
+    files = {"/graphics/example_map/height.dat": synth.height_dat(raw, 32),
+             "/graphics/example_map/height.hini": synth.hini(r"graphics\EXAMPLE_MAP\height.dat", "", corners, 1.0, 36.0)}
+    (tmp_path / "IL-2" / "data").mkdir(parents=True)
+    (tmp_path / "IL-2" / "data" / "Maps.gtp").write_bytes(synth.gtp(files))
+    assert cli.main(["list", "--game", str(tmp_path / "IL-2")]) == 0
+    err = capsys.readouterr().err
+    assert err.startswith("1 map in ")
+

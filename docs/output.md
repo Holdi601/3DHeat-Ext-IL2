@@ -5,7 +5,8 @@ nav_order: 4
 
 # The level files and frames
 
-`<out>/<map>/<map>.glb` and `<map>.json` beside it. The glb is written to
+`<out>/<map>/<map>.glb` (the level: a 3D model of the ground) and `<map>.json`
+beside it. The glb is written to
 `<map>.glb.part` and renamed when complete.
 
 | Part | What it is |
@@ -14,7 +15,7 @@ nav_order: 4
 | `water:<map>` | rivers, lakes and sea: flat quads at the water's height, one per grid cell enough of whose heightmap samples are under water (a third with the map's water mask, half without) |
 | `ground:<map> towns` | the built-up footprints of towns and villages, draped 1.5 m over the ground |
 
-![A synthetic map's level from above, coloured by height, with its water strip](assets/img/level-top.svg)
+![A synthetic map's level from above, coloured by height, with its water strip; the legend gives the colours](assets/img/level-top.svg)
 
 The JSON holds the map's **corners and latitude/longitude box** (`corners`,
 `extent`), how they were found (`georeference`), the height settings
