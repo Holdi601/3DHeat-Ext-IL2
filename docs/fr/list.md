@@ -10,7 +10,7 @@ search_exclude: true
 # Trouver les cartes : `list` {#finding-maps-list}
 
 ```text
-heat3d-il2-level list [--game DOSSIER ...]
+heat3d-il2-level list [--game FOLDER ...]
 python -m heat3d_ext_il2 list ...          la même chose, sans installer
 ```
 
@@ -39,6 +39,6 @@ contient des archives `Maps*.gtp`.
 
 | Option | Effet |
 |---|---|
-| `--game DOSSIER` | un dossier IL-2 ; répétez-la pour plusieurs installations |
+| `--game FOLDER` | un dossier IL-2 ; répétez-la pour plusieurs installations |
 
 Code de sortie : 0 terminé, 2 aucune installation trouvée.

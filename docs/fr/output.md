@@ -29,14 +29,14 @@ origine (`frame`, `geo`), le nombre de triangles et les `notes` éventuelles.
 
 Deux repères, `--frame` :
 
-- `enu` (par défaut) : mètres vers l'est, altitude au-dessus du niveau de la mer, et nord par rapport à une origine,
+- `enu` (par défaut) : mètres vers l'est, altitude au-dessus du niveau de la mer, et vers le nord par rapport à une origine,
   sur le plan tangent WGS-84 : la carte plate dans laquelle le 3DHeat Watcher place un enregistrement
-  Tacview d'IL-2 (x est, y altitude, z nord, dessiné avec z en miroir). Le glb
+  Tacview d'IL-2 (x vers l'est, y altitude, z vers le nord, dessiné avec z en miroir). Le glb
   stocke (est, altitude, -nord). Convertissez avec `--origin <lat> <lon>` défini sur le `geo` d'un
   enregistrement (son point de référence de session) : l'enregistrement se pose sur le niveau sans étape de placement ;
   sans cela, le centre de la carte sert d'origine, et le `geo` du JSON indique laquelle.
-- `game` : les mètres propres au jeu, comme dans les fichiers de mission : x nord depuis le bord sud, y la hauteur du jeu,
-  z est depuis le bord ouest (droitier tel quel, donc glb = (x, y, z)). Les cartes qui ne peuvent pas être posées sur la
+- `game` : les mètres propres au jeu, comme dans les fichiers de mission : x vers le nord depuis le bord sud, y la hauteur du jeu,
+  z vers l'est depuis le bord ouest (droitier tel quel, donc glb = (x, y, z)). Les cartes qui ne peuvent pas être posées sur la
   Terre sont écrites dans ce repère quoi qu'on demande, avec une note.
 
 Le niveau est un binaire glTF avec des parties nommées, comme tout niveau 3DHeat ; la page

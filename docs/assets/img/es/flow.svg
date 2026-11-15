@@ -23,7 +23,7 @@
 <path d="M430,252 C430,267.0 642,267.0 642,281" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
 <rect x="16" y="400" width="828" height="82" rx="8" fill="#eef4ff" stroke="#8c95a3"/>
 <text x="28" y="427" font-size="15" fill="#1f2328" font-weight="600">3. El visor 3DHeat</text>
-<text x="28" y="447" font-size="14" fill="#3d4450">Panel Nivel; un vuelo de Tacview con</text>
+<text x="28" y="447" font-size="14" fill="#3d4450">Fondo / nivel; un vuelo de Tacview con</text>
 <text x="28" y="467" font-size="14" fill="#3d4450">el mismo origen cae sobre él</text>
 <path d="M218,368 C218,383.0 430,383.0 430,397" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>
 <path d="M642,368 C642,383.0 430,383.0 430,397" fill="none" stroke="#5b6270" stroke-width="1.6" marker-end="url(#a)"/>

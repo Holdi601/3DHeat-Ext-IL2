@@ -14,7 +14,7 @@ escribe en `<map>.glb.part` y se renombra cuando termina.
 
 | Parte | Qué es |
 |---|---|
-| `ground:<map>` | el mapa de altura del terreno como cuadrícula, con como máximo `--max-grid` muestras por lado (por defecto 1024: unos 2 millones de triángulos) |
+| `ground:<map>` | el mapa de altura del terreno como cuadrícula, con un máximo de `--max-grid` muestras por lado (por defecto 1024: unos 2 millones de triángulos) |
 | `water:<map>` | ríos, lagos y mar: cuadriláteros planos a la altura del agua, uno por celda de la cuadrícula con suficientes muestras del mapa de altura bajo el agua (un tercio con la máscara de agua del mapa, la mitad sin ella) |
 | `ground:<map> towns` | las huellas de las zonas urbanas de pueblos y aldeas, colocadas 1,5 m sobre el terreno |
 
@@ -36,7 +36,7 @@ Dos marcos, `--frame`:
   sesión) y la grabación cae sobre el nivel sin paso de colocación; sin esto, el centro del mapa es el
   origen, y el `geo` del JSON dice cuál es.
 - `game`: los metros propios del juego, tal como los tienen los archivos de misión: x norte desde el
-  borde sur, y la altura del juego, z este desde el borde oeste (dextrógiro tal cual, así que glb =
+  borde sur, y la altura del juego, z este desde el borde oeste (de mano derecha tal cual, así que glb =
   (x, y, z)). Los mapas que no se pueden colocar sobre la tierra se escriben en este marco aunque se pida
   otra cosa, con una nota.
 

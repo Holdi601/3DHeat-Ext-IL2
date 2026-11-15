@@ -45,7 +45,7 @@ Lancez ces commandes dans le dossier que vous avez cloné ou décompressé :
 python -m pip install -e .                         # installe la commande heat3d-il2-level
 python -m pip install -e .[fast]                            # avec numba : décodage 20 à 50 fois plus rapide
 heat3d-il2-level list                              # chaque carte trouvée, avec sa boîte latitude/longitude
-heat3d-il2-level extract <carte> -o levels         # une carte (noms tels que `list` les affiche, jokers permis)
+heat3d-il2-level extract <carte> -o levels         # une carte (noms tels que `list` les affiche, caractères génériques permis)
 heat3d-il2-level extract --all -o levels           # toutes les cartes
 ```
 
@@ -76,8 +76,8 @@ ordinateur** ; ne les publiez jamais ([Conditions](terms.md)).
   documentation sur [holdi601.github.io/3DHeat](https://holdi601.github.io/3DHeat/).
 - Télémétrie pour ces niveaux : le [3DHeat Watcher](https://holdi601.github.io/3DHeat-Watcher/)
   convertit les enregistrements Tacview d'IL-2 ; les formats de fichiers de la visionneuse, dont son
-  conteneur d'un fichier par partie, sont décrits dans
-  [Un fichier par partie (.3dheat)](https://holdi601.github.io/3DHeat/container.html).
+  conteneur d'un fichier par match, sont décrits dans
+  [Un fichier par match (.3dheat)](https://holdi601.github.io/3DHeat/container.html).
 
 ## Les outils 3DHeat {#the-3dheat-tools}
 

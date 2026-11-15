@@ -84,7 +84,7 @@ Siguiente: [Buscar mapas: list](list.md), y después [Construir niveles: extract
 | `'heat3d-il2-level' is not recognized` | Repite el paso 4 en la carpeta de la herramienta, o escribe `python -m heat3d_ext_il2` en lugar de `heat3d-il2-level`: hace lo mismo. |
 | `No module named heat3d_ext_il2` | No estás en la carpeta de la herramienta, o el paso 4 falló: entra con `cd` y repite el paso 4. |
 | `No module named pip` | Ejecuta `python -m ensurepip` y después el paso 4. |
-| cualquier otra cosa | Lee la última línea del mensaje y abre un issue en GitHub con ella. |
+| cualquier otra cosa | Lee la última línea del mensaje y abre una incidencia (issue) en GitHub con ella. |
 
 Cada comando termina también con un **código de salida**: 0 significa que funcionó. Para verlo,
 escribe `echo $LASTEXITCODE` en PowerShell o `echo $?` en macOS y Linux.

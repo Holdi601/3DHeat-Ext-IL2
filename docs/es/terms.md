@@ -12,7 +12,7 @@ search_exclude: true
 ## Velocidad {#speed}
 
 La decodificación es Python puro salvo que esté instalado numba (`python -m pip install -e .[fast]`):
-un mapa de tamaño medio tarda unos 15 s sin él y unos dos segundos con él; el mapa más grande, varios
+un mapa de tamaño medio tarda unos 15 s sin él y alrededor de un segundo con él; el mapa más grande, varios
 cientos de millones de muestras, unos 7 s con él (la primera ejecución también compila). La memoria se
 mantiene en una fila de sectores más la cuadrícula de salida.
 
@@ -23,7 +23,7 @@ python -m pytest -q
 ```
 
 `tests/synth.py` construye en código archivos, mapas de altura (un codificador del códec de arriba),
-archivos `height.hini` y archivos sin tabla de ficheros.
+archivos `height.hini` y archivos sin tabla de archivos.
 
 ## Condiciones {#the-terms}
 

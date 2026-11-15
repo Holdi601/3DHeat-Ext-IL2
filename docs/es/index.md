@@ -14,7 +14,7 @@ permalink: /es/
 desde **tu propia instalación**, en modelos 3D (niveles) sobre los que puedes volar en el visor
 [3DHeat](https://github.com/Holdi601/3DHeat) ([documentación](https://holdi601.github.io/3DHeat/)):
 las colinas, ríos, lagos, el mar y los pueblos, colocados donde están sobre la tierra. Un segundo juego
-de IL-2 cuyos archivos ocultan su tabla de ficheros se lee hasta donde lo permiten
+de IL-2 cuyos archivos ocultan su tabla de archivos se lee hasta donde lo permiten
 ([detalles](archives-without-table.md)).
 
 **¿Para qué lo usaría?** Para ver tus vuelos de IL-2 sobre el propio mapa del juego.
@@ -64,7 +64,7 @@ nunca los publiques ([Condiciones](terms.md)).
 | [Construir niveles: extract](extract.md) | cada opción, paso a paso, ejemplos |
 | [Los archivos del nivel y los marcos](output.md) | las partes `.glb`, el `.json`, los marcos `enu` y `game` |
 | [Cómo se leen los archivos](reading.md) | archivos, el códec del mapa de altura, agua, pueblos, ajustes por puntos de referencia |
-| [Archivos sin tabla de ficheros](archives-without-table.md) | el segundo juego, leído hasta donde permiten sus archivos |
+| [Archivos sin tabla de archivos](archives-without-table.md) | el segundo juego, leído hasta donde permiten sus archivos |
 | [Velocidad, pruebas y condiciones](terms.md) | numba, las pruebas, las condiciones del juego, la licencia |
 | [Referencia de comandos](../cli-reference.md) | cada opción, generada desde el código |
 | [Mantenimiento de estas páginas](maintaining.md) | la lista de comprobación de cada versión |
@@ -82,7 +82,7 @@ nunca los publiques ([Condiciones](terms.md)).
 
 | Herramienta | Qué hace | Código | Documentación |
 |---|---|---|---|
-| Visor 3DHeat | muestra los datos: mapas de calor, análisis de carreras, revisión de partidas | [3DHeat](https://github.com/Holdi601/3DHeat) | [docs](https://holdi601.github.io/3DHeat/) |
+| Visor 3DHeat | muestra los datos: mapas de calor, análisis de carrera, revisión de partidas | [3DHeat](https://github.com/Holdi601/3DHeat) | [docs](https://holdi601.github.io/3DHeat/) |
 | GameFiles | niveles y circuitos a partir de los archivos propios de un juego | [3DHeat-GameFiles](https://github.com/Holdi601/3DHeat-GameFiles) | [docs](https://holdi601.github.io/3DHeat-GameFiles/) |
 | GameCapture | telemetría de vueltas, y niveles reconstruidos a partir de vídeo de juego | [3DHeat-GameCapture](https://github.com/Holdi601/3DHeat-GameCapture) | [docs](https://holdi601.github.io/3DHeat-GameCapture/) |
 | Unreal Exporter | un plugin del editor de Unreal: un nivel como un solo `.glb` | [3DHeat-UnrealExporter](https://github.com/Holdi601/3DHeat-UnrealExporter) | [docs](https://holdi601.github.io/3DHeat-UnrealExporter/) |

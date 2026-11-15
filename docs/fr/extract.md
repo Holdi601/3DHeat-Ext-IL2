@@ -10,7 +10,7 @@ search_exclude: true
 # Construire les niveaux : `extract` {#building-levels-extract}
 
 ```text
-heat3d-il2-level extract (<carte> ... | --all) -o <dossier> [--game DOSSIER ...]
+heat3d-il2-level extract (<carte> ... | --all) -o <dossier> [--game FOLDER ...]
                  [--max-grid N] [--frame enu|game] [--origin LAT LON]
                  [--no-water] [--no-towns] [--skip-existing]
 ```
@@ -20,7 +20,7 @@ heat3d-il2-level extract (<carte> ... | --all) -o <dossier> [--game DOSSIER ...]
 Vous débutez avec la ligne de commande ? Lisez d'abord [Avant de commencer](before-you-start.md).
 
 1. Trouvez le nom de la carte avec [`list`](list.md).
-2. Lancez `heat3d-il2-level extract <carte> -o levels`. Les noms peuvent utiliser des jokers,
+2. Lancez `heat3d-il2-level extract <carte> -o levels`. Les noms peuvent utiliser des caractères génériques,
    entre guillemets (`"<famille>_*"`) ; `--all` prend chaque carte.
 3. Pour poser un enregistrement sur le niveau sans étape de placement, donnez son origine :
    `--origin <lat> <lon>` avec le `geo` de l'enregistrement (son point de référence de session). Sans cela, le centre
@@ -43,12 +43,12 @@ Une seconde exécution sur des cartes déjà écrites :
 
 | Option | Par défaut | Effet |
 |---|---|---|
-| `cartes` | - | noms de cartes tels que `list` les affiche ; jokers permis |
+| `cartes` | - | noms de cartes tels que `list` les affiche ; caractères génériques permis |
 | `--all` | désactivé | chaque carte ; les saisons qui partagent une carte de hauteurs et une carte d'eau ne sont écrites qu'une fois |
 | `-o`, `--out` | obligatoire | le dossier de sortie ; chaque carte va dans `<out>/<carte>/` |
-| `--game DOSSIER` | trouvé | un dossier IL-2 (répétable) |
+| `--game FOLDER` | trouvé | un dossier IL-2 (répétable) |
 | `--max-grid N` | `1024` | nombre maximal d'échantillons de la carte de hauteurs par côté (1024 : environ 2 millions de triangles) ; la carte est échantillonnée tous les *k* échantillons pour tenir |
-| `--frame` `enu` ou `game` | `enu` | `enu` : mètres vers l'est, altitude, et nord, par rapport à `--origin`, comme les tableaux Tacview du Watcher ; `game` : les mètres propres au jeu (x nord, y haut, z est). Une carte qui ne peut pas être posée sur la Terre est écrite en `game` quoi qu'on demande |
+| `--frame` `enu` ou `game` | `enu` | `enu` : mètres vers l'est, altitude, et vers le nord, par rapport à `--origin`, comme les tableaux Tacview du Watcher ; `game` : les mètres propres au jeu (x nord, y haut, z est). Une carte qui ne peut pas être posée sur la Terre est écrite en `game` quoi qu'on demande |
 | `--origin LAT LON` | le centre de la carte | l'origine du repère `enu` (le `geo` d'un enregistrement) |
 | `--no-water` | désactivé | omettre l'eau |
 | `--no-towns` | désactivé | omettre les emprises des villes |

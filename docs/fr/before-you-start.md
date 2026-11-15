@@ -60,7 +60,7 @@ Vous devez voir quelque chose comme :
 
 ```text
 <carte>	Great Battles	height /graphics/<carte>/height.dat	<lat>..<lat> N, <lon>..<lon> E
-<n> cartes dans C:\Games\IL-2 Sturmovik Great Battles
+<n> maps in C:\Games\IL-2 Sturmovik Great Battles
 ```
 
 Suite : [Trouver les cartes : list](list.md), puis [Construire les niveaux : extract](extract.md).

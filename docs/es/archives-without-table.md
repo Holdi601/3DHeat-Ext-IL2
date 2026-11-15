@@ -1,5 +1,5 @@
 ---
-title: Archivos sin tabla de ficheros
+title: Archivos sin tabla de archivos
 nav_order: 6
 lang: es
 source: archives-without-table.md
@@ -7,10 +7,10 @@ source_hash: "58c4c46721e5"
 nav_exclude: true
 search_exclude: true
 ---
-# Un juego cuyos archivos no tienen tabla de ficheros {#a-game-whose-archives-have-no-file-table}
+# Un juego cuyos archivos no tienen tabla de archivos {#a-game-whose-archives-have-no-file-table}
 
-IL-2 Series: Korea no conserva en sus archivos una tabla de ficheros legible (los nombres están
-ocultos en un bloque al final de cada archivo), y sus ficheros de ajustes no se guardan legibles.
+IL-2 Series: Korea no conserva en sus archivos una tabla de archivos legible (los nombres están
+ocultos en un bloque al final de cada archivo), y sus archivos de ajustes no se guardan legibles.
 `list` muestra su mapa con el juego `Korea`. Así que:
 
 - su mapa de altura y su mapa de agua se encuentran por su cabecera (la disposición de `height.dat`,
