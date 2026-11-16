@@ -28,12 +28,12 @@ Vous débutez avec la ligne de commande ? Lisez d'abord [Avant de commencer](bef
 
 ![list sur une installation synthétique](../assets/img/list.svg)
 
-L'image est une exécution sur une installation construite par les écrivains de tests
+L'image est une exécution sur une installation fabriquée par les tests
 (`tests/synth.py`), et non sur le jeu.
 
 ## Où les installations sont trouvées {#where-the-installs-are-found}
 
-Par Steam ; sinon `--game <dossier>` (répétable, une par installation) ou la variable d'environnement
+Via Steam ; sinon `--game <dossier>` (répétable, une par installation) ou la variable d'environnement
 `HEAT3D_IL2_GAME`. Une installation est un dossier dont le sous-dossier `data`
 contient des archives `Maps*.gtp`.
 

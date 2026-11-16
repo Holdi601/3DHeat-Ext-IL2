@@ -9,8 +9,8 @@ search_exclude: true
 ---
 # Un gioco i cui archivi non hanno una tabella dei file {#a-game-whose-archives-have-no-file-table}
 
-IL-2 Series: Korea non conserva negli archivi una tabella dei file leggibile (i nomi sono cifrati in un
-blocco alla fine di ogni archivio), e i suoi file di impostazione non sono memorizzati in forma
+IL-2 Series: Korea non conserva negli archivi una tabella dei file leggibile (i nomi sono codificati con un
+hash in un blocco alla fine di ogni archivio), e i suoi file di impostazione non sono memorizzati in forma
 leggibile. `list` mostra la sua mappa con il gioco `Korea`. Quindi:
 
 - la sua mappa delle altezze e la sua mappa dell'acqua vengono trovate dalla loro intestazione (il

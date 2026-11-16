@@ -17,7 +17,7 @@ Cela prend une dizaine de minutes, une seule fois.
 Cet outil demande **Python 3.10 ou plus récent**.
 
 - **Windows :** téléchargez Python sur [python.org/downloads](https://www.python.org/downloads/)
-  et lancez l'installeur. Sur son premier écran, cochez **Add python.exe to PATH**,
+  et lancez l'installateur. Sur son premier écran, cochez **Add python.exe to PATH**,
   puis cliquez sur **Install Now**.
 - **macOS et Linux :** Python 3 est souvent déjà là. Là où ces pages écrivent
   `python`, tapez `python3`.

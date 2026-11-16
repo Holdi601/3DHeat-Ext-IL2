@@ -9,7 +9,7 @@ search_exclude: true
 ---
 # Les fichiers de niveau et les repères {#the-level-files-and-frames}
 
-`<out>/<carte>/<carte>.glb` (le niveau : un modèle 3D du sol) et `<carte>.json`
+`<dossier>/<carte>/<carte>.glb` (le niveau : un modèle 3D du sol) et `<carte>.json`
 à côté. Le glb est écrit dans `<carte>.glb.part`, puis renommé une fois terminé.
 
 | Partie | Ce que c'est |
@@ -36,8 +36,8 @@ Deux repères, `--frame` :
   enregistrement (son point de référence de session) : l'enregistrement se pose sur le niveau sans étape de placement ;
   sans cela, le centre de la carte sert d'origine, et le `geo` du JSON indique laquelle.
 - `game` : les mètres propres au jeu, comme dans les fichiers de mission : x vers le nord depuis le bord sud, y la hauteur du jeu,
-  z vers l'est depuis le bord ouest (droitier tel quel, donc glb = (x, y, z)). Les cartes qui ne peuvent pas être posées sur la
+  z vers l'est depuis le bord ouest (repère direct tel quel, donc glb = (x, y, z)). Les cartes qui ne peuvent pas être posées sur la
   Terre sont écrites dans ce repère quoi qu'on demande, avec une note.
 
 Le niveau est un binaire glTF avec des parties nommées, comme tout niveau 3DHeat ; la page
-[Niveaux](https://holdi601.github.io/3DHeat/levels.html) de la visionneuse explique comment il les charge.
+[Niveaux](https://holdi601.github.io/3DHeat/levels.html) du visualiseur explique comment il les charge.

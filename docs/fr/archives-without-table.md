@@ -11,7 +11,7 @@ search_exclude: true
 
 IL-2 Series: Korea ne conserve aucune table des fichiers lisible dans ses archives (les noms sont
 hachés dans un bloc à la fin de chaque archive), et ses fichiers de réglages ne sont pas stockés
-lisibles. `list` affiche sa carte avec le jeu `Korea`. Donc :
+sous une forme lisible. `list` affiche sa carte avec le jeu `Korea`. Donc :
 
 - sa carte de hauteurs et sa carte d'eau sont trouvées par leur en-tête (la disposition de
   `height.dat`, des secteurs de 128 échantillons ; une très grande grille à pas fin) ;

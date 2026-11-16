@@ -27,7 +27,7 @@ Vous débutez avec la ligne de commande ? Lisez d'abord [Avant de commencer](bef
    de la carte sert d'origine, et le `geo` du `.json` indique laquelle.
 4. La commande affiche une ligne par carte au fur et à mesure de son décodage, puis
    `ok <glb> <triangles> (repère <frame>)` ou `failed <carte>: <raison>`.
-5. Chargez `<dossier>/<carte>/<carte>.glb` dans le panneau Arrière-plan / niveau de la visionneuse.
+5. Chargez `<dossier>/<carte>/<carte>.glb` dans le panneau Arrière-plan / niveau du visualiseur.
 
 ![extract sur une installation synthétique](../assets/img/extract.svg)
 
@@ -45,7 +45,7 @@ Une seconde exécution sur des cartes déjà écrites :
 |---|---|---|
 | `cartes` | - | noms de cartes tels que `list` les affiche ; caractères génériques permis |
 | `--all` | désactivé | chaque carte ; les saisons qui partagent une carte de hauteurs et une carte d'eau ne sont écrites qu'une fois |
-| `-o`, `--out` | obligatoire | le dossier de sortie ; chaque carte va dans `<out>/<carte>/` |
+| `-o`, `--out` | obligatoire | le dossier de sortie ; chaque carte va dans `<dossier>/<carte>/` |
 | `--game FOLDER` | trouvé | un dossier IL-2 (répétable) |
 | `--max-grid N` | `1024` | nombre maximal d'échantillons de la carte de hauteurs par côté (1024 : environ 2 millions de triangles) ; la carte est échantillonnée tous les *k* échantillons pour tenir |
 | `--frame` `enu` ou `game` | `enu` | `enu` : mètres vers l'est, altitude, et vers le nord, par rapport à `--origin`, comme les tableaux Tacview du Watcher ; `game` : les mètres propres au jeu (x nord, y haut, z est). Une carte qui ne peut pas être posée sur la Terre est écrite en `game` quoi qu'on demande |

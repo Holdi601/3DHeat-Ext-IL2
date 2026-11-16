@@ -3,7 +3,7 @@ title: "Velocità, test, condizioni"
 nav_order: 7
 lang: "it"
 source: terms.md
-source_hash: "5f420f7d2d05"
+source_hash: "09281b2a1fe2"
 nav_exclude: true
 search_exclude: true
 ---
@@ -37,5 +37,5 @@ dati di gioco, e i test costruiscono ogni file che leggono.
 ## Licenza {#licence}
 
 MIT - vedi [`LICENSE`](https://github.com/Holdi601/3DHeat-Ext-IL2/blob/main/LICENSE). Usa numpy
-(BSD-3-Clause) e, facoltativamente, numba (BSD-2-Clause). `heat3d_update` è l'aggiornatore condiviso
+(BSD-3-Clause) e, facoltativamente, numba (BSD-2-Clause). `heat3d_ext_il2.update` è l'aggiornatore condiviso
 degli strumenti 3DHeat.

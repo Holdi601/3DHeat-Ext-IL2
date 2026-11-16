@@ -29,7 +29,7 @@ Non hai mai usato la riga di comando? Leggi prima [Prima di iniziare](before-you
 
 ![list su un'installazione sintetica](../assets/img/list.svg)
 
-L'immagine è un'esecuzione su un'installazione costruita con gli scrittori dei test
+L'immagine è un'esecuzione su un'installazione creata dai test
 (`tests/synth.py`), non sul gioco.
 
 ## Dove vengono trovate le installazioni {#where-the-installs-are-found}

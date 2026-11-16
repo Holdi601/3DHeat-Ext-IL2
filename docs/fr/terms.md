@@ -3,7 +3,7 @@ title: "Vitesse, tests, conditions"
 nav_order: 7
 lang: "fr"
 source: terms.md
-source_hash: "5f420f7d2d05"
+source_hash: "09281b2a1fe2"
 nav_exclude: true
 search_exclude: true
 ---
@@ -38,4 +38,4 @@ tests construisent chaque fichier qu'ils lisent.
 ## Licence {#licence}
 
 MIT - voir [`LICENSE`](https://github.com/Holdi601/3DHeat-Ext-IL2/blob/main/LICENSE). Utilise numpy (BSD-3-Clause) et, en option,
-numba (BSD-2-Clause). `heat3d_update` est l'outil de mise à jour commun des outils 3DHeat.
+numba (BSD-2-Clause). `heat3d_ext_il2.update` est l'outil de mise à jour commun des outils 3DHeat.

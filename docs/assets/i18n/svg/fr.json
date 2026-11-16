@@ -1,11 +1,11 @@
 {
  "1. Your IL-2 install": "1. Votre installation IL-2",
  "2. heat3d-il2-level extract": "2. heat3d-il2-level extract",
- "3. The 3DHeat viewer": "3. La visionneuse 3DHeat",
+ "3. The 3DHeat viewer": "3. Le visualiseur 3DHeat",
  "<map>.glb": "<carte>.glb",
  "<map>.json": "<carte>.json",
  "A synthetic map from above": "Une carte synthétique vue d'en haut",
- "Background / level; a Tacview flight with": "Panneau Niveau ; un vol Tacview avec",
+ "Background / level; a Tacview flight with": "Panneau Arrière-plan / niveau ; un vol Tacview avec",
  "From an IL-2 install to a 3DHeat level": "D'une installation IL-2 à un niveau 3DHeat",
  "data/Maps*.gtp archives:": "archives data/Maps*.gtp :",
  "decodes the heightmap, finds the corners": "décode la carte de hauteurs, trouve les coins",

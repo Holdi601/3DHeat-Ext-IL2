@@ -28,11 +28,11 @@ search_exclude: true
 Little-endian :
 
 ```text
-u32 largeur, u32 hauteur, u32 secteursX, u32 secteursY, u32 tailleSecteur, f32 tailleCase
-u32 décalage[secteursX * secteursY]        depuis le début du fichier, ligne par ligne, la ligne du haut d'abord
-secteur : u16 nombre (octets qui suivent), u16 mode ((log2 tailleSecteur) << 4 | LW, LW = 4),
-          puis un flux de bits lu MSB d'abord :
-  PRE   2 * (log2(tailleSecteur) - 5) bits, toujours 0 jusqu'ici
+u32 width, u32 height, u32 sectorsX, u32 sectorsY, u32 sectorSize, f32 cellSize
+u32 offset[sectorsX * sectorsY]            depuis le début du fichier, ligne par ligne, la ligne du haut d'abord
+sector: u16 count (octets qui suivent), u16 mode ((log2 sectorSize) << 4 | LW, LW = 4),
+        puis un flux de bits lu MSB d'abord :
+  PRE   2 * (log2(sectorSize) - 5) bits, toujours 0 jusqu'ici
   LIT   le premier échantillon : signe (1), n (LW bits), amplitude (n + 1 bits)
   puis jusqu'à ce que le secteur soit plein :
     0 LIT       suivant = précédent + LIT
@@ -48,6 +48,6 @@ codec vaut pour la carte d'eau et pour la carte de hauteurs de détail lointain.
 
 Lorsque les coins d'une carte ne peuvent pas servir, `landmarks.py` ajuste une transformation affine
 des mètres du jeu vers la Terre par moindres carrés : positions dans le jeu issues de vos propres
-fichiers (blocs `Airfield` des missions, bases de positions de la carrière), positions réelles issues de
+fichiers (blocs `Airfield` des missions, bases de positions du mode carrière), positions réelles issues de
 tableaux des coordonnées publiées des lieux, dans le code. Le `georeference` du JSON contient la
 matrice, l'origine, chaque repère avec son écart, et l'écart quadratique moyen.

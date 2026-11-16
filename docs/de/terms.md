@@ -3,7 +3,7 @@ title: "Geschwindigkeit, Tests, Bedingungen"
 nav_order: 7
 lang: "de"
 source: terms.md
-source_hash: "5f420f7d2d05"
+source_hash: "09281b2a1fe2"
 nav_exclude: true
 search_exclude: true
 ---
@@ -37,5 +37,5 @@ bauen jede Datei, die sie lesen.
 ## Lizenz {#licence}
 
 MIT – siehe [`LICENSE`](https://github.com/Holdi601/3DHeat-Ext-IL2/blob/main/LICENSE). Verwendet numpy
-(BSD-3-Clause) und optional numba (BSD-2-Clause). `heat3d_update` ist der gemeinsame Updater der
+(BSD-3-Clause) und optional numba (BSD-2-Clause). `heat3d_ext_il2.update` ist der gemeinsame Updater der
 3DHeat-Werkzeuge.

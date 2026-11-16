@@ -3,7 +3,7 @@ title: "Velocidad, pruebas y condiciones"
 nav_order: 7
 lang: "es"
 source: terms.md
-source_hash: "5f420f7d2d05"
+source_hash: "09281b2a1fe2"
 nav_exclude: true
 search_exclude: true
 ---
@@ -37,5 +37,5 @@ todos los archivos que leen.
 ## Licencia {#licence}
 
 MIT - ver [`LICENSE`](https://github.com/Holdi601/3DHeat-Ext-IL2/blob/main/LICENSE). Usa numpy
-(BSD-3-Clause) y, opcionalmente, numba (BSD-2-Clause). `heat3d_update` es el actualizador compartido de
+(BSD-3-Clause) y, opcionalmente, numba (BSD-2-Clause). `heat3d_ext_il2.update` es el actualizador compartido de
 las herramientas de 3DHeat.
