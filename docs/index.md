@@ -52,6 +52,11 @@ Then load `levels/<map>/<map>.glb` in the viewer's Background / level panel
 The levels it writes are built from the game's data: they stay **on your
 machine**; never publish them ([Terms](terms.md)).
 
+Each game reader is its own small project with its own licence file, releases
+and issue tracker, so it can be installed, updated, maintained - or withdrawn
+on a rights holder's request - on its own, without affecting the viewer or the
+other tools.
+
 ## Pages
 
 | Page | What it covers |
@@ -62,7 +67,7 @@ machine**; never publish them ([Terms](terms.md)).
 | [The level files and frames](output.md) | the `.glb` parts, the `.json`, the `enu` and `game` frames |
 | [How the files are read](reading.md) | archives, the heightmap codec, water, towns, landmark fits |
 | [Archives without a file table](archives-without-table.md) | the second game, read as far as its archives allow |
-| [Speed, tests, terms](terms.md) | numba, the tests, the game's terms, licence |
+| [Speed, tests, terms](terms.md) | numba, the tests, what is read and what is not shipped, the licence |
 | [Command reference](cli-reference.md) | every option, generated from the code |
 | [Maintaining these docs](maintaining.md) | the release checklist |
 

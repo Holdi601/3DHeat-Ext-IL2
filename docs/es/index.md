@@ -3,7 +3,7 @@ title: "Inicio"
 nav_order: 1
 lang: "es"
 source: index.md
-source_hash: "e495b9b1064a"
+source_hash: "37cc4e8f571d"
 nav_exclude: true
 search_exclude: true
 permalink: /es/
@@ -55,6 +55,8 @@ Después carga `levels/<map>/<map>.glb` en el panel Fondo / nivel del visor
 Los niveles que escribe se construyen con los datos del juego: se quedan **en tu equipo**;
 nunca los publiques ([Condiciones](terms.md)).
 
+Cada lector de juego es un pequeño proyecto propio, con su propio archivo de licencia, sus versiones y su gestor de incidencias, de modo que puede instalarse, actualizarse, mantenerse - o retirarse a petición de un titular de derechos - por separado, sin afectar al visor ni a las demás herramientas.
+
 ## Páginas {#pages}
 
 | Página | Qué cubre |
@@ -65,7 +67,7 @@ nunca los publiques ([Condiciones](terms.md)).
 | [Los archivos del nivel y los marcos](output.md) | las partes `.glb`, el `.json`, los marcos `enu` y `game` |
 | [Cómo se leen los archivos](reading.md) | archivos, el códec del mapa de altura, agua, pueblos, ajustes por puntos de referencia |
 | [Archivos sin tabla de archivos](archives-without-table.md) | el segundo juego, leído hasta donde permiten sus archivos |
-| [Velocidad, pruebas y condiciones](terms.md) | numba, las pruebas, las condiciones del juego, la licencia |
+| [Velocidad, pruebas y condiciones](terms.md) | numba, las pruebas, qué se lee y qué no se incluye, la licencia |
 | [Referencia de comandos](../cli-reference.md) | cada opción, generada desde el código |
 | [Mantenimiento de estas páginas](maintaining.md) | la lista de comprobación de cada versión |
 

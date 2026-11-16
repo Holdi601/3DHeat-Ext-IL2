@@ -3,7 +3,7 @@ title: Home
 nav_order: 1
 lang: "it"
 source: index.md
-source_hash: "e495b9b1064a"
+source_hash: "37cc4e8f571d"
 nav_exclude: true
 search_exclude: true
 permalink: /it/
@@ -55,6 +55,8 @@ Poi carica `levels/<mappa>/<mappa>.glb` nel pannello Sfondo / livello del visual
 I livelli che scrive sono costruiti con i dati del gioco: restano **sul tuo computer**; non
 pubblicarli mai ([Condizioni](terms.md)).
 
+Ogni lettore di gioco è un piccolo progetto a sé, con il proprio file di licenza, le proprie release e il proprio tracker delle segnalazioni: può quindi essere installato, aggiornato, mantenuto - o ritirato su richiesta di un titolare dei diritti - da solo, senza toccare il visualizzatore o gli altri strumenti.
+
 ## Pagine {#pages}
 
 | Pagina | Cosa contiene |
@@ -65,7 +67,7 @@ pubblicarli mai ([Condizioni](terms.md)).
 | [I file del livello e i sistemi di riferimento](output.md) | le parti `.glb`, il `.json`, i sistemi `enu` e `game` |
 | [Come vengono letti i file](reading.md) | archivi, codec della mappa delle altezze, acqua, città, adattamenti sui punti di riferimento |
 | [Archivi senza tabella dei file](archives-without-table.md) | il secondo gioco, letto nei limiti dei suoi archivi |
-| [Velocità, test, condizioni](terms.md) | numba, i test, le condizioni del gioco, la licenza |
+| [Velocità, test, condizioni](terms.md) | numba, i test, che cosa viene letto e che cosa non viene distribuito, la licenza |
 | [Riferimento dei comandi](../cli-reference.md) | ogni opzione, generata dal codice |
 | [Manutenzione di questa documentazione](maintaining.md) | la lista di controllo per ogni rilascio |
 

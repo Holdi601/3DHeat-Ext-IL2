@@ -56,6 +56,8 @@ Ansin lódáil `levels/<map>/<map>.glb` i bpainéal Cúlra / leibhéal an amharc
 Tógtar na leibhéil a scríobhann sé ó shonraí an chluiche: fanann siad **ar do
 mheaisín**; ná foilsigh iad choíche ([Téarmaí](terms.md)).
 
+Is tionscadal beag ann féin é gach léitheoir cluiche, lena chomhad ceadúnais féin, a eisiúintí féin agus a rianaitheoir saincheisteanna féin, ionas gur féidir é a shuiteáil, a nuashonrú, a chothabháil - nó a tharraingt siar ar iarratas ó shealbhóir ceart - leis féin, gan tionchar ar an amharcán ná ar na huirlisí eile.
+
 ## Leathanaigh {#pages}
 
 | Leathanach | Cad a chlúdaíonn sé |
@@ -66,7 +68,7 @@ mheaisín**; ná foilsigh iad choíche ([Téarmaí](terms.md)).
 | [Comhaid agus fráma an leibhéil](output.md) | codanna an `.glb`, an `.json`, na frámaí `enu` agus `game` |
 | [Conas a léitear na comhaid](reading.md) | cartlanna, cód na léarscáile airde, uisce, bailte, feistiú tírdhreacha |
 | [Cartlanna gan tábla comhad](archives-without-table.md) | an dara cluiche, léite chomh fada agus a ligeann a chartlanna |
-| [Luas, tástálacha, téarmaí](terms.md) | numba, na tástálacha, téarmaí an chluiche, ceadúnas |
+| [Luas, tástálacha, téarmaí](terms.md) | numba, na tástálacha, cad a léitear agus cad nach seoltar, an ceadúnas |
 | [Tagairt orduithe](../cli-reference.md) | gach rogha, ginte ón gcód |
 | [Na doiciméid seo a chothabháil](maintaining.md) | an seicliosta eisiúna |
 

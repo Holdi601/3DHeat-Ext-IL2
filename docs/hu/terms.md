@@ -27,12 +27,13 @@ kódoló kódolóját), a `height.hini` fájlokat, és a fájltáblázat nélkü
 
 ## A feltételek {#the-terms}
 
-Az IL-2 Sturmovik: Great Battles és az IL-2 Series (1C Game Studios / 777 Studios) licencszerződését
-**nem találtuk meg**: nincs a telepítésben (amelynek `data/Licenses.txt` fájlja csak harmadik féltől
-származó licenceket tartalmaz), nincs a kiadó oldalán, és a Steam EULA oldala nem töltődött be. Ellenőrizd
-te, mielőtt erre támaszkodnál. Ez az eszköz csak olvassa az archívumokat, és sosem módosítja őket. Az általad
-írt pályák a te gépeden maradnak: **soha ne tedd közzé őket**. Ez a csomag nem szállít játékadatot, a tesztek
-pedig minden olvasott fájlt maguk építenek.
+Ez az eszköz a saját IL-2 Sturmovik: Great Battles-telepítésed archívumait olvassa a számítógépeden, és soha nem módosítja őket.
+
+A játékból semmi nem kerül kiadásra vagy továbbterjesztésre: sem játékfájl, sem játékkód, sem DLL; a tesztek maguk állítják elő minden fájlt, amelyet olvasnak. Az általa írt pályák a gépeden maradnak.
+
+A(z) 3DHeat IL-2 nem áll kapcsolatban a(z) 1C Game Studios / 777 Studios céggel, és az nem is támogatja. A(z) IL-2 Sturmovik és a kapcsolódó nevek és védjegyek a tulajdonosaikat illetik.
+
+Jogtulajdonosok: nyissatok bejelentést itt: [github.com/Holdi601/3DHeat-Ext-IL2/issues](https://github.com/Holdi601/3DHeat-Ext-IL2/issues) - gyorsan válaszolunk, és kérésre bármit eltávolítunk.
 
 ## Licenc {#licence}
 

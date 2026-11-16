@@ -43,6 +43,8 @@ heat3d-il2-level extract --all -o levels           # every map
 
 它所寫出的關卡是由遊戲的資料建成的，只能**留在你的電腦上**；請勿發布（[條款](terms.md)）。
 
+每個遊戲讀取器都是一個獨立的小專案，有自己的授權檔案、發行版本和問題追蹤，因此可以單獨安裝、更新、維護——或應權利人的要求撤下——而不影響檢視器或其他工具。
+
 ## 頁面 {#pages}
 
 | 頁面 | 內容 |
@@ -53,7 +55,7 @@ heat3d-il2-level extract --all -o levels           # every map
 | [關卡檔案與座標系](output.md) | `.glb` 的各部分、`.json`、`enu` 與 `game` 座標系 |
 | [檔案如何被讀取](reading.md) | 封存檔、高度圖編碼、水域、城鎮、地標擬合 |
 | [沒有檔案表的封存檔](archives-without-table.md) | 第二款遊戲，在其封存檔允許的範圍內讀取 |
-| [速度、測試與條款](terms.md) | numba、測試、遊戲條款、授權 |
+| [速度、測試與條款](terms.md) | numba、測試、讀取什麼以及不隨附什麼、授權 |
 | [指令參考](../cli-reference.md) | 每個選項，由程式碼產生 |
 | [維護這些文件](maintaining.md) | 發行檢查清單 |
 

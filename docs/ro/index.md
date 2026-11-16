@@ -53,6 +53,8 @@ Apoi încărcați `levels/<map>/<map>.glb` în panoul Fundal / nivel al vizualiz
 Nivelurile pe care le scrie sunt construite din datele jocului: ele rămân **pe calculatorul
 dumneavoastră**; nu le publicați niciodată ([Condiții](terms.md)).
 
+Fiecare cititor de joc este un mic proiect separat, cu propriul fișier de licență, propriile versiuni și propriul sistem de tichete, astfel încât poate fi instalat, actualizat, întreținut - sau retras la cererea unui deținător de drepturi - separat, fără să afecteze vizualizatorul sau celelalte instrumente.
+
 ## Pagini {#pages}
 
 | Pagina | Ce acoperă |
@@ -63,7 +65,7 @@ dumneavoastră**; nu le publicați niciodată ([Condiții](terms.md)).
 | [Fișierele nivelului și sistemele de coordonate](output.md) | părțile `.glb`, `.json`, sistemele `enu` și `game` |
 | [Cum se citesc fișierele](reading.md) | arhive, codecul hărții de înălțimi, apa, orașele, potrivirile după repere |
 | [Arhive fără tabel de fișiere](archives-without-table.md) | al doilea joc, citit cât permit arhivele sale |
-| [Viteză, teste, condiții](terms.md) | numba, testele, condițiile jocului, licența |
+| [Viteză, teste, condiții](terms.md) | numba, testele, ce se citește și ce nu se livrează, licența |
 | [Referința comenzilor](../cli-reference.md) | fiecare opțiune, generată din cod |
 | [Întreținerea acestor documente](maintaining.md) | lista de verificare pentru lansare |
 

@@ -3,7 +3,7 @@ title: "Accueil"
 nav_order: 1
 lang: "fr"
 source: index.md
-source_hash: "e495b9b1064a"
+source_hash: "37cc4e8f571d"
 nav_exclude: true
 search_exclude: true
 permalink: /fr/
@@ -56,6 +56,8 @@ Chargez ensuite `levels/<carte>/<carte>.glb` dans le panneau Arrière-plan / niv
 Les niveaux écrits sont construits à partir des données du jeu : ils restent **sur votre
 ordinateur** ; ne les publiez jamais ([Conditions](terms.md)).
 
+Chaque lecteur de jeu est un petit projet à part, avec son propre fichier de licence, ses propres versions et son propre suivi des tickets : il peut être installé, mis à jour, maintenu - ou retiré à la demande d'un ayant droit - séparément, sans toucher au visualiseur ni aux autres outils.
+
 ## Pages {#pages}
 
 | Page | Ce qu'elle explique |
@@ -66,7 +68,7 @@ ordinateur** ; ne les publiez jamais ([Conditions](terms.md)).
 | [Les fichiers de niveau et les repères](output.md) | les parties `.glb`, le `.json`, les repères `enu` et `game` |
 | [Comment les fichiers sont lus](reading.md) | archives, codec des cartes de hauteurs, eau, villes, ajustements par repères |
 | [Archives sans table des fichiers](archives-without-table.md) | le second jeu, lu dans la mesure où ses archives le permettent |
-| [Vitesse, tests, conditions](terms.md) | numba, les tests, les conditions du jeu, la licence |
+| [Vitesse, tests, conditions](terms.md) | numba, les tests, ce qui est lu et ce qui n'est pas livré, la licence |
 | [Référence des commandes](../cli-reference.md) | chaque option, générée depuis le code |
 | [Maintenir ces documents](maintaining.md) | la liste de contrôle des versions |
 

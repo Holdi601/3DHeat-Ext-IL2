@@ -51,6 +51,8 @@ Seejärel laadi `levels/<map>/<map>.glb` vaataja paneelis **Taust / tase**
 Tasemed, mida see kirjutab, on tehtud mängu andmetest, nii et need jäävad **sinu masinasse**;
 ära kunagi avalda neid ([Tingimused](terms.md)).
 
+Iga mängulugeja on omaette väike projekt, millel on oma litsentsifail, oma väljalasked ja oma veahaldus, nii et seda saab eraldi paigaldada, uuendada, hooldada - või õiguste omaja palvel tagasi võtta -, ilma et see mõjutaks vaaturit või teisi tööriistu.
+
 ## Lehed {#pages}
 
 | Leht | Mida see käsitleb |
@@ -61,7 +63,7 @@ Tasemed, mida see kirjutab, on tehtud mängu andmetest, nii et need jäävad **s
 | [Tasemefailid ja raamistikud](output.md) | `.glb` osad, `.json`, `enu` ja `game` raamistikud |
 | [Kuidas faile loetakse](reading.md) | arhiivid, kõrgustikukaardi kodek, vesi, linnad, maamärkide sobitused |
 | [Arhiivid ilma failitabelita](archives-without-table.md) | teine mäng, loetud nii kaugele, kui arhiivid lubavad |
-| [Kiirus, testid, tingimused](terms.md) | numba, testid, mängu tingimused, litsents |
+| [Kiirus, testid, tingimused](terms.md) | numba, testid, mida loetakse ja mida ei tarnita, litsents |
 | [Käsu viide](../cli-reference.md) | iga valik, koodist genereeritud |
 | [Nende dokumentide hooldamine](maintaining.md) | väljalaske kontrollnimekiri |
 

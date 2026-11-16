@@ -55,6 +55,8 @@ Lataa sitten `levels/<map>/<map>.glb` katselimen Tausta / kenttä -paneeliin
 Kentät, jotka se kirjoittaa, on rakennettu pelin tiedoista: ne pysyvät **koneellasi**;
 älä koskaan julkaise niitä ([Ehdot](terms.md)).
 
+Jokainen pelinlukija on oma pieni projektinsa, jolla on oma lisenssitiedosto, omat julkaisut ja oma vikaseuranta, joten sen voi asentaa, päivittää, ylläpitää - tai vetää pois oikeudenhaltijan pyynnöstä - erikseen ilman, että katseluohjelma tai muut työkalut muuttuvat.
+
 ## Sivut {#pages}
 
 | Sivu | Mitä se kattaa |
@@ -65,7 +67,7 @@ Kentät, jotka se kirjoittaa, on rakennettu pelin tiedoista: ne pysyvät **konee
 | [Kenttätiedostot ja kehykset](output.md) | `.glb`-osat, `.json`, `enu`- ja `game`-kehykset |
 | [Miten tiedostot luetaan](reading.md) | arkistot, korkeuskartan koodekki, vesi, kaupungit, maamerkkisovitukset |
 | [Arkistot ilman tiedostotaulukkoa](archives-without-table.md) | toinen peli, luettu niin pitkälle kuin sen arkistot sallivat |
-| [Nopeus, testit, ehdot](terms.md) | numba, testit, pelin ehdot, lisenssi |
+| [Nopeus, testit, ehdot](terms.md) | numba, testit, mitä luetaan ja mitä ei toimiteta, lisenssi |
 | [Komentoviite](../cli-reference.md) | jokainen asetus, luotu koodista |
 | [Dokumentaation ylläpito](maintaining.md) | julkaisun tarkistuslista |
 

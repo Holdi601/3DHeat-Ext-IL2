@@ -56,6 +56,8 @@ Pastaj ngarko `levels/<map>/<map>.glb` te paneli Sfondi / niveli i shikuesit
 Nivelet që shkruan ndërtohen nga të dhënat e lojës: ato mbeten **në kompjuterin
 tënd**; mos i publiko kurrë ([Kushtet](terms.md)).
 
+Çdo lexues loje është një projekt i vogël më vete, me skedarin e vet të licencës, versionet e veta dhe gjurmuesin e vet të problemeve, kështu që mund të instalohet, përditësohet, mirëmbahet - ose tërhiqet me kërkesë të një mbajtësi të drejtash - më vete, pa prekur shikuesin ose mjetet e tjera.
+
 ## Faqet {#pages}
 
 | Faqja | Çfarë mbulon |
@@ -66,7 +68,7 @@ tënd**; mos i publiko kurrë ([Kushtet](terms.md)).
 | [Skedarët e nivelit dhe kornizat](output.md) | pjesët e `.glb`, `.json`, kornizat `enu` dhe `game` |
 | [Si lexohen skedarët](reading.md) | arkivat, kodeku i heightmap, uji, qytetet, përshtatjet me pika referimi |
 | [Arkiva pa tabelë skedarësh](archives-without-table.md) | loja e dytë, e lexuar aq sa e lejojnë arkivat e saj |
-| [Shpejtësia, testet, kushtet](terms.md) | numba, testet, kushtet e lojës, licenca |
+| [Shpejtësia, testet, kushtet](terms.md) | numba, testet, çfarë lexohet dhe çfarë nuk shpërndahet, licenca |
 | [Referenca e komandave](../cli-reference.md) | çdo opsion, e gjeneruar nga kodi |
 | [Mirëmbajtja e këtyre dokumenteve](maintaining.md) | lista e kontrollit të botimit |
 

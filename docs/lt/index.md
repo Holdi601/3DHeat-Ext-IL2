@@ -52,6 +52,8 @@ Tada įkelkite `levels/<map>/<map>.glb` žiūryklės Lygio skydelyje
 Lygiai, kuriuos jis įrašo, sukurti iš žaidimo duomenų, todėl jie lieka **jūsų kompiuteryje**; niekada jų neskelbkite
 ([Sąlygos](terms.md)).
 
+Kiekvienas žaidimo skaitytuvas yra atskiras nedidelis projektas su savo licencijos failu, leidimais ir klaidų sekimo sistema, todėl jį galima įdiegti, atnaujinti, prižiūrėti - arba teisių turėtojo prašymu atšaukti - atskirai, nepaveikiant peržiūros programos ar kitų įrankių.
+
 ## Puslapiai {#pages}
 
 | Puslapis | Ką jame rasite |
@@ -62,7 +64,7 @@ Lygiai, kuriuos jis įrašo, sukurti iš žaidimo duomenų, todėl jie lieka **j
 | [Lygio failai ir koordinačių sistemos](output.md) | `.glb` dalys, `.json`, `enu` ir `game` koordinačių sistemos |
 | [Kaip skaitomi failai](reading.md) | archyvai, reljefo kodekas, vanduo, miestai, orientyrų pritaikymai |
 | [Archyvai be failų lentelės](archives-without-table.md) | antrasis žaidimas, skaitomas tiek, kiek leidžia jo archyvai |
-| [Greitis, testai, sąlygos](terms.md) | numba, testai, žaidimo sąlygos, licencija |
+| [Greitis, testai, sąlygos](terms.md) | numba, testai, kas skaitoma ir kas nepateikiama, licencija |
 | [Komandų nuoroda](../cli-reference.md) | kiekviena parinktis, sugeneruota iš kodo |
 | [Šių dokumentų priežiūra](maintaining.md) | išleidimo kontrolinis sąrašas |
 

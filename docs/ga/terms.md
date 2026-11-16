@@ -27,13 +27,13 @@ comhaid `height.hini` agus cartlanna gan tábla comhad i gcód.
 
 ## Na téarmaí {#the-terms}
 
-**Níor aimsíodh** comhaontú ceadúnais IL-2 Sturmovik: Great Battles agus IL-2 Series (1C Game
-Studios / 777 Studios): ní sa tsuiteáil (nach gcoinníonn `data/Licenses.txt` ach
-ceadúnais tríú páirtí), ní ar shuíomh an fhoilsitheora, agus níor lódáil leathanach EULA Steam.
-Seiceáil é tú féin sula mbraitheann tú air seo.
-Ní léann an uirlis seo ach na cartlanna agus ní athraíonn sí iad choíche. Fanann na leibhéil a scríobhann sí
-ar do mheaisín: **ná foilsigh iad choíche**. Ní sheolann aon rud anseo aon sonraí cluiche, agus
-tógann na tástálacha gach comhad a léann siad.
+Léann an uirlis seo cartlanna do shuiteála féin de IL-2 Sturmovik: Great Battles ar do ríomhaire agus ní athraíonn sí riamh iad.
+
+Ní sheoltar ná ní athdháiltear aon rud ón gcluiche: gan comhaid chluiche, gan cód cluiche, gan DLLanna; tógann na tástálacha féin gach comhad a léann siad. Fanann na leibhéil a scríobhann sé ar do mheaisín.
+
+Níl baint ag 3DHeat IL-2 le 1C Game Studios / 777 Studios agus níl sé formhuinithe acu. Is lena n-úinéirí IL-2 Sturmovik agus na hainmneacha agus na trádmharcanna gaolmhara.
+
+Sealbhóirí ceart: oscail saincheist ag [github.com/Holdi601/3DHeat-Ext-IL2/issues](https://github.com/Holdi601/3DHeat-Ext-IL2/issues) - freagraímid go tapa agus bainimid aon rud ar iarratas.
 
 ## Ceadúnas {#licence}
 

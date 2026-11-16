@@ -56,6 +56,8 @@ Indlæs derefter `levels/<map>/<map>.glb` i viewerens Baggrund / bane-panel
 De baner, den skriver, er bygget af spillets data: de bliver **på din maskine**;
 offentliggør dem aldrig ([Vilkår](terms.md)).
 
+Hver spillæser er sit eget lille projekt med egen licensfil, egne udgivelser og egen issue-tracker, så den kan installeres, opdateres, vedligeholdes - eller trækkes tilbage på en rettighedshavers anmodning - for sig selv, uden at det påvirker vieweren eller de andre værktøjer.
+
 ## Sider {#pages}
 
 | Side | Hvad den dækker |
@@ -66,7 +68,7 @@ offentliggør dem aldrig ([Vilkår](terms.md)).
 | [Banefilerne og rammerne](output.md) | `.glb`-delene, `.json`, koordinatrammerne `enu` og `game` |
 | [Sådan læses filerne](reading.md) | arkiver, højdekortets kodek, vand, byer, landemærketilpasning |
 | [Arkiver uden filtabel](archives-without-table.md) | det andet spil, læst så langt dets arkiver tillader |
-| [Hastighed, tests, vilkår](terms.md) | numba, testene, spillets vilkår, licens |
+| [Hastighed, tests, vilkår](terms.md) | numba, testene, hvad der læses og hvad der ikke følger med, licensen |
 | [Kommandoreference](../cli-reference.md) | alle valgmuligheder, genereret ud fra koden |
 | [Vedligeholdelse af disse dokumenter](maintaining.md) | tjeklisten til udgivelser |
 

@@ -3,7 +3,7 @@ title: "Vitesse, tests, conditions"
 nav_order: 7
 lang: "fr"
 source: terms.md
-source_hash: "09281b2a1fe2"
+source_hash: "3baa9f57ade6"
 nav_exclude: true
 search_exclude: true
 ---
@@ -27,13 +27,13 @@ des fichiers `height.hini` et des archives sans table des fichiers.
 
 ## Les conditions {#the-terms}
 
-Le contrat de licence d'IL-2 Sturmovik: Great Battles et d'IL-2 Series (1C Game
-Studios / 777 Studios) n'a **pas été trouvé** : ni dans l'installation (dont
-`data/Licenses.txt` ne contient que des licences tierces), ni sur le site de l'éditeur,
-et la page du CLUF de Steam ne s'est pas chargée. Vérifiez-le vous-même avant de vous y fier.
-Cet outil ne fait que lire les archives et ne les modifie jamais. Les niveaux qu'il écrit restent
-sur votre ordinateur : **ne les publiez jamais**. Rien ici ne livre de données de jeu, et les
-tests construisent chaque fichier qu'ils lisent.
+Cet outil lit les archives de votre propre installation d'IL-2 Sturmovik: Great Battles, sur votre ordinateur, et ne les modifie jamais.
+
+Rien du jeu n'est livré ni redistribué : aucun fichier du jeu, aucun code du jeu, aucune DLL ; les tests construisent eux-mêmes chaque fichier qu'ils lisent. Les niveaux qu'il écrit restent sur votre machine.
+
+3DHeat IL-2 n'est ni affilié à 1C Game Studios / 777 Studios ni approuvé par celui-ci. IL-2 Sturmovik ainsi que les noms et marques associés appartiennent à leurs propriétaires.
+
+Ayants droit : ouvrez un ticket sur [github.com/Holdi601/3DHeat-Ext-IL2/issues](https://github.com/Holdi601/3DHeat-Ext-IL2/issues) - nous répondons rapidement et retirons tout élément sur demande.
 
 ## Licence {#licence}
 

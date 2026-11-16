@@ -27,11 +27,13 @@ in arhive brez tabele datotek.
 
 ## Pogoji {#the-terms}
 
-Licenčne pogodbe za IL-2 Sturmovik: Great Battles in IL-2 Series (1C Game Studios / 777 Studios) **nisem našel**:
-ni je v namestitvi (katere `data/Licenses.txt` vsebuje samo licence tretjih oseb), ni je na spletnem mestu
-založnika, stran Steam EULA pa se ni naložila. Preveri jo sam, preden se zaneseš nanjo. To orodje samo bere arhive
-in jih nikoli ne spremeni. Ravni, ki jih zapiše, ostanejo na tvojem računalniku: **nikoli jih ne objavljaj**.
-Nič tu ne prinaša podatkov igre, testi pa zgradijo vsako datoteko, ki jo berejo.
+To orodje bere arhive tvoje lastne namestitve IL-2 Sturmovik: Great Battles na tvojem računalniku in jih nikoli ne spremeni.
+
+Nič iz igre se ne priloži ali naprej razširja: nobenih datotek igre, nobene kode igre, nobenih DLL; testi sami zgradijo vsako datoteko, ki jo berejo. Ravni, ki jih zapiše, ostanejo na tvojem računalniku.
+
+3DHeat IL-2 ni povezan s 1C Game Studios / 777 Studios niti ga ta ne podpira. IL-2 Sturmovik ter povezana imena in blagovne znamke pripadajo svojim lastnikom.
+
+Imetniki pravic: odprite zahtevek na [github.com/Holdi601/3DHeat-Ext-IL2/issues](https://github.com/Holdi601/3DHeat-Ext-IL2/issues) - odgovorimo hitro in na zahtevo odstranimo karkoli.
 
 ## Licenca {#licence}
 

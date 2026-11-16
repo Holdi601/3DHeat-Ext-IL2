@@ -27,13 +27,13 @@ fitxers `height.hini` i arxius sense taula de fitxers.
 
 ## Les condicions {#the-terms}
 
-El contracte de llicència d'IL-2 Sturmovik: Great Battles i IL-2 Series (1C Game
-Studios / 777 Studios) **no s'ha trobat**: ni a la instal·lació (el fitxer
-`data/Licenses.txt` només conté llicències de tercers), ni al lloc de l'editor, i la pàgina
-de l'EULA de Steam no es va carregar. Comprova-la tu mateix abans de confiar-hi.
-Aquesta eina només llegeix els arxius i mai els canvia. Els nivells que escriu es queden a la
-teva màquina: **no els publiquis mai**. Aquí no s'envia cap dada del joc, i les
-proves construeixen tots els fitxers que llegeixen.
+Aquesta eina llegeix els arxius de la teva pròpia instal·lació d'IL-2 Sturmovik: Great Battles a l'ordinador i no els modifica mai.
+
+No s'inclou ni es redistribueix res del joc: cap fitxer del joc, cap codi del joc, cap DLL; les proves generen elles mateixes cada fitxer que llegeixen. Els nivells que escriu es queden al teu equip.
+
+3DHeat IL-2 no està afiliat a 1C Game Studios / 777 Studios ni té el seu aval. IL-2 Sturmovik i els noms i marques relacionats pertanyen als seus propietaris.
+
+Titulars de drets: obriu una incidència a [github.com/Holdi601/3DHeat-Ext-IL2/issues](https://github.com/Holdi601/3DHeat-Ext-IL2/issues) - responem ràpidament i retirem qualsevol cosa que se'ns demani.
 
 ## Llicència {#licence}
 

@@ -56,6 +56,8 @@ Després carrega `levels/<mapa>/<mapa>.glb` al panell Fons / nivell del visualit
 Els nivells que escrius estan construïts a partir de les dades del joc: es queden a la **teva
 màquina**; no els publiquis mai ([Condicions](terms.md)).
 
+Cada lector de joc és un petit projecte propi, amb el seu fitxer de llicència, les seves versions i el seu gestor d'incidències, de manera que es pot instal·lar, actualitzar, mantenir - o retirar a petició d'un titular de drets - per separat, sense afectar el visor ni les altres eines.
+
 ## Pàgines {#pages}
 
 | Pàgina | Què cobreix |
@@ -66,7 +68,7 @@ màquina**; no els publiquis mai ([Condicions](terms.md)).
 | [Els fitxers del nivell i els marcs](output.md) | les parts `.glb`, el `.json`, els marcs `enu` i `game` |
 | [Com es llegeixen els fitxers](reading.md) | arxius, el còdec del mapa d'alçades, aigua, pobles, ajustos per punts de referència |
 | [Arxius sense taula de fitxers](archives-without-table.md) | el segon joc, llegit fins on permeten els seus arxius |
-| [Velocitat, proves, condicions](terms.md) | numba, les proves, les condicions del joc, la llicència |
+| [Velocitat, proves, condicions](terms.md) | numba, les proves, què es llegeix i què no s'inclou, la llicència |
 | [Referència de l'ordre](../cli-reference.md) | cada opció, generada a partir del codi |
 | [Mantenir aquesta documentació](maintaining.md) | la llista de comprovació de publicació |
 

@@ -50,6 +50,8 @@ Läs sedan in `levels/<map>/<map>.glb` i visarens panel Bakgrund / nivå
 
 Nivåerna den skriver är byggda av spelets data: de stannar på **din dator**; publicera dem aldrig ([Villkor](terms.md)).
 
+Varje spelläsare är ett eget litet projekt med egen licensfil, egna releaser och egen ärendehantering, så att den kan installeras, uppdateras, underhållas - eller dras tillbaka på begäran av en rättighetsinnehavare - för sig själv, utan att visaren eller de andra verktygen påverkas.
+
 ## Sidor {#pages}
 
 | Sida | Vad den täcker |
@@ -60,7 +62,7 @@ Nivåerna den skriver är byggda av spelets data: de stannar på **din dator**; 
 | [Nivåfilerna och ramarna](output.md) | delarna `.glb`, `.json`, ramarna `enu` och `game` |
 | [Så läses filerna](reading.md) | arkiven, höjdkartans kodek, vatten, städer, landmärkesanpassningar |
 | [Arkiv utan filtabell](archives-without-table.md) | det andra spelet, läst så långt dess arkiv tillåter |
-| [Hastighet, tester, villkor](terms.md) | numba, testerna, spelets villkor, licens |
+| [Hastighet, tester, villkor](terms.md) | numba, testerna, vad som läses och vad som inte följer med, licensen |
 | [Kommandoreferens](../cli-reference.md) | varje alternativ, genererat från koden |
 | [Underhålla dokumentationen](maintaining.md) | checklistan för utgivning |
 

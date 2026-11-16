@@ -23,7 +23,13 @@ python -m pytest -q
 
 ## Koşullar {#the-terms}
 
-IL-2 Sturmovik: Great Battles ve IL-2 Series'in (1C Game Studios / 777 Studios) lisans sözleşmesi **bulunamadı**: kurulumda yok (orada `data/Licenses.txt` yalnızca üçüncü taraf lisanslarını tutar), yayımcının sitesinde yok ve Steam EULA sayfası yüklenmedi. Buna dayanmadan önce kendiniz denetleyin. Bu araç arşivleri yalnızca okur, hiçbirini değiştirmez. Yazdığı seviyeler kendi makinenizde kalır: **asla yayımlamayın**. Burada hiçbir oyun verisi dağıtılmaz; testler okudukları her dosyayı kendileri oluşturur.
+Bu araç, bilgisayarınızdaki kendi IL-2 Sturmovik: Great Battles kurulumunuzun arşivlerini okur ve onları asla değiştirmez.
+
+Oyundan hiçbir şey birlikte gönderilmez veya yeniden dağıtılmaz: oyun dosyası yok, oyun kodu yok, DLL yok; testler okudukları her dosyayı kendileri oluşturur. Yazdığı seviyeler sizin makinenizde kalır.
+
+3DHeat IL-2, 1C Game Studios / 777 Studios ile bağlantılı değildir ve onun tarafından onaylanmamıştır. IL-2 Sturmovik ve ilgili adlar ile ticari markalar sahiplerine aittir.
+
+Hak sahipleri: [github.com/Holdi601/3DHeat-Ext-IL2/issues](https://github.com/Holdi601/3DHeat-Ext-IL2/issues) adresinde bir kayıt açın - hızlı yanıt veriyor ve istek üzerine her şeyi kaldırıyoruz.
 
 ## Lisans {#licence}
 

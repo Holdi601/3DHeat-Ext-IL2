@@ -24,8 +24,13 @@ python -m pytest -q
 
 ## 條款 {#the-terms}
 
-IL-2 Sturmovik: Great Battles 與 IL-2 Series（1C Game Studios / 777 Studios）的授權合約 **未能找到**：不在安裝目錄中（其 `data/Licenses.txt` 只含第三方授權），也不在發行商的網站上，而 Steam 的 EULA 頁面也無法載入。在依賴本工具之前，請自行查核。
-本工具只讀取封存檔，從不修改它們。它所寫出的關卡只應留在你的電腦上：**請勿發布**。本工具不附帶任何遊戲資料，而測試會建立它們讀取的每一個檔案。
+此工具讀取你電腦上你自己的 IL-2 Sturmovik: Great Battles 安裝中的封存檔，且從不修改它們。
+
+不隨附也不再散布遊戲中的任何東西：沒有遊戲檔案、沒有遊戲程式碼、沒有 DLL；測試會自行產生它們讀取的每個檔案。它寫出的關卡留在你的電腦上。
+
+3DHeat IL-2 與 1C Game Studios / 777 Studios 無關聯，也未獲其認可。IL-2 Sturmovik 及相關名稱和商標歸其各自所有者所有。
+
+權利人：請在 [github.com/Holdi601/3DHeat-Ext-IL2/issues](https://github.com/Holdi601/3DHeat-Ext-IL2/issues) 提出 issue——我們會迅速回覆，並依要求移除任何內容。
 
 ## 授權 {#licence}
 

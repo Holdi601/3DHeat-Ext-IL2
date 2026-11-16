@@ -57,6 +57,8 @@ Hladdu síðan `levels/<map>/<map>.glb` í spjaldið Bakgrunnur / borð í skoð
 Borðin sem það skrifar eru smíðuð úr gögnum leiksins: þau haldast **á þinni
 vél**; birtu þau aldrei ([Skilmálar](terms.md)).
 
+Hver leikjalesari er sitt eigið litla verkefni með eigin leyfisskrá, eigin útgáfur og eigin verkbeiðnalista, svo hægt er að setja hann upp, uppfæra, viðhalda - eða draga hann til baka að beiðni rétthafa - einan og sér, án þess að það hafi áhrif á skoðarann eða hin verkfærin.
+
 ## Síður {#pages}
 
 | Síða | Hvað hún fjallar um |
@@ -67,7 +69,7 @@ vél**; birtu þau aldrei ([Skilmálar](terms.md)).
 | [Borðaskrárnar og rammar](output.md) | hlutar `.glb`, `.json`, `enu` og `game` rammarnir |
 | [Hvernig skrárnar eru lesnar](reading.md) | skjalasöfn, hæðarkortsmálið, vatn, bæir, kennileitafittun |
 | [Skjalasöfn án skráartöflu](archives-without-table.md) | seinni leikurinn, lesinn eins langt og skjalasöfn hans leyfa |
-| [Hraði, prófanir, skilmálar](terms.md) | numba, prófanirnar, skilmálar leiksins, leyfi |
+| [Hraði, prófanir, skilmálar](terms.md) | numba, prófanirnar, hvað er lesið og hvað fylgir ekki með, leyfið |
 | [Skipanayfirlit](../cli-reference.md) | hver valkostur, búið til úr kóðanum |
 | [Viðhald þessara skjala](maintaining.md) | gátlisti útgáfu |
 

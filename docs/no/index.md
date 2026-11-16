@@ -56,6 +56,8 @@ Last deretter inn `levels/<map>/<map>.glb` i visningsprogrammets Bakgrunn / niv�
 Nivåene den skriver er laget av spillets data: de blir **på din egen
 maskin**; publiser dem aldri ([Vilkår](terms.md)).
 
+Hver spilleser er sitt eget lille prosjekt med egen lisensfil, egne utgivelser og egen saksliste, slik at den kan installeres, oppdateres, vedlikeholdes - eller trekkes tilbake på forespørsel fra en rettighetshaver - for seg selv, uten at det påvirker visningsprogrammet eller de andre verktøyene.
+
 ## Sider {#pages}
 
 | Side | Hva den dekker |
@@ -66,7 +68,7 @@ maskin**; publiser dem aldri ([Vilkår](terms.md)).
 | [Nivåfilene og rammene](output.md) | `.glb`-delene, `.json`, `enu`- og `game`-rammene |
 | [Slik leses filene](reading.md) | arkiver, høydekartkodeken, vann, byer, landemerketilpasninger |
 | [Arkiver uten filtabell](archives-without-table.md) | det andre spillet, lest så langt arkivene tillater |
-| [Fart, tester, vilkår](terms.md) | numba, testene, spillets vilkår, lisens |
+| [Fart, tester, vilkår](terms.md) | numba, testene, hva som leses og hva som ikke følger med, lisensen |
 | [Kommandoreferanse](../cli-reference.md) | hvert alternativ, generert fra koden |
 | [Vedlikeholde dokumentasjonen](maintaining.md) | sjekklisten for utgivelse |
 

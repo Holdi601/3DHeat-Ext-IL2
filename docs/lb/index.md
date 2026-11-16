@@ -57,6 +57,8 @@ Dann lued `levels/<map>/<map>.glb` am Panel „Hannergrond / Level“ vum Viewer
 D'Levelen, déi et schreift, si vun de Daten vum Spill gebaut: si bleiwen **op Ärem
 Rechner**; publizéiert se ni ([Bedingungen](terms.md)).
 
+All Spill-Lieser ass e klengt eegent Projet mat enger eegener Lizenzdatei, eegene Releases an engem eegenen Issue-Tracker, sou datt e fir sech eleng installéiert, aktualiséiert, gefleegt - oder op Ufro vun engem Rechteinhaber zréckgezunn - ka ginn, ouni de Viewer oder déi aner Tools ze beréieren.
+
 ## Säiten {#pages}
 
 | Säit | Wat se ofdeckt |
@@ -67,7 +69,7 @@ Rechner**; publizéiert se ni ([Bedingungen](terms.md)).
 | [D'Level-Dateien an d'Frames](output.md) | d'`.glb`-Deeler, den `.json`, d'`enu`- an `game`-Frames |
 | [Wéi d'Dateie gelies ginn](reading.md) | Archiver, de Heightmap-Codec, Waasser, Stied, Landmark-Fits |
 | [Archiver ouni Dateitabell](archives-without-table.md) | dat zweet Spill, gelies, sou wäit seng Archiver et erlaben |
-| [Geschwindegkeet, Tester, Bedingungen](terms.md) | numba, d'Tester, d'Bedingunge vum Spill, Lizenz |
+| [Geschwindegkeet, Tester, Bedingungen](terms.md) | numba, d'Tester, wat gelies a wat net matgeliwwert gëtt, d'Lizenz |
 | [Kommando-Referenz](../cli-reference.md) | all Optioun, aus dem Code generéiert |
 | [Dës Dokumentatioun ënnerhalen](maintaining.md) | d'Release-Checklëscht |
 

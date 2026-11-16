@@ -52,6 +52,8 @@ Potom načítajte `levels/<map>/<map>.glb` do panela Pozadie / level prehliadač
 Úrovne, ktoré zapisuje, sú postavené z dát hry: ostávajú **na vašom
 počítači**; nikdy ich nezverejňujte ([Podmienky](terms.md)).
 
+Každá čítačka hry je samostatný malý projekt s vlastným licenčným súborom, vlastnými vydaniami a vlastným systémom hlásení, takže ju možno inštalovať, aktualizovať, udržiavať - alebo na žiadosť držiteľa práv stiahnuť - samostatne, bez vplyvu na prehliadač alebo ostatné nástroje.
+
 ## Stránky {#pages}
 
 | Stránka | Čo obsahuje |
@@ -62,7 +64,7 @@ počítači**; nikdy ich nezverejňujte ([Podmienky](terms.md)).
 | [Súbory úrovne a rámce](output.md) | časti `.glb`, `.json`, rámce `enu` a `game` |
 | [Ako sa čítajú súbory](reading.md) | archívy, kodek výškovej mapy, voda, mestá, prispôsobenie orientačným bodom |
 | [Archívy bez tabuľky súborov](archives-without-table.md) | druhá hra, čítaná tak ďaleko, ako dovolia jej archívy |
-| [Rýchlosť, testy, podmienky](terms.md) | numba, testy, podmienky hry, licencia |
+| [Rýchlosť, testy, podmienky](terms.md) | numba, testy, čo sa číta a čo sa nedodáva, licencia |
 | [Referencia príkazov](../cli-reference.md) | každá možnosť, generované z kódu |
 | [Údržba týchto dokumentov](maintaining.md) | kontrolný zoznam pri vydaní |
 

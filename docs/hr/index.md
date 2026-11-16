@@ -46,6 +46,8 @@ Zatim učitajte `levels/<map>/<map>.glb` u panel Pozadina / razina preglednika
 
 Razine koje alat piše izrađene su iz podataka igre, pa **ostaju na vašem računalu**; nikad ih ne objavljujte ([Uvjeti](terms.md)).
 
+Svaki čitač igre zaseban je mali projekt s vlastitom datotekom licence, vlastitim izdanjima i vlastitim sustavom prijava, pa ga je moguće instalirati, ažurirati, održavati - ili povući na zahtjev nositelja prava - zasebno, bez utjecaja na preglednik i ostale alate.
+
 ## Stranice {#pages}
 
 | Stranica | Što obuhvaća |
@@ -56,7 +58,7 @@ Razine koje alat piše izrađene su iz podataka igre, pa **ostaju na vašem rač
 | [Datoteke razine i okviri](output.md) | `.glb` dijelovi, `.json`, okviri `enu` i `game` |
 | [Kako se datoteke čitaju](reading.md) | arhivi, kodek visinske mape, voda, gradovi, prilagodbe prema orijentirima |
 | [Arhivi bez tablice datoteka](archives-without-table.md) | druga igra, čitana koliko njezini arhivi dopuštaju |
-| [Brzina, testovi, uvjeti](terms.md) | numba, testovi, uvjeti igre, licenca |
+| [Brzina, testovi, uvjeti](terms.md) | numba, testovi, što se čita i što se ne isporučuje, licenca |
 | [Referenca naredbi](../cli-reference.md) | svaka opcija, generirano iz koda |
 | [Održavanje ovih stranica](maintaining.md) | popis za izdavanje verzije |
 

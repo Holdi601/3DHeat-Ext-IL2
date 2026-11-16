@@ -55,6 +55,8 @@ Laad daarna `levels/<map>/<map>.glb` in het paneel Achtergrond / level van de vi
 De levels die het schrijft, zijn gemaakt uit de gegevens van het spel: ze blijven **op jouw
 computer**; publiceer ze nooit ([Voorwaarden](terms.md)).
 
+Elke spellezer is een eigen klein project met een eigen licentiebestand, eigen releases en een eigen issuetracker, zodat hij los kan worden geïnstalleerd, bijgewerkt, onderhouden - of op verzoek van een rechthebbende teruggetrokken - zonder dat de viewer of de andere tools daar last van hebben.
+
 ## Pagina's {#pages}
 
 | Pagina | Wat die behandelt |
@@ -65,7 +67,7 @@ computer**; publiceer ze nooit ([Voorwaarden](terms.md)).
 | [De levelbestanden en frames](output.md) | de `.glb`-onderdelen, de `.json`, de `enu`- en `game`-frames |
 | [Hoe de bestanden worden gelezen](reading.md) | archieven, de hoogtekaartcodec, water, steden, oriëntatiepuntenpassingen |
 | [Archieven zonder bestandstabel](archives-without-table.md) | het tweede spel, gelezen voor zover de archieven dat toelaten |
-| [Snelheid, tests, voorwaarden](terms.md) | numba, de tests, de voorwaarden van het spel, licentie |
+| [Snelheid, tests, voorwaarden](terms.md) | numba, de tests, wat er gelezen en wat er niet meegeleverd wordt, de licentie |
 | [Commandoreferentie](../cli-reference.md) | elke optie, gegenereerd uit de code |
 | [Deze documentatie onderhouden](maintaining.md) | de checklist per release |
 

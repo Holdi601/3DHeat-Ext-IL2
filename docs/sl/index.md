@@ -54,6 +54,8 @@ Nato naloži `levels/<zemljevid>/<zemljevid>.glb` na plošči Ozadje / nivo preg
 Ravni, ki jih zapiše, so zgrajene iz igrinih podatkov in ostanejo **na tvojem računalniku**; nikoli jih
 ne objavljaj ([Pogoji](terms.md)).
 
+Vsak bralnik igre je samostojen majhen projekt z lastno licenčno datoteko, lastnimi izdajami in lastnim sledilnikom težav, zato ga je mogoče namestiti, posodobiti, vzdrževati - ali na zahtevo imetnika pravic umakniti - samostojno, ne da bi to vplivalo na pregledovalnik ali druga orodja.
+
 ## Strani {#pages}
 
 | Stran | Kaj obravnava |
@@ -64,7 +66,7 @@ ne objavljaj ([Pogoji](terms.md)).
 | [Datoteke ravni in okvirji](output.md) | deli `.glb`, `.json`, okvirja `enu` in `game` |
 | [Kako se datoteke berejo](reading.md) | arhivi, kodek višinske karte, voda, mesta, prilagajanje z orientiri |
 | [Arhivi brez tabele datotek](archives-without-table.md) | druga igra, prebrana do tiste meje, ki jo dopuščajo njeni arhivi |
-| [Hitrost, testi, pogoji](terms.md) | numba, testi, pogoji igre, licenca |
+| [Hitrost, testi, pogoji](terms.md) | numba, testi, kaj se bere in kaj ni priloženo, licenca |
 | [Priročnik ukazov](../cli-reference.md) | vsaka možnost, ustvarjena iz kode |
 | [Vzdrževanje teh strani](maintaining.md) | kontrolni seznam ob izdaji |
 

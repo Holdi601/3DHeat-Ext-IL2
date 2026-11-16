@@ -27,13 +27,13 @@ fajls `height.hini` u arkivji mingħajr tabella tal-fajls fil-kodiċi.
 
 ## It-termini {#the-terms}
 
-Il-ftehim tal-liċenzja ta' IL-2 Sturmovik: Great Battles u IL-2 Series (1C Game
-Studios / 777 Studios) **ma nstabx**: mhux fl-installazzjoni (li `data/Licenses.txt`
-tagħha fih biss liċenzji ta' terzi), mhux fuq is-sit tal-pubblikatur,
-u l-paġna tal-EULA ta' Steam ma tgħabbietx. Iċċekkja int qabel ma tafda fuq dan.
-Din l-għodda taqra biss l-arkivji u qatt ma tibdilhom. Il-livelli li tikteb jibqgħu
-fuq il-magna tiegħek: **qatt ma tippubblikahom**. Xejn hawn ma jaqsam dejta tal-logħba, u
-t-testijiet jibnu kull fajl li jaqraw.
+Din l-għodda taqra l-arkivji tal-installazzjoni tiegħek ta' IL-2 Sturmovik: Great Battles fuq il-kompjuter tiegħek u qatt ma tibdilhom.
+
+Xejn mil-logħba ma jintbagħat jew jitqassam mill-ġdid: l-ebda fajl tal-logħba, l-ebda kodiċi tal-logħba, l-ebda DLL; it-testijiet jibnu huma stess kull fajl li jaqraw. Il-livelli li jikteb jibqgħu fuq il-magna tiegħek.
+
+3DHeat IL-2 mhuwiex affiljat ma' 1C Game Studios / 777 Studios u mhuwiex approvat minnhom. IL-2 Sturmovik u l-ismijiet u t-trademarks relatati jappartjenu lis-sidien tagħhom.
+
+Detenturi tad-drittijiet: iftħu kwistjoni fuq [github.com/Holdi601/3DHeat-Ext-IL2/issues](https://github.com/Holdi601/3DHeat-Ext-IL2/issues) - inwieġbu malajr u nneħħu kull ħaġa fuq talba.
 
 ## Liċenzja {#licence}
 

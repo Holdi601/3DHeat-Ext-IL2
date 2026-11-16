@@ -55,6 +55,8 @@ A `list` térképenként egy sort ír ki, az `extract` pedig `ok ...` sorokat. E
 Az általad írt pályák a játék adataiból készülnek, ezért **a te gépeden maradnak**; soha ne tedd közzé
 ([Feltételek](terms.md)).
 
+Minden játékolvasó önálló kis projekt saját licencfájllal, saját kiadásokkal és saját hibakövetővel, így külön telepíthető, frissíthető, karbantartható - vagy egy jogtulajdonos kérésére visszavonható -, anélkül hogy a megjelenítőt vagy a többi eszközt érintené.
+
 ## Oldalak {#pages}
 
 | Oldal | Mit tartalmaz |
@@ -65,7 +67,7 @@ Az általad írt pályák a játék adataiból készülnek, ezért **a te géped
 | [A pályafájlok és a keretek](output.md) | a `.glb` részei, a `.json`, az `enu` és a `game` keret |
 | [Hogyan olvasódnak be a fájlok](reading.md) | archívumok, a magassági térkép kódolása, víz, városok, tájékozódó illesztések |
 | [Archívumok fájltáblázat nélkül](archives-without-table.md) | a második játék, amennyire az archívumai engedik |
-| [Sebesség, tesztek, feltételek](terms.md) | numba, a tesztek, a játék feltételei, licenc |
+| [Sebesség, tesztek, feltételek](terms.md) | numba, a tesztek, mit olvas és mit nem tartalmaz, a licenc |
 | [Parancsleírás](../cli-reference.md) | minden kapcsoló, a kódból generálva |
 | [A dokumentáció karbantartása](maintaining.md) | a kiadási ellenőrzőlista |
 

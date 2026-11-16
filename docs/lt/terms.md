@@ -26,11 +26,13 @@ ir archyvus be failų lentelės.
 
 ## Sąlygos {#the-terms}
 
-IL-2 Sturmovik: Great Battles ir IL-2 Series (1C Game Studios / 777 Studios) licencijavimo sutartis **nerasta**: nei
-įdiegime (kurio `data/Licenses.txt` turi tik trečiųjų šalių licencijas), nei leidėjo svetainėje, o Steam EULA puslapis
-neįsikrovė. Patikrinkite pats, prieš tai pasikliaudami.
-Šis įrankis tik skaito archyvus ir jų niekada nekeičia. Lygiai, kuriuos jis įrašo, lieka
-jūsų kompiuteryje: **niekada jų neskelbkite**. Čia joks žaidimo duomenų failas nepateikiamas, o testai sukuria visus failus, kuriuos skaito.
+Šis įrankis skaito tavo paties IL-2 Sturmovik: Great Battles diegimo archyvus tavo kompiuteryje ir niekada jų nekeičia.
+
+Iš žaidimo niekas nepateikiama ir neplatinama: jokių žaidimo failų, jokio žaidimo kodo, jokių DLL; testai patys sukuria kiekvieną skaitomą failą. Jo įrašyti lygiai lieka tavo kompiuteryje.
+
+3DHeat IL-2 nėra susijęs su 1C Game Studios / 777 Studios ir nėra jo patvirtintas. IL-2 Sturmovik ir susiję pavadinimai bei prekių ženklai priklauso jų savininkams.
+
+Teisių turėtojai: sukurkite pranešimą adresu [github.com/Holdi601/3DHeat-Ext-IL2/issues](https://github.com/Holdi601/3DHeat-Ext-IL2/issues) - atsakome greitai ir paprašius pašaliname bet ką.
 
 ## Licencija {#licence}
 

@@ -27,13 +27,13 @@ python -m pytest -q
 
 ## De voorwaarden {#the-terms}
 
-De licentieovereenkomst van IL-2 Sturmovik: Great Battles en IL-2 Series (1C Game
-Studios / 777 Studios) is **niet gevonden**: niet in de installatie (waarvan
-`data/Licenses.txt` alleen licenties van derden bevat), niet op de site van de uitgever,
-en de EULA-pagina van Steam laadde niet. Controleer dit zelf voordat je erop vertrouwt.
-Deze tool leest alleen de archieven en verandert ze nooit. De levels die hij schrijft blijven
-op jouw computer: **publiceer ze nooit**. Hier wordt geen spelgegeven meegeleverd, en de
-tests bouwen elk bestand dat ze lezen.
+Deze tool leest de archieven van je eigen installatie van IL-2 Sturmovik: Great Battles op je computer en verandert ze nooit.
+
+Niets uit het spel wordt meegeleverd of verspreid: geen spelbestanden, geen spelcode, geen DLL's; de tests bouwen elk bestand dat ze lezen zelf. De levels die hij schrijft blijven op je computer.
+
+3DHeat IL-2 is niet verbonden aan en niet goedgekeurd door 1C Game Studios / 777 Studios. IL-2 Sturmovik en bijbehorende namen en handelsmerken zijn van hun eigenaars.
+
+Rechthebbenden: open een issue op [github.com/Holdi601/3DHeat-Ext-IL2/issues](https://github.com/Holdi601/3DHeat-Ext-IL2/issues) - we reageren snel en verwijderen alles op verzoek.
 
 ## Licentie {#licence}
 

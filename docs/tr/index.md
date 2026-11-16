@@ -40,6 +40,8 @@ heat3d-il2-level extract --all -o levels           # her harita
 
 Yazdığı seviyeler oyunun verilerinden yapılır: **kendi makinenizde** kalırlar; asla yayımlamayın ([Koşullar](terms.md)).
 
+Her oyun okuyucusu kendi lisans dosyası, kendi sürümleri ve kendi sorun takipçisi olan ayrı küçük bir projedir; bu sayede görüntüleyiciyi ya da diğer araçları etkilemeden tek başına kurulabilir, güncellenebilir, bakımı yapılabilir - ya da bir hak sahibinin isteği üzerine geri çekilebilir.
+
 ## Sayfalar {#pages}
 
 | Sayfa | Neyi anlatır |
@@ -50,7 +52,7 @@ Yazdığı seviyeler oyunun verilerinden yapılır: **kendi makinenizde** kalır
 | [Seviye dosyaları ve çerçeveler](output.md) | `.glb` parçaları, `.json`, `enu` ve `game` çerçeveleri |
 | [Dosyalar nasıl okunur](reading.md) | arşivler, yükseklik haritası kodlayıcısı, su, kasabalar, yer işareti uydurmaları |
 | [Dosya tablosu olmayan arşivler](archives-without-table.md) | ikinci oyun, arşivlerin izin verdiği ölçüde |
-| [Hız, testler, koşullar](terms.md) | numba, testler, oyunun koşulları, lisans |
+| [Hız, testler, koşullar](terms.md) | numba, testler, neyin okunduğu ve neyin gönderilmediği, lisans |
 | [Komut başvurusu](../cli-reference.md) | her seçenek, koddan üretilmiş |
 | [Bu belgelerin bakımı](maintaining.md) | sürüm kontrol listesi |
 

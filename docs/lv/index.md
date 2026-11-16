@@ -44,6 +44,8 @@ Pēc tam ielādējiet `levels/<map>/<map>.glb` skatītāja Līmeņa panelī
 
 Līmeņi, ko tas raksta, veidoti no spēles datiem, un tie paliek **jūsu datorā**; nekad nepublicējiet tos ([Noteikumi](terms.md)).
 
+Katrs spēles lasītājs ir atsevišķs mazs projekts ar savu licences failu, saviem laidieniem un savu problēmu sekotāju, tāpēc to var instalēt, atjaunināt, uzturēt - vai pēc tiesību īpašnieka lūguma atsaukt - atsevišķi, neietekmējot skatītāju vai citus rīkus.
+
 ## Lapas {#pages}
 
 | Lapa | Ko tā aptver |
@@ -54,7 +56,7 @@ Līmeņi, ko tas raksta, veidoti no spēles datiem, un tie paliek **jūsu dator�
 | [Līmeņa faili un sistēmas](output.md) | `.glb` daļas, `.json`, `enu` un `game` sistēmas |
 | [Kā tiek nolasīti faili](reading.md) | arhīvi, augstuma kartes kodeks, ūdens, pilsētas, orientieru pieskaņojumi |
 | [Arhīvi bez failu tabulas](archives-without-table.md) | otrā spēle, nolasīta, cik tālu to arhīvi ļauj |
-| [Ātrums, testi, noteikumi](terms.md) | numba, testi, spēles noteikumi, licence |
+| [Ātrums, testi, noteikumi](terms.md) | numba, testi, ko lasa un ko nepiegādā, licence |
 | [Komandu atsauce](../cli-reference.md) | katra iespēja, ģenerēta no koda |
 | [Šo lapu uzturēšana](maintaining.md) | izlaides kontrolsaraksts |
 

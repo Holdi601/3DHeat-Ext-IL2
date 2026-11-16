@@ -27,13 +27,13 @@ skedarë `height.hini` dhe arkiva pa tabelë skedarësh në kod.
 
 ## Kushtet {#the-terms}
 
-Marrëveshja e licencës së IL-2 Sturmovik: Great Battles dhe IL-2 Series (1C Game
-Studios / 777 Studios) **nuk u gjet**: jo në instalim (`data/Licenses.txt` e të cilit
-mban vetëm licenca të palëve të treta), jo në faqen e botuesit, dhe faqja e EULA të Steam
-nuk u ngarkua. Kontrolloje vetë para se të mbështetesh te kjo.
-Ky mjet vetëm i lexon arkivat dhe kurrë nuk i ndryshon. Nivelet që shkruan mbeten
-në kompjuterin tënd: **mos i publiko kurrë**. Asgjë këtu nuk shpërndan të dhëna loje, dhe
-testet ndërtojnë çdo skedar që lexojnë.
+Ky mjet lexon arkivat e instalimit tënd të IL-2 Sturmovik: Great Battles në kompjuterin tënd dhe nuk i ndryshon kurrë.
+
+Asgjë nga loja nuk shpërndahet as nuk rishpërndahet: asnjë skedar loje, asnjë kod loje, asnjë DLL; testet e ndërtojnë vetë çdo skedar që lexojnë. Nivelet që shkruan mbeten në kompjuterin tënd.
+
+3DHeat IL-2 nuk është i lidhur me 1C Game Studios / 777 Studios dhe nuk miratohet prej saj. IL-2 Sturmovik dhe emrat e markat tregtare përkatëse u përkasin pronarëve të tyre.
+
+Mbajtës të drejtash: hapni një çështje në [github.com/Holdi601/3DHeat-Ext-IL2/issues](https://github.com/Holdi601/3DHeat-Ext-IL2/issues) - përgjigjemi shpejt dhe heqim çdo gjë me kërkesë.
 
 ## Licenca {#licence}
 

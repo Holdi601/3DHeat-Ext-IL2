@@ -57,6 +57,8 @@ Imbagħad tgħabbi `levels/<map>/<map>.glb` fil-pannell Sfond / livell tal-viewe
 Il-livelli li tikteb huma mibnija mid-dejta tal-logħba: jibqgħu **fuq il-magna
 tiegħek**; qatt ma tippubblikahom ([Termini](terms.md)).
 
+Kull qarrej ta' logħba huwa proġett żgħir għalih, bil-fajl tal-liċenzja tiegħu, ir-rilaxxi tiegħu u s-sistema tal-kwistjonijiet tiegħu, sabiex ikun jista' jiġi installat, aġġornat, miżmum - jew irtirat fuq talba ta' detentur tad-drittijiet - waħdu, mingħajr ma jolqot lill-viewer jew l-għodod l-oħra.
+
 ## Paġni {#pages}
 
 | Paġna | X'tkopri |
@@ -67,7 +69,7 @@ tiegħek**; qatt ma tippubblikahom ([Termini](terms.md)).
 | [Il-fajls tal-livell u l-frames](output.md) | il-partijiet tal-`.glb`, il-`.json`, il-frames `enu` u `game` |
 | [Kif jinqraw il-fajls](reading.md) | arkivji, il-codec tal-heightmap, ilma, irħula, landmark fits |
 | [Arkivji mingħajr tabella tal-fajls](archives-without-table.md) | it-tieni logħba, moqrija safejn jippermettu l-arkivji tagħha |
-| [Veloċità, testijiet, termini](terms.md) | numba, it-testijiet, it-termini tal-logħba, liċenzja |
+| [Veloċità, testijiet, termini](terms.md) | numba, it-testijiet, x'jinqara u x'ma jintbagħatx, il-liċenzja |
 | [Referenza tal-kmandi](../cli-reference.md) | kull għażla, iġġenerata mill-kodiċi |
 | [Iżżomm dawn id-dokumenti](maintaining.md) | il-lista ta' kontroll tar-rilaxx |
 

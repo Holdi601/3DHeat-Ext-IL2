@@ -56,6 +56,8 @@ Depois carregue `levels/<mapa>/<mapa>.glb` no painel Fundo / nível do visualiza
 Os níveis que ela grava são montados a partir dos dados do jogo: eles ficam na **sua
 máquina**; nunca os publique ([Termos](terms.md)).
 
+Cada leitor de jogo é um pequeno projeto próprio, com seu próprio arquivo de licença, versões e rastreador de issues, para que possa ser instalado, atualizado, mantido - ou retirado a pedido de um titular de direitos - de forma independente, sem afetar o visualizador nem as outras ferramentas.
+
 ## Páginas {#pages}
 
 | Página | O que cobre |
@@ -66,7 +68,7 @@ máquina**; nunca os publique ([Termos](terms.md)).
 | [Os arquivos do nível e os quadros](output.md) | as partes `.glb`, o `.json`, os quadros `enu` e `game` |
 | [Como os arquivos são lidos](reading.md) | arquivos, o codec do mapa de altura, água, cidades, ajustes por marcos |
 | [Arquivos sem tabela de arquivos](archives-without-table.md) | o segundo jogo, lido até onde os seus arquivos permitem |
-| [Velocidade, testes, termos](terms.md) | numba, os testes, os termos do jogo, a licença |
+| [Velocidade, testes, termos](terms.md) | numba, os testes, o que é lido e o que não é incluído, a licença |
 | [Referência de comandos](../cli-reference.md) | cada opção, gerada a partir do código |
 | [Manutenção destas páginas](maintaining.md) | a lista de verificação de cada versão |
 

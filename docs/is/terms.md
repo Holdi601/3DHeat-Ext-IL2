@@ -27,13 +27,13 @@ python -m pytest -q
 
 ## Skilmálarnir {#the-terms}
 
-Leyfissamningur IL-2 Sturmovik: Great Battles og IL-2 Series (1C Game
-Studios / 777 Studios) **fannst ekki**: ekki í uppsetningunni (þar sem
-`data/Licenses.txt` geymir aðeins leyfi þriðja aðila), ekki á vef útgefandans,
-og Steam EULA síðan hlóðst ekki. Athugaðu hann sjálfs þín vegna áður en þú treystir á þetta.
-Þetta verkfæri les aðeins skjalasöfnin og breytir þeim aldrei. Borðin sem það skrifar haldast
-á þinni vél: **birtu þau aldrei**. Ekkert hér fylgir með neinum leikjagögnum, og
-prófanirnar smíða hverja skrá sem þær lesa.
+Þetta verkfæri les skjalasöfnin í þinni eigin uppsetningu á IL-2 Sturmovik: Great Battles á tölvunni þinni og breytir þeim aldrei.
+
+Ekkert úr leiknum fylgir með eða er dreift áfram: engar leikjaskrár, enginn leikjakóði, engin DLL-söfn; prófanirnar búa sjálfar til hverja skrá sem þær lesa. Borðin sem það skrifar verða eftir á tölvunni þinni.
+
+3DHeat IL-2 tengist ekki 1C Game Studios / 777 Studios og er ekki stutt af þeim. IL-2 Sturmovik og tengd heiti og vörumerki tilheyra eigendum sínum.
+
+Rétthafar: stofnið verkbeiðni á [github.com/Holdi601/3DHeat-Ext-IL2/issues](https://github.com/Holdi601/3DHeat-Ext-IL2/issues) - við svörum fljótt og fjarlægjum hvað sem er að beiðni.
 
 ## Leyfi {#licence}
 

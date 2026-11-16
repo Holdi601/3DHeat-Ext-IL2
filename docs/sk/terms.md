@@ -25,12 +25,13 @@ súbory `height.hini` a archívy bez tabuľky súborov.
 
 ## Podmienky {#the-terms}
 
-Licenčná zmluva hry IL-2 Sturmovik: Great Battles a IL-2 Series (1C Game
-Studios / 777 Studios) sa **nenašla**: nie v inštalácii (jej
-`data/Licenses.txt` obsahuje len licencie tretích strán), nie na stránke vydavateľa
-a stránka EULA na Steame sa nenačítala. Pred tým, ako sa na to spoľahnete, ju overte sami.
-Tento nástroj iba číta archívy a nikdy ich nemení. Úrovne, ktoré zapisuje, ostávajú
-na vašom počítači: **nikdy ich nezverejňujte**. Nič tu neobsahuje herné dáta a testy vytvárajú každý súbor, ktorý čítajú.
+Tento nástroj číta archívy vašej vlastnej inštalácie IL-2 Sturmovik: Great Battles na vašom počítači a nikdy ich nemení.
+
+Nič z hry sa nedodáva ani ďalej nešíri: žiadne súbory hry, žiadny kód hry, žiadne knižnice DLL; testy si každý súbor, ktorý čítajú, vytvoria samy. Úrovne, ktoré zapíše, zostávajú na vašom počítači.
+
+3DHeat IL-2 nie je pridružený k 1C Game Studios / 777 Studios ani ním schválený. IL-2 Sturmovik a súvisiace názvy a ochranné známky patria ich vlastníkom.
+
+Držitelia práv: založte hlásenie na [github.com/Holdi601/3DHeat-Ext-IL2/issues](https://github.com/Holdi601/3DHeat-Ext-IL2/issues) - odpovedáme rýchlo a na požiadanie čokoľvek odstránime.
 
 ## Licencia {#licence}
 

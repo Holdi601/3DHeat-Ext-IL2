@@ -3,7 +3,7 @@ title: "Startseite"
 nav_order: 1
 lang: "de"
 source: index.md
-source_hash: "e495b9b1064a"
+source_hash: "37cc4e8f571d"
 nav_exclude: true
 search_exclude: true
 permalink: /de/
@@ -54,6 +54,8 @@ Du solltest eine Zeile pro Karte von `list` sehen und `ok ...` von `extract`. La
 Die Level, die es schreibt, werden aus den Daten des Spiels gebaut: sie bleiben **auf deinem Rechner**;
 veröffentliche sie niemals ([Bedingungen](terms.md)).
 
+Jeder Spiel-Leser ist ein eigenes kleines Projekt mit eigener Lizenzdatei, eigenen Releases und eigenem Issue-Tracker. So lässt er sich für sich allein installieren, aktualisieren, pflegen - oder auf Wunsch eines Rechteinhabers zurückziehen -, ohne den Viewer oder die anderen Werkzeuge zu berühren.
+
 ## Seiten {#pages}
 
 | Seite | Was sie behandelt |
@@ -64,7 +66,7 @@ veröffentliche sie niemals ([Bedingungen](terms.md)).
 | [Die Level-Dateien und Rahmen](output.md) | die `.glb`-Teile, die `.json`, die Rahmen `enu` und `game` |
 | [Wie die Dateien gelesen werden](reading.md) | Archive, der Codec der Höhenkarte, Wasser, Städte, Anpassung über Orientierungspunkte |
 | [Archive ohne Dateitabelle](archives-without-table.md) | das zweite Spiel, so weit gelesen, wie seine Archive es zulassen |
-| [Geschwindigkeit, Tests, Bedingungen](terms.md) | numba, die Tests, die Bedingungen des Spiels, die Lizenz |
+| [Geschwindigkeit, Tests, Bedingungen](terms.md) | numba, die Tests, was gelesen und was nicht mitgeliefert wird, die Lizenz |
 | [Befehlsreferenz](../cli-reference.md) | jede Option, aus dem Code erzeugt |
 | [Diese Doku pflegen](maintaining.md) | die Checkliste für jedes Release |
 

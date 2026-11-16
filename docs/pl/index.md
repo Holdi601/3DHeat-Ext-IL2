@@ -52,6 +52,8 @@ Potem wczytaj `levels/<map>/<map>.glb` w panelu **Tło / poziom** przeglądarki
 Poziomy, które narzędzie zapisuje, są zbudowane z danych gry: zostają **na twoim komputerze**;
 nigdy ich nie publikuj ([Warunki](terms.md)).
 
+Każdy czytnik gry to osobny mały projekt z własnym plikiem licencji, własnymi wydaniami i własnym systemem zgłoszeń, więc można go instalować, aktualizować, utrzymywać - albo wycofać na prośbę właściciela praw - osobno, bez wpływu na przeglądarkę i pozostałe narzędzia.
+
 ## Strony {#pages}
 
 | Strona | Czego dotyczy |
@@ -62,7 +64,7 @@ nigdy ich nie publikuj ([Warunki](terms.md)).
 | [Pliki poziomu i układy](output.md) | części `.glb`, `.json`, układy `enu` i `game` |
 | [Jak czytane są pliki](reading.md) | archiwa, kodek mapy wysokości, woda, miasta, dopasowania do punktów orientacyjnych |
 | [Archiwa bez tabeli plików](archives-without-table.md) | druga gra, odczytana tak daleko, jak pozwalają archiwa |
-| [Szybkość, testy, warunki](terms.md) | numba, testy, warunki gry, licencja |
+| [Szybkość, testy, warunki](terms.md) | numba, testy, co jest czytane i czego nie dołączamy, licencja |
 | [Opis poleceń](../cli-reference.md) | każda opcja, generowana z kodu |
 | [Utrzymanie tych stron](maintaining.md) | lista kontrolna wydania |
 
