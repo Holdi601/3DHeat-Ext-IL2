@@ -25,7 +25,44 @@ and issue tracker, so it can be installed, updated, maintained - or withdrawn
 on a rights holder's request - on its own, without affecting the viewer or the
 other tools.
 
-## Install
+## Quick start for new users
+
+You need: Windows, [Python](https://www.python.org/downloads/) 3.10 or later
+("Add python.exe to PATH" ticked in its installer), IL-2 Sturmovik: Great
+Battles installed through Steam (found by itself), and about 30 MB of disk
+space a map. No Git is needed.
+
+1. Install the tool (one line, in PowerShell or a command prompt), and
+   optionally numba, which decodes 20 to 50 times faster:
+
+   ```bash
+   python -m pip install https://github.com/Holdi601/3DHeat-Ext-IL2/archive/refs/tags/v0.2.0.zip
+   python -m pip install numba
+   ```
+
+2. List the maps and export one, or all (an install outside Steam needs
+   `--game "<IL-2 folder>"`):
+
+   ```bash
+   heat3d-il2-level list
+   heat3d-il2-level extract landscape_stalin_s -o levels
+   heat3d-il2-level extract --all -o levels
+   ```
+
+3. Each map goes into its own folder: `levels\landscape_stalin_s\landscape_stalin_s.glb`
+   (the level, about 30 MB, in seconds with numba) and `landscape_stalin_s.json`
+   beside it (where it lies on the earth). `extract` prints
+   `ok <glb> <n> triangles (enu frame)` per map.
+4. Open it in the [3DHeat viewer](https://github.com/Holdi601/3DHeat#quick-start):
+   download the viewer (**Code -> Download ZIP**, unpack) and double-click
+   `start.bat`; it offers to install [Node.js](https://nodejs.org/) when it is
+   missing and opens Chrome or Edge at `http://127.0.0.1:5273`. There,
+   **Background / level -> 3D model...** and pick the `.glb`.
+
+When a new release is out, the tool says so when it starts and offers to
+update itself (`python -m heat3d_ext_il2.update` does the same).
+
+## Install from a checkout
 
 New to the command line? Read [Before you start](https://holdi601.github.io/3DHeat-Ext-IL2/before-you-start.html) first.
 

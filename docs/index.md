@@ -34,23 +34,35 @@ What it is useful for:
 
 ## Quick start
 
-New to the command line? Read [Before you start](before-you-start.md) first.
-Run these in the folder you cloned or unzipped:
+You need Windows, Python 3.10 or later ("Add python.exe to PATH" ticked in its
+installer), IL-2 Sturmovik: Great Battles installed through Steam (found by
+itself) and about 30 MB of disk space a map; no Git. New to the command line?
+Read [Before you start](before-you-start.md) first.
 
 ```bash
-python -m pip install -e .                         # installs the heat3d-il2-level command
-python -m pip install -e .[fast]                            # with numba: decoding 20 to 50 times faster
-heat3d-il2-level list                              # every map found, with its latitude/longitude box
-heat3d-il2-level extract <map> -o levels           # one map (names as `list` prints them, wildcards allowed)
-heat3d-il2-level extract --all -o levels           # every map
+python -m pip install https://github.com/Holdi601/3DHeat-Ext-IL2/archive/refs/tags/v0.2.0.zip
+python -m pip install numba                               # optional: decoding 20 to 50 times faster
+heat3d-il2-level list                                     # every map found, with its latitude/longitude box
+heat3d-il2-level extract landscape_stalin_s -o levels     # one map (names as `list` prints them, wildcards allowed)
+heat3d-il2-level extract --all -o levels                  # every map
 ```
 
-You should see a line per map from `list`, and `ok ...` from `extract`.
-Then load `levels/<map>/<map>.glb` in the viewer's Background / level panel
-([Levels](https://holdi601.github.io/3DHeat/levels.html)).
+You should see a line per map from `list`, and
+`ok <glb> <n> triangles (enu frame)` per map from `extract`. Each map goes into
+its own folder: `levels\landscape_stalin_s\landscape_stalin_s.glb` (the level,
+about 30 MB, in seconds with numba) and `landscape_stalin_s.json` beside it
+(where it lies on the earth). An install outside Steam needs
+`--game "<IL-2 folder>"`.
 
-The levels it writes are built from the game's data: they stay **on your
-machine**; never publish them ([Terms](terms.md)).
+Then open the `.glb` in the [3DHeat viewer](https://github.com/Holdi601/3DHeat#quick-start):
+download it (**Code -> Download ZIP**, unpack), double-click `start.bat` (it
+offers to install Node.js when it is missing and opens `http://127.0.0.1:5273`),
+then **Background / level -> 3D model...** and pick the file
+([Levels](https://holdi601.github.io/3DHeat/levels.html)). The level stays on
+your machine.
+
+When a new release is out, the tool says so when it starts and offers to
+update itself.
 
 Each game reader is its own small project with its own licence file, releases
 and issue tracker, so it can be installed, updated, maintained - or withdrawn

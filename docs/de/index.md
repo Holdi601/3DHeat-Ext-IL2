@@ -3,7 +3,7 @@ title: "Startseite"
 nav_order: 1
 lang: "de"
 source: index.md
-source_hash: "37cc4e8f571d"
+source_hash: "f2eb7f19def1"
 nav_exclude: true
 search_exclude: true
 permalink: /de/
@@ -36,23 +36,34 @@ Wofür es nützlich ist:
 
 ## Schnellstart {#quick-start}
 
-Noch nie in der Kommandozeile gearbeitet? Lies zuerst [Bevor du anfängst](before-you-start.md).
-Führe diese Befehle in dem Ordner aus, in den du das Werkzeug geklont oder entpackt hast:
+Du brauchst Windows, Python 3.10 oder neuer (im Installer "Add python.exe to PATH"
+ankreuzen), IL-2 Sturmovik: Great Battles über Steam installiert (wird von selbst
+gefunden) und etwa 30 MB Platz je Karte; Git ist nicht nötig. Noch nie in der
+Kommandozeile gearbeitet? Lies zuerst [Bevor du anfängst](before-you-start.md).
 
 ```bash
-python -m pip install -e .                         # installiert den Befehl heat3d-il2-level
-python -m pip install -e .[fast]                            # mit numba: Dekodieren 20- bis 50-mal schneller
-heat3d-il2-level list                              # jede gefundene Karte, mit ihrem Breiten-/Längengrad-Bereich
-heat3d-il2-level extract <map> -o levels           # eine Karte (Namen wie `list` sie ausgibt, Platzhalter erlaubt)
-heat3d-il2-level extract --all -o levels           # jede Karte
+python -m pip install https://github.com/Holdi601/3DHeat-Ext-IL2/archive/refs/tags/v0.2.0.zip
+python -m pip install numba                               # optional: Dekodieren 20- bis 50-mal schneller
+heat3d-il2-level list                                     # jede gefundene Karte, mit ihrem Breiten-/Längengrad-Bereich
+heat3d-il2-level extract landscape_stalin_s -o levels     # eine Karte (Namen wie `list` sie ausgibt, Platzhalter erlaubt)
+heat3d-il2-level extract --all -o levels                  # jede Karte
 ```
 
-Du solltest eine Zeile pro Karte von `list` sehen und `ok ...` von `extract`. Lade dann
-`levels/<map>/<map>.glb` im Panel „Hintergrund / Level“ des Viewers
-([Levels](https://holdi601.github.io/3DHeat/levels.html)).
+Du solltest eine Zeile pro Karte von `list` sehen und von `extract` je Karte
+`ok <glb> <n> triangles (enu frame)`. Jede Karte kommt in ihren eigenen Ordner:
+`levels\landscape_stalin_s\landscape_stalin_s.glb` (das Level, etwa 30 MB, mit numba in
+Sekunden) und daneben `landscape_stalin_s.json` (wo es auf der Erde liegt). Liegt die
+Installation nicht in Steam, nenne sie mit `--game "<IL-2-Ordner>"`.
 
-Die Level, die es schreibt, werden aus den Daten des Spiels gebaut: sie bleiben **auf deinem Rechner**;
-veröffentliche sie niemals ([Bedingungen](terms.md)).
+Dann öffne die `.glb` im [3DHeat-Viewer](https://github.com/Holdi601/3DHeat#quick-start):
+herunterladen (**Code -> Download ZIP**, entpacken), `start.bat` doppelklicken (es bietet
+an, Node.js zu installieren, wenn es fehlt, und öffnet `http://127.0.0.1:5273`), dann
+**Hintergrund / Level -> 3D-Modell...** und die Datei wählen
+([Levels](https://holdi601.github.io/3DHeat/levels.html)). Das Level bleibt auf deinem
+Rechner.
+
+Wenn ein neues Release erscheint, sagt das Werkzeug es beim Start und bietet an, sich
+selbst zu aktualisieren.
 
 Jeder Spiel-Leser ist ein eigenes kleines Projekt mit eigener Lizenzdatei, eigenen Releases und eigenem Issue-Tracker. So lässt er sich für sich allein installieren, aktualisieren, pflegen - oder auf Wunsch eines Rechteinhabers zurückziehen -, ohne den Viewer oder die anderen Werkzeuge zu berühren.
 

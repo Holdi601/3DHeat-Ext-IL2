@@ -5,6 +5,8 @@
 - Maps whose `height.hini` carries another map's corners placed on the earth by a landmark fit.
 - The game's water mask (`water.wtr`) and town footprints; `--no-water`, `--no-towns`.
 - `list` counts one map in the singular.
+- Installs with one pip line from the release zip, no Git needed; a pip install knows its version and updates itself with pip when a newer release is out.
+- README: a quick start for new users.
 
 ## 0.1.0
 
