@@ -2,6 +2,7 @@ __pycache__/
 *.egg-info/
 build/
 dist/
+dist-standalone/
 .pytest_cache/
 # Game files and extracted levels never belong here.
 *.gtp

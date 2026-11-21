@@ -25,7 +25,21 @@ and issue tracker, so it can be installed, updated, maintained - or withdrawn
 on a rights holder's request - on its own, without affecting the viewer or the
 other tools.
 
-## Quick start for new users
+## The standalone program
+
+No Python needed: download the file for your system from the
+[latest release](https://github.com/Holdi601/3DHeat-Ext-IL2/releases/latest)
+(`heat3d-il2-<version>-windows-x64.zip` for Windows,
+`heat3d-il2-<version>-linux-x64.tar.gz` for IL-2 under Proton on Linux and
+Steam Deck), check it against `SHA256SUMS`, unpack it and start `heat3d-il2`.
+Its window finds your IL-2 installs, says what is missing, lists the maps
+that are new or changed since the last extraction and extracts the ones you
+pick into the 3DHeat levels folder, and asks before it updates itself.
+`heat3d-il2 --help` lists its commands (every command below runs through it
+too). The 3DHeat app's Extractors panel can install and update it for you.
+See [The standalone program](https://holdi601.github.io/3DHeat-Ext-IL2/#the-standalone-program-no-python-needed).
+
+## Quick start for new users (Python)
 
 You need: Windows, [Python](https://www.python.org/downloads/) 3.10 or later
 ("Add python.exe to PATH" ticked in its installer), IL-2 Sturmovik: Great
@@ -59,8 +73,11 @@ space a map. No Git is needed.
    missing and opens Chrome or Edge at `http://127.0.0.1:5273`. There,
    **Background / level -> 3D model...** and pick the `.glb`.
 
-When a new release is out, the tool says so when it starts and offers to
-update itself (`python -m heat3d_ext_il2.update` does the same).
+When a new release is out, the tool says so when it starts, shows its notes
+and asks: update now, later, or skip this version. It updates without asking
+only when you chose that: `--auto-update` (this run), the standalone window's
+*Update automatically*, or `HEAT3D_AUTO_UPDATE=1`. `python -m heat3d_ext_il2.update`
+updates on request; `HEAT3D_NO_UPDATE=1` switches the check off.
 
 ## Install from a checkout
 

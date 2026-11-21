@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.3.0
+
+- A standalone program for Windows and Linux (no Python needed), built by CI with a `SHA256SUMS` file. Without
+  arguments it opens a window: what is found and what is missing (Great Battles and Korea installs, disk space),
+  the levels folder, the maps as new / changed by a game update / extracted by an older version / up to date,
+  and extraction of the picked ones one at a time into `<levels>/il2/` (Korea: `<levels>/il2-korea/`), and
+  updates.
+- Each extracted map is recorded in `<levels>/il2/.heat3d-extract.json` (extractor version, size and SHA-256 of
+  the archives its files are in), so maps an update adds or changes are found and only those extracted:
+  `status --json`, `extract [--game il2|il2-korea] --new` / `--changed` / `--outdated` / `<map>...`,
+  `--progress-json`.
+- Updates ask first (update now / later / skip this version) unless automatic updates were chosen
+  (`--auto-update`, the window's checkbox, or `HEAT3D_AUTO_UPDATE=1`).
+- Installs are found in every Steam library on Windows and Linux (native, flatpak, Steam Deck; IL-2 under
+  Proton) and in the launcher's usual folders on Windows.
+
 ## 0.2.0
 
 - Maps whose `height.hini` carries another map's corners placed on the earth by a landmark fit.

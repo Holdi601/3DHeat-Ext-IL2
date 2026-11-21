@@ -32,7 +32,44 @@ What it is useful for:
 
 ![From an IL-2 install to a 3DHeat level](assets/img/flow.svg)
 
-## Quick start
+## The standalone program (no Python needed)
+
+Each [release](https://github.com/Holdi601/3DHeat-Ext-IL2/releases/latest)
+has a ready-to-run program for Windows (`heat3d-il2-<version>-windows-x64.zip`)
+and Linux (`heat3d-il2-<version>-linux-x64.tar.gz`, for IL-2 installed by
+Steam under Proton, Steam Deck included), with a `SHA256SUMS` file to check
+the download. Unpack it anywhere and start `heat3d-il2`.
+
+Started without arguments it opens a window that:
+
+- finds IL-2 Sturmovik: Great Battles and IL-2 Series: Korea in any Steam
+  library (Windows, Linux native and flatpak, Steam Deck) and the launcher's
+  usual folders, or lets you choose each one's folder;
+- says what is missing: a game, free disk space;
+- lists the maps (each season of a map is one) as new, changed by a game
+  update, extracted by an older version, or up to date, and extracts the ones
+  you pick, one at a time, into the 3DHeat levels folder (`HEAT3D_LEVELS`, by
+  default `%LOCALAPPDATA%\3DHeat\levels` on Windows and
+  `~/.local/share/3dheat/levels` on Linux), under `il2/` (Korea under
+  `il2-korea/`), where the viewer finds them: `<map>/<map>.glb` and its
+  `.json`;
+- checks for updates and asks before installing one, unless you tick
+  *Update automatically*.
+
+A map an update adds or changes is found the next time: each extracted map is
+recorded in `<levels>/il2/.heat3d-extract.json` with the version that
+extracted it and the size and SHA-256 of the archives its files are in.
+
+The same program runs every command below: `heat3d-il2 heat3d-il2-level list`,
+`heat3d-il2 heat3d-il2-level extract <map> -o <folder>`. For scripts:
+`heat3d-il2 status --json` reports the maps' state,
+`heat3d-il2 extract --new` extracts only the new ones and
+`heat3d-il2 --check --json` says what is found and missing. The 3DHeat app's
+Extractors panel installs, updates and starts it for you.
+`python -m heat3d_ext_il2.standalone_spec` opens the same window from the
+source.
+
+## Quick start (Python)
 
 You need Windows, Python 3.10 or later ("Add python.exe to PATH" ticked in its
 installer), IL-2 Sturmovik: Great Battles installed through Steam (found by
@@ -61,8 +98,10 @@ then **Background / level -> 3D model...** and pick the file
 ([Levels](https://holdi601.github.io/3DHeat/levels.html)). The level stays on
 your machine.
 
-When a new release is out, the tool says so when it starts and offers to
-update itself.
+When a new release is out, the tool says so when it starts, shows its notes
+and asks: update now, later, or skip this version. It updates without asking
+only when you chose that: `--auto-update` (this run), the standalone window's
+*Update automatically*, or `HEAT3D_AUTO_UPDATE=1`.
 
 Each game reader is its own small project with its own licence file, releases
 and issue tracker, so it can be installed, updated, maintained - or withdrawn

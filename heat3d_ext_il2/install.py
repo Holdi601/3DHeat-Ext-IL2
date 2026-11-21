@@ -11,7 +11,6 @@ readable `height.hini`, so its maps have no corner coordinates here.
 from __future__ import annotations
 
 import os
-import re
 import struct
 from pathlib import Path
 
@@ -22,34 +21,34 @@ from .gtp import Entry, read_table, scan_chain
 from .hini import parse_hini
 from .level import MapSource
 
-_LIBRARY_PATH = re.compile(r'"path"\s*"([^"]+)"')
-_STEAM_DEFAULTS = (r"C:\Program Files (x86)\Steam", r"C:\Program Files\Steam")
 _FOLDERS = ("IL-2 Sturmovik Battle of Stalingrad", "IL-2 Sturmovik Great Battles", "IL2Series")
 
 
 def steam_libraries() -> list[Path]:
-    roots: list[Path] = []
-    seen: set[str] = set()
-    for base in _STEAM_DEFAULTS:
-        try:
-            text = (Path(base) / "config" / "libraryfolders.vdf").read_text(encoding="utf-8", errors="replace")
-        except OSError:
-            continue
-        for found in _LIBRARY_PATH.finditer(text):
-            p = Path(found.group(1).replace("\\\\", "\\"))
-            if str(p).lower() not in seen:
-                seen.add(str(p).lower())
-                roots.append(p)
-    return roots
+    """Every Steam library (Windows, Linux native, flatpak and Steam Deck, macOS)."""
+    from .app import paths
+
+    return paths.steam_libraries()
+
+
+def _launcher_folders() -> list[Path]:
+    """Where the game's own launcher usually installs it (Windows)."""
+    if os.name != "nt":
+        return []
+    bases = [Path(os.environ.get(v, d)) for v, d in (("ProgramFiles", r"C:\Program Files"),
+                                                     ("ProgramFiles(x86)", r"C:\Program Files (x86)"))]
+    bases += [Path(r"C:\Games"), Path("C:\\")]
+    return [b / f for b in bases for f in _FOLDERS]
 
 
 def find_installs(given: list[str] | None = None) -> list[Path]:
-    """Every IL-2 folder found: the ones given (`--game`, `HEAT3D_IL2_GAME`), else Steam's."""
+    """Every IL-2 folder found: the ones given (`--game`, `HEAT3D_IL2_GAME`), else Steam's and the launcher's usual folders."""
     out: list[Path] = []
     wanted = list(given or [])
     if os.environ.get("HEAT3D_IL2_GAME"):
         wanted += os.environ["HEAT3D_IL2_GAME"].split(os.pathsep)
-    cands = [Path(g) for g in wanted] or [lib / "steamapps" / "common" / f for lib in steam_libraries() for f in _FOLDERS]
+    cands = [Path(g) for g in wanted] or (
+        [lib / "steamapps" / "common" / f for lib in steam_libraries() for f in _FOLDERS] + _launcher_folders())
     for c in cands:
         if (c / "data").is_dir() and any((c / "data").glob("Maps*.gtp")) and c not in out:
             out.append(c)
