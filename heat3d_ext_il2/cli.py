@@ -1,5 +1,6 @@
 """
-`heat3d-il2-level list` and `heat3d-il2-level extract <map>... | --all -o <folder>`
+`heat3d-il2-level list`, `heat3d-il2-level extract <map>... | --all -o <folder>`, `heat3d-il2-level models`,
+`heat3d-il2-level catalog` and `heat3d-il2-level --check [--json]`
 
 Reads the maps of IL-2 Sturmovik: Great Battles (and, as far as it can, IL-2
 Series: Korea) from the user's own install and writes each as
@@ -31,7 +32,10 @@ def main(argv: list[str] | None = None) -> int:
         pass
     ap = argparse.ArgumentParser(prog="heat3d-il2-level", description="IL-2 Sturmovik maps into 3DHeat .glb levels")
     ap.add_argument("--version", action="version", version=f"heat3d-il2-level {__version__}")
-    sub = ap.add_subparsers(dest="cmd", required=True)
+    ap.add_argument("--check", action="store_true", help="say what is found and what is missing, then stop")
+    ap.add_argument("--json", action="store_true", help="with --check: as one JSON object")
+    ap.add_argument("--levels", help="the 3DHeat levels folder (default: HEAT3D_LEVELS)")
+    sub = ap.add_subparsers(dest="cmd")
     ls = sub.add_parser("list", help="list the maps found")
     ls.add_argument("--game", action="append", help="an IL-2 folder (repeatable; default: found through Steam)")
     ex = sub.add_parser("extract", help="extract maps")
@@ -50,7 +54,31 @@ def main(argv: list[str] | None = None) -> int:
     ex.add_argument("--no-water", action="store_true", help="leave the water out")
     ex.add_argument("--no-towns", action="store_true", help="leave the town footprints out")
     ex.add_argument("--skip-existing", action="store_true", help="leave maps whose .glb exists")
+    mo = sub.add_parser("models", help="every aircraft, vehicle, gun and ship model as a local 3DHeat model pack")
+    mo.add_argument("--game", action="append", help="an IL-2 folder (repeatable)")
+    mo.add_argument("-o", "--out", help="the pack folder (default: <levels>/model-packs/il2)")
+    mo.add_argument("--units", help="only these units, by folder name (bf109g6,pziv-g,...)")
+    mo.add_argument("--domains", help="air,ground,sea (default: all)")
+    mo.add_argument("--limit", type=int, help="at most this many units")
+    mo.add_argument("--force", action="store_true", help="rebuild units that are up to date")
+    mo.add_argument("--levels", default=argparse.SUPPRESS, help="the 3DHeat levels folder (default: HEAT3D_LEVELS)")
+    ca = sub.add_parser("catalog", help="the units of your install as <levels>/il2/catalog.json")
+    ca.add_argument("--game", action="append", help="an IL-2 folder (repeatable)")
+    ca.add_argument("-o", "--out", help="the catalogue file (default: <levels>/il2/catalog.json)")
+    ca.add_argument("--list", action="store_true", help="print the units instead of writing the file")
+    ca.add_argument("--levels", default=argparse.SUPPRESS, help="the 3DHeat levels folder (default: HEAT3D_LEVELS)")
     args = ap.parse_args(argv)
+    from . import modelcli
+
+    if args.check:
+        return modelcli.print_check(args)
+    if args.cmd is None:
+        ap.print_help()
+        return 2
+    if args.cmd == "models":
+        return modelcli.cmd_models(args)
+    if args.cmd == "catalog":
+        return modelcli.cmd_catalog(args)
 
     roots = find_installs(args.game)
     if not roots:

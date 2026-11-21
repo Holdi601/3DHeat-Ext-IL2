@@ -1,6 +1,7 @@
 {
   "spec": "heat3d_ext_il2.standalone_spec",
   "collect_submodules": ["numpy"],
+  "collect": ["fast_simplification"],
   "platforms": {
     "windows-x64": {"build": true, "tested": true, "note": "Great Battles (Steam and the game's own launcher), Korea where readable; CI builds and smoke-runs, maps checked on a real install"},
     "linux-x64": {"build": true, "tested": false, "note": "Steam/Proton installs found (native, flatpak, Steam Deck); CI builds and smoke-runs"}

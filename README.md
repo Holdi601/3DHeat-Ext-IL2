@@ -129,6 +129,23 @@ failed (the others are still written); 2 no install or no map found.
 
 Every option, as the program prints it: [Command reference](https://holdi601.github.io/3DHeat-Ext-IL2/cli-reference.html).
 
+## Unit models and the unit list
+
+```bash
+heat3d-il2-level models --levels <levels folder>    # every aircraft, vehicle, gun and ship as a local model pack
+heat3d-il2-level catalog --levels <levels folder>   # the units, with the real vehicle each one is
+heat3d-il2-level --check                            # what is found and what is missing
+```
+
+`models` writes `<levels>\model-packs\il2\` (one `.glb` per unit and
+`model-pack.json`); the 3DHeat viewer then draws each unit of a recording as
+its own model at its true size, with turning propellers, landing gear that
+folds away in flight and a tank's turret and gun following the data.
+`catalog` writes `<levels>\il2\catalog.json`: each unit's real vehicle name
+(`Bf 109 G-6`, `Il-2 mod.1943`) and the names other games give it, so other
+games' units of the same vehicle can be drawn with these models and the other
+way round. Both stay on your machine. Details: [Unit models](https://holdi601.github.io/3DHeat-Ext-IL2/models.html).
+
 ## What comes out
 
 `<out>/<map>/<map>.glb` (a glTF binary level) and `<map>.json` beside it. Levels are

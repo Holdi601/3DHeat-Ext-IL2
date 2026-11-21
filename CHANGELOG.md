@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.1
+
+- `models`: every aircraft, vehicle, gun and ship of your install as a local 3DHeat model pack, from a new reader for the game's `.mgm` models: three levels of detail posed as the game shows the unit at rest, propellers (`rotor.N`, hub, axis, diameter), retractable landing gear (`gear`, posed down), a vehicle's turret and gun, and the hit regions (`dm`, one per piece the game can shoot away).
+- `catalog`: the units with the real vehicle each one is and the names other games give it.
+- `--check [--json]`: what is found and what is missing.
+
 ## 0.3.0
 
 - A standalone program for Windows and Linux (no Python needed), built by CI with a `SHA256SUMS` file. Without
@@ -38,6 +44,7 @@ Where each feature is documented
 | Installing, a first run | [Before you start](docs/before-you-start.md) |
 | Finding installs and maps (`list`, `--game`, `HEAT3D_IL2_GAME`) | [Finding maps: list](docs/list.md) |
 | Building levels (`extract` and its options, `HEAT3D_DEBUG`) | [Building levels: extract](docs/extract.md) |
+| Unit models and the unit list (`models`, `catalog`, `--check`) | [Unit models](docs/models.md) |
 | The `.glb` parts, the `.json`, the `enu` and `game` frames | [The level files and frames](docs/output.md) |
 | Archives, the heightmap codec, water, towns, landmark fits | [How the files are read](docs/reading.md) |
 | The second game, whose archives have no file table | [Archives without a file table](docs/archives-without-table.md) |
