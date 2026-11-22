@@ -126,14 +126,21 @@ def cmd_catalog(args) -> int:
     units = models.scan(gb)
     names = models.object_names(gb)
     items = []
-    for key, u in sorted(units.items()):
+    taken: set = set()
+    # A unit's id is what the game's own logs and recordings call it (its object name, "Bf 109 G-6"); a static form
+    # (folder "_name") or a second folder of the same name keeps its folder name.
+    for key, u in sorted(units.items(), key=lambda kv: (kv[1].unit.startswith("_"), kv[0])):
         e = catalog.entry(u.folder, u.unit, names.get(u.unit, ""))
-        items.append({"id": u.unit, "kind": "vehicle", "name": e["gameName"], "key": e["key"], "aliases": e["aliases"],
-                      "class": e["class"], "nation": e["nation"], "domain": e["domain"], "type": e["type"],
-                      "folder": u.folder, "model": f"model-packs/{GAME}/{catalog.safe_id(u.unit)}.glb"})
+        uid = e["gameName"] if e["type"] != "static" and e["gameName"].lower() not in taken else u.unit
+        taken.add(uid.lower())
+        items.append({"id": uid, "kind": "vehicle", "name": e["gameName"], "key": e["key"], "names": e["aliases"],
+                      "aliases": e["aliases"], "class": e["class"], "nation": e["nation"], "domain": e["domain"],
+                      "type": e["type"], "folder": u.folder, "unit": u.unit,
+                      "model": f"model-packs/{GAME}/{catalog.safe_id(u.unit)}.glb"})
     if args.list:
         for it in items:
-            print(f"{it['folder']}/{it['id']}\t{it['name']}\t{it['class']}\t{it['nation']}\t{', '.join(it['aliases'])}")
+            print(f"{it['folder']}/{it['unit']}\t{it['key']}\t{it['name']}\t{it['class']}\t{it['nation']}\t"
+                  f"{', '.join(it['aliases'])}")
         return 0
     lv = levels_folder(args.levels)
     path = Path(args.out) if args.out else (lv / GAME / "catalog.json" if lv else None)
