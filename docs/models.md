@@ -50,9 +50,37 @@ free disk space) and stops; `--check --json` says the same as one JSON object.
 - parts the viewer moves, from the model's own node names and animations:
   `rotor.N` for each propeller (its hub, axis and diameter), `gear` for
   retractable landing gear (fixed gear stays on the airframe), `turret` and
-  `gun` for a vehicle's turret and gun;
+  `gun` for a vehicle's turret and gun (as joints: the turret turns, the gun
+  raises on it);
 - `dm`: the hit regions, one per piece the game can shoot away (wing panels,
-  control surfaces, engine cowling, fuselage sections), named by the piece.
+  control surfaces, engine cowling, fuselage sections), named by the piece;
+- `aerial`: a vehicle's radio aerials, drawn but left out of its size.
+
+### Tanks you drive (Tank Crew)
+
+A tank or assault gun the player drives is put together the way the game puts
+it together: the hull, and each crew station with a weapon (the turret or the
+assault gun's mount, the commander's cupola, the hull machine gun) at its place
+on the hull. The hull comes from the game's own outside levels of detail; the
+gun is posed level and straight ahead, the hatches shut and the machine guns
+pointing forward, so the model has the vehicle's true size. Its index entry
+adds:
+
+- `turret` and `gun` as joints (`turret` turns about its ring, `gun` raises on
+  the turret; an assault gun's limited traverse is its `turret`), with the
+  traverse and elevation limits the game gives (`yawLimits`, `pitchLimits`);
+- `dm`: every armour plate of the hull and the stations with its thickness
+  (`mm`, the millimetres of armour steel the game counts for it) and the part
+  it moves with, and the modules: `ammo`, `fuel`, `engine`, `transmission`,
+  `radiator`, `electrics`, `optics`, `gun`, `drive` (turret traverse), and the
+  outside parts (`tracks`, `wheel`, `structure`: covers, side screens, spare
+  parts). The viewer's vehicle hit analysis shows these plates, the armour
+  along a shot's way and the angle it met the plate;
+- `armoured` (how many armour plates), `armourMm` (thinnest and thickest),
+  `drivable: true`.
+
+In the catalogue these tanks carry the game's own name for them (`Pz.Kpfw.IV
+Ausf.G`, beside the computer-driven `PzKpfw IV Ausf.G`) and `drivable: true`.
 
 Muzzle flashes, smoke, lights, markings, propeller blur, damaged states and the
 cockpit are left out. A model that does not read as expected is skipped and

@@ -84,11 +84,12 @@ def cmd_models(args) -> int:
         return 2
     pack = Pack(out, GAME, game_build(gb), SOURCE)
     names = models.object_names(gb)
+    scripts = models.vehicle_scripts(gb)
     done = skipped = failed = 0
     t0 = time.time()
     for i, u in enumerate(picked):
         e = catalog.entry(u.folder, u.unit, names.get(u.unit, ""))
-        if not args.force and pack.fresh(u.unit, u.fingerprint):
+        if not args.force and pack.fresh(u.unit, models.fingerprint(u, scripts)):
             skipped += 1
             continue
         try:
@@ -96,7 +97,7 @@ def cmd_models(args) -> int:
             entry = models.build_unit(
                 u, pack, e["key"], e["type"], [e["gameName"]] if e["gameName"] != u.unit else [],
                 {"displayName": e["gameName"], "names": e["aliases"], "class": e["class"], "nation": e["nation"],
-                 "folder": u.folder})
+                 "folder": u.folder}, scripts=scripts)
             done += 1
             print(f"ok {u.folder}/{u.unit} {entry['file']} {'/'.join(map(str, entry['tris']))} triangles"
                   f"{' ' + ','.join(entry['parts']) if len(entry['parts']) > 1 else ''}", flush=True)
@@ -127,8 +128,8 @@ def cmd_catalog(args) -> int:
     names = models.object_names(gb)
     items = []
     taken: set = set()
-    # A unit's id is what the game's own logs and recordings call it (its object name, "Bf 109 G-6"); a static form
-    # (folder "_name") or a second folder of the same name keeps its folder name.
+    # A unit's id is what the game's own logs and recordings call it (its object name, "Bf 109 G-6"); a second folder
+    # of the same name keeps its folder name.
     for key, u in sorted(units.items(), key=lambda kv: (kv[1].unit.startswith("_"), kv[0])):
         e = catalog.entry(u.folder, u.unit, names.get(u.unit, ""))
         uid = e["gameName"] if e["type"] != "static" and e["gameName"].lower() not in taken else u.unit

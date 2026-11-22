@@ -142,7 +142,10 @@ heat3d-il2-level --check                            # what is found and what is 
 `models` writes `<levels>\model-packs\il2\` (one `.glb` per unit and
 `model-pack.json`); the 3DHeat viewer then draws each unit of a recording as
 its own model at its true size, with turning propellers, landing gear that
-folds away in flight and a tank's turret and gun following the data.
+folds away in flight and a tank's turret and gun following the data. The
+tanks you drive (Tank Crew) come with their armour plates (thickness in mm)
+and modules (ammunition, fuel, engine, transmission...) for the viewer's hit
+analysis.
 `catalog` writes `<levels>\il2\catalog.json`: each unit's real vehicle name
 (`Bf 109 G-6`, `Il-2 mod.1943`) and the names other games give it, so other
 games' units of the same vehicle can be drawn with these models and the other

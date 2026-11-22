@@ -191,3 +191,90 @@ def plane() -> bytes:
 
 def plane_txt() -> bytes:
     return b'lod="graphics\\Planes\\Test\\10_Test.MGM",400\r\nDefArg=-1,0.0\r\n'
+
+
+def _rot_z(deg: float) -> tuple:
+    """A turn about z as the file writes it (the reader takes the inverse)."""
+    a = np.radians(deg) / 2
+    return (0.0, 0.0, -np.sin(a), np.cos(a))
+
+
+def tank_hull() -> bytes:
+    """A drivable tank's hull (x forward, y up, z right; no root turn): a 6 x 1.2 x 3 m body on two tracks, and a 2 m
+    whip aerial at the back."""
+    root = Node("Scene Root")
+    body = Node("body_d0", root)
+    body.mesh = box((0, 1.0, 0), (6.0, 1.2, 3.0))
+    for side, z in (("L", -1.2), ("R", 1.2)):
+        t = Node(f"track{side}_lenta_d0", root)
+        t.mesh = box((0, 0.4, z), (6.0, 0.8, 0.5))
+    aerial = Node("antenna", root, local=mat((-2.5, 1.6, -1.0)))
+    aerial.mesh = box((0, 1.0, 0), (0.02, 2.0, 0.02))
+    return build(root, [])
+
+
+def tank_turret() -> bytes:
+    """Its turret, in the turret's own frame (origin on the ring): a 2 x 0.8 x 2 m body, a gun mount 1 m ahead and
+    0.3 m up whose 3 m barrel argument 30 turns from 30 degrees up (0) through level (0.5) to 30 degrees down (1),
+    and a hatch on the roof that argument 31 swings open (1) or shut (0)."""
+    root = Node("Scene Root")
+    tur = Node("Dummy_turret", root)
+    shell = Node("turret_d0", tur)
+    shell.mesh = box((0, 0.4, 0), (2.0, 0.8, 2.0))
+    mask = Node("Dummy_gunmask", tur, local=mat((1.0, 0.3, 0.0)))
+    gun = Node("gun_d0", mask)
+    gun.mesh = box((1.5, 0, 0), (3.0, 0.1, 0.1))
+    hatch = Node("Dummy_hatch", tur, local=mat((-0.5, 0.8, 0.0)))
+    lid = Node("hatch_d0", hatch)
+    lid.mesh = box((0.25, 0.01, 0), (0.5, 0.02, 0.5))
+    elev = [(0.0, True, (0, 0, 0), _rot_z(30), (1, 1, 1)),
+            (0.5, True, (0, 0, 0), _rot_z(0), (1, 1, 1)),
+            (1.0, True, (0, 0, 0), _rot_z(-30), (1, 1, 1))]
+    swing = [(0.0, True, (0, 0, 0), _rot_z(0), (1, 1, 1)),
+             (1.0, True, (0, 0, 0), _rot_z(90), (1, 1, 1))]
+    return build(root, [(30, [(mask, elev)]), (31, [(hatch, swing)])])
+
+
+def col(objects: dict) -> bytes:
+    """A hit body `.col` text file: {name: (verts, faces)}."""
+    out = [f"AllObjects = {len(objects)}", ""]
+    for i, (name, (v, f)) in enumerate(objects.items()):
+        out += [f"[Object = {i}]", f'\tName="{name}"', "", "\tAX=1.0, 0.0, 0.0", "\tPIVOT=0.0, 0.0, 0.0", ""]
+        out += [f"\tVertex={k}: {x:.4f}, {y:.4f}, {z:.4f}" for k, (x, y, z) in enumerate(v)]
+        out += [""] + [f"\tFace={k}: {a}, {b}, {c}" for k, (a, b, c) in enumerate(f)] + ["", "[End]", ""]
+    return "\r\n".join(out).encode("latin1")
+
+
+def tank_files() -> dict:
+    """A drivable tank `_test` as an install holds it: models, hit bodies and scripts (none of them a game file)."""
+    g = "/graphics/vehicles/_test/"
+    s = "/luascripts/worldobjects/vehicles/"
+    hull_col = col({"front_1": box((3.0, 1.0, 0), (0.05, 1.0, 2.8)), "left_1": box((0, 1.0, -1.5), (5.8, 1.0, 0.04)),
+                    "ammunition_01": box((0, 0.8, 0.5), (0.6, 0.3, 0.4)), "#wL1": box((1, 0.3, -1.2), (0.6, 0.6, 0.2)),
+                    "#^body1000_coll": box((0, 1, 0), (1, 1, 1)), "Dummy_hull": box((0, 1, 0), (5, 1, 2))})
+    turret_col = col({"front_1a": box((1.0, 0.4, 0), (0.05, 0.7, 1.8)), "mask_1": box((1.05, 0.3, 0), (0.1, 0.4, 0.5)),
+                      "top_1": box((0, 0.8, 0), (1.8, 0.03, 1.8))})
+    return {
+        g + "_test.mgm": tank_hull(), g + "_10_test.mgm": tank_hull(), g + "_20_test.mgm": tank_hull(),
+        g + "_test.txt": b'lod="graphics\\Vehicles\\_Test\\_10_Test.MGM",200\r\nlod="graphics\\Vehicles\\_Test\\_20_Test.MGM",20'
+                         b"\r\nDefArg=-1,0\r\n",
+        g + "_test-c1-low.mgm": tank_turret(),
+        g + "_test-c1-low.txt": b"DefArg=-1,0\r\nDefArg=30,0.4\r\nDefArg=31,1.0\r\n",
+        g + "_test_detcoll.col": hull_col, g + "_test-c1_detcoll.col": turret_col,
+        s + "_test.txt": (b'object_name = "Test Tank"\r\nVisualImage=0,"graphics\\Vehicles\\_Test\\_Test.mgm",true\r\n'
+                          b'HitBody="graphics\\Vehicles\\_Test\\_Test_DetColl.col"\r\n'
+                          b'energyloss="front_1",false,50,1\t// x\r\nenergyloss="left_1",false,30,1\r\n'
+                          b'energyloss="ammunition_01",true,2,20000\r\nenergyloss="#wL1",true,5,1\r\n'
+                          b'energyloss="#^body1000_coll",false,0,1\r\n'
+                          b'[attach=1]\r\n\tposition= 0.5,1.6,0.0\r\n\trotation= 0, 0, 0\r\n'
+                          b'\tobject = "LuaScripts/WorldObjects/Vehicles/Turrets/_Test_T0.txt"\r\n[end]\r\n'),
+        s + "turrets/_test_t0.txt": (b'VisualImage=0,"graphics\\Vehicles\\_Test\\_Test-C1-low.mgm",97\r\n'
+                                     b'HitBody="graphics\\Vehicles\\_Test\\_Test-C1_DetColl.col"\r\n'
+                                     b"[TurretsPos=0]\r\n\t[Joint=0]\r\n\t\tSectorAngleMin = -180.0\r\n"
+                                     b"\t\tSectorAngleMax = 180.0\r\n\t\tAnimationArgNum = 10020\r\n\t[end]\r\n"
+                                     b"\t[Joint=1]\r\n\t\tSectorAngleMin = -20.0\r\n\t\tSectorAngleMax = 8.0\r\n"
+                                     b"\t\tAnimationArgNum = 301\r\n\t[end]\r\n"
+                                     b"\tAimSector=-180, 180, -8, 20\t//AI aim limits\r\n[end]\r\n"
+                                     b'energyloss="front_1a",false,50,1\r\nenergyloss="mask_1",false,43,1\r\n'
+                                     b'energyloss="top_1",false,10,1\r\n'),
+    }

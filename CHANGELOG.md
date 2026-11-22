@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.5.0
+
+- What's new: the tanks you drive in Tank Crew are in the model pack at their true size, with a turret that turns
+  and a gun that raises, and with their armour plates (thickness in mm) and modules (ammunition, fuel, engine,
+  transmission, radiator...) for the 3DHeat viewer's hit analysis.
+- `models`: a drivable tank or assault gun is put together from its hull and crew stations as the game does it
+  (before, only the hull was read, from its inside model: no turret, and tracks and aerials that made several
+  of them metres too long or tall). The gun is posed level, hatches shut, machine guns forward.
+- The computer-driven tanks' turret and gun are joints in the index too (`joints`), as in the other games' packs;
+  radio aerials are their own part (`aerial`) and no longer count in a vehicle's size; a wreck form some models
+  keep is left out.
+- `catalog`: the drivable tanks are tanks with the game's own name for them (they were marked as scenery).
+
 ## 0.4.0
 
 - Its own icon: the 3DHeat cube with a text badge for its game (letters in 3DHeat's colours), as the

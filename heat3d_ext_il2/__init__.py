@@ -5,4 +5,4 @@ the user's own install. Standalone; nothing of it is imported by the other
 3DHeat tools.
 """
 
-__version__ = "0.4.0"
+__version__ = "0.5.0"

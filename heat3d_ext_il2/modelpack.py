@@ -7,8 +7,10 @@ length, width, height, tris, gear}}}`; `name` is the real vehicle's name, the sa
 `.glb` per unit. A unit's file has a root node `unit` (extras: the index entry) with children `lod0`, `lod1`,
 `lod2` (full, coarse, far), each holding one mesh node per part: `hull`, `gear` (an aircraft's retractable landing
 gear, posed down, extras {retract: true, pivot}; a ground unit's wheels and tracks), `turret` (extras {joint: "yaw",
-pivot}), `gun` (extras {joint: "pitch", pivot, parent}) and `rotor.N` (a propeller: extras {spin: "rotor", pivot,
-axis, diameter}); and an optional child `dm` with one node per hit region, `dm:<name>`, extras {part, group}.
+pivot}), `gun` (extras {joint: "pitch", pivot, parent}), `aerial` (a ground unit's radio aerials: drawn, left out of
+its size) and `rotor.N` (a propeller: extras {spin: "rotor", pivot, axis, diameter}); and an optional child `dm` with
+one node per hit region, `dm:<name>`, extras {part, group} and, for an armoured vehicle, `mm` (the thickness the game
+counts, millimetres of armour steel).
 Positions are float32 metres in the viewer's figure frame (x forward, y up, z right) about the unit's own origin.
 
 Catalogue: `catalog.json` (`{format: "3dheat-catalog", version: 1, game, gameBuild, source, items: [{id, kind,
@@ -30,7 +32,7 @@ import numpy as np
 
 PACK_FORMAT = "3dheat-model-pack"
 CATALOG_FORMAT = "3dheat-catalog"
-PARTS = ("hull", "gear", "turret", "gun", "rotor")
+PARTS = ("hull", "aerial", "gear", "turret", "gun", "rotor")
 #: Triangles per level of detail (full, coarse, far), by domain.
 BUDGET = {"ground": (14000, 2600, 700), "air": (16000, 3000, 800), "sea": (30000, 6000, 1500)}
 
@@ -65,7 +67,7 @@ GEAR_SHARE = 0.12
 
 def _weight(name: str) -> float:
     base = name.split(".")[0]
-    return {"gun": 3.0, "turret": 1.5, "rotor": 2.0}.get(base, 0.0)
+    return {"gun": 3.0, "turret": 1.5, "rotor": 2.0, "aerial": 1.0}.get(base, 0.0)
 
 
 def simplify(parts: dict, budget: int, domain: str = "") -> dict:
@@ -273,7 +275,9 @@ class Pack:
         """Writes a unit from three ready levels ({part: (verts, faces)} each, figure frame)."""
         pivots = pivots or {}
         joints = {k: v for k, v in (joints or {}).items() if k in lods[0]}
-        allv = np.concatenate([v for v, _ in lods[0].values()])
+        # the body's box: aerials (thin whips standing far above it) are drawn but not counted in its size
+        body = [v for p, (v, _) in lods[0].items() if not p.startswith("aerial")] or [v for v, _ in lods[0].values()]
+        allv = np.concatenate(body)
         lo, hi = allv.min(0), allv.max(0)
         fname = re.sub(r"[^a-z0-9_.-]", "_", unit.lower()) + ".glb"
         retract = "gear" in pivots and "gear" in lods[0]

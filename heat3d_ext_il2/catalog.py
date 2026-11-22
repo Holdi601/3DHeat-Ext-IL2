@@ -336,13 +336,12 @@ def entry(folder: str, unit: str, game_name: str = "") -> dict:
     from .models import FOLDERS
 
     domain = FOLDERS.get(folder, "ground")
-    # A folder name starting with "_" is the game's static form of a vehicle (placed as scenery): it stands for no
-    # unit of the data, so the viewer never draws a unit with it.
-    static = unit.startswith("_")
+    # A folder name starting with "_" is a vehicle the player drives (Tank Crew): the same real vehicle as the AI
+    # unit without it, its own unit of the data under its own object name.
     return {"id": unit, "folder": folder, "key": key, "gameName": game_name or key,
             "aliases": sorted(set(a for a in aliases if a != key)),
             "class": cls, "nation": nation, "domain": domain,
-            "type": "static" if static else _TYPE_WORD.get(cls, cls)}
+            "type": _TYPE_WORD.get(cls, cls), **({"drivable": True} if unit.startswith("_") else {})}
 
 
 def safe_id(unit: str) -> str:
