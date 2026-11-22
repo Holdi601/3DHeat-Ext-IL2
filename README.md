@@ -39,6 +39,8 @@ pick into the 3DHeat levels folder, and asks before it updates itself.
 too). The 3DHeat app's Extractors panel can install and update it for you.
 See [The standalone program](https://holdi601.github.io/3DHeat-Ext-IL2/#the-standalone-program-no-python-needed).
 
+The window walks through four steps (find the game, choose, work, done) in the 3DHeat look, dark or light. On Windows the program opens only its window, with no console window; in a terminal it prints as usual, and `heat3d-il2-cli.cmd` in the same folder makes the terminal wait for it and pass on its exit code.
+
 ## Quick start for new users (Python)
 
 You need: Windows, [Python](https://www.python.org/downloads/) 3.10 or later

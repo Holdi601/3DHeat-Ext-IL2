@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "heat3d-ext-il2"
-version = "0.3.1"
+version = "0.4.0"
 description = "IL-2 Sturmovik maps (Great Battles; Korea where readable) into .glb levels for the 3DHeat viewer"
 readme = "README.md"
 license = { text = "MIT" }
